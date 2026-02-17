@@ -1,19 +1,12 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "templates/index.html",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/data/(.*)",
-            "dest": "/data/$1"
+            "source": "/data/:path*",
+            "destination": "/data/:path*"
         },
         {
-            "src": "/(.*)",
-            "dest": "/templates/index.html"
+            "source": "/",
+            "destination": "/templates/index.html"
         }
     ]
 }

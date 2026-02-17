@@ -1,0 +1,9 @@
+{
+  "botId": "1467518015326130470",
+  "botName": "gaku-co3.0",
+  "testChannelId": "1473262637419593771",
+  "targetChannels": {
+    "test": "1473262637419593771"
+  },
+  "token": "${DISCORD_BOT_TOKEN}"
+}

@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "templates/index.html",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/data/(.*)",
+            "dest": "/data/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/templates/index.html"
+        }
+    ]
+}

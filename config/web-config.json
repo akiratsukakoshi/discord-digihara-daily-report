@@ -1,0 +1,5 @@
+{
+  "password": "${REPORT_PASSWORD}",
+  "timezone": "Asia/Tokyo",
+  "dailyTime": "24:00"
+}

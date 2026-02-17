@@ -11,7 +11,7 @@
 ## Architecture
 
 1. **Discord Bot** - メッセージ履歴を取得
-2. **LLM (Haiku 4.5)** - 要約・分類・JSON生成
+3. **LLM (Z.AI GLM-4.7)** - 要約・分類・JSON生成
 3. **Web Interface** - パスワード保護された閲覧ページ
 
 ## Output Format

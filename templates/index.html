@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Daily Report</title>
+    <title>DigiHara Daily Report</title>
     <style>
         * {
             margin: 0;
@@ -237,7 +237,7 @@
 <body>
     <div class="login-overlay" id="loginOverlay">
         <div class="login-box">
-            <h2>🔐 Discord Daily Report</h2>
+            <h2>🔐 DigiHara Daily Report</h2>
             <div class="error-message" id="errorMessage"></div>
             <input type="password" id="passwordInput" placeholder="パスワードを入力">
             <button onclick="login()">閲覧</button>
@@ -246,7 +246,7 @@
 
     <div class="container hidden" id="mainContent">
         <div class="header">
-            <h1>📊 Discord Daily Report</h1>
+            <h1>📊 DigiHara Daily Report</h1>
             <p>デジタル原っぱ大学 運営チャンネル 日報</p>
             <div class="date-selector">
                 <select id="dateSelect" onchange="loadReport()">
@@ -275,7 +275,7 @@
 
     <script>
         // パスワード設定（実際にはサーバー側で検証すべき）
-        const CORRECT_PASSWORD = 'test123'; // テスト用、本番では環境変数等で管理推奨だが静的サイトでは困難
+        const CORRECT_PASSWORD = 'harappa2026'; // テスト用、本番では環境変数等で管理推奨だが静的サイトでは困難
 
         // ログイン処理
         function login() {

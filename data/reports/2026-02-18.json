@@ -1,0 +1,34 @@
+{
+  "date": "2026-02-18",
+  "channelSummary": "総メッセージ数: 100件（AI: 59件、人間: 41件）。主なトピック: スキル開発・テスト、Botchy（AIアシスタント）の改善。",
+  "users": {
+    "1360187059544920115": {
+      "name": "ボッチー",
+      "role": "AIアシスタント",
+      "progress": "アシスタントとして対応",
+      "interestsAndQuestions": "参加者との対話",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "参加者",
+      "progress": "なし",
+      "interestsAndQuestions": "Discord APIのチャンネル管理 / Botchyの改善",
+      "adviceReceived": []
+    },
+    "1467518015326130470": {
+      "name": "ガクコ",
+      "role": "AIアシスタント",
+      "progress": "アシスタントとして対応",
+      "interestsAndQuestions": "参加者との対話",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "progress": "スキルのテスト実施・修正",
+      "interestsAndQuestions": "Discord APIのチャンネル管理 / Botchyの改善",
+      "adviceReceived": []
+    }
+  }
+}

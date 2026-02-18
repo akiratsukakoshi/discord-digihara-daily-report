@@ -6,21 +6,18 @@
 
 以下の手順で日報を生成してください：
 
-1. **メッセージ取得**
-   - Discordチャンネル（ID: 1473262637419593771）のメッセージを取得
-   - message toolを使って取得（action=read, channel=discord, channelId=1473262637419593771, limit=100）
-   - 取得したメッセージを時間順に並べ替える（古い順）
+1. **日報生成スクリプトの実行**
+   - 以下のコマンドを実行して、メッセージ取得・生成・保存・GitPush・通知を一括で行う。
+   - `python3 scripts/generate_report.py`
+   - エラーが発生した場合は、エラーメッセージを確認して対処する。
 
-2. **ユーザーマッピング読み込み**
-   - `/home/node/.openclaw/workspace/skills/discord-daily-report/config/user-mapping.json` を読み込む
+2. **(完了)**
+   - スクリプトが正常終了すればタスク完了です。
 
-3. **日報生成**
-   - 取得したメッセージを分析して、以下のJSON形式で日報を生成
-   - 各ユーザーの進捗・興味・疑問・アドバイスを抽出
-
-4. **保存**
-   - 生成した日報を `/home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/YYYY-MM-DD.json` に保存
-   - JSON形式で、UTF-8エンコーディング
+   - Gitに変更をPushする：
+     - 環境変数 `GITHUB_TOKEN` を使用して認証を行う
+     - コマンド例: `git push https://<GITHUB_TOKEN>@github.com/akiratsukakoshi/discord-digihara-daily-report.git main`
+     - コミットメッセージ: `chore: add daily report for YYYY-MM-DD`
 
 ## JSON Format
 
@@ -51,3 +48,55 @@
 - ユーザーマッピングにないユーザーはDiscordの表示名を使用
 - ボッチーや他AIからのアドバイスは「adviceReceived」に記録
 - JSONは常に有効な形式であること
+
+## Git Push
+
+日報を保存した後、以下の手順でgit pushを行ってください：
+
+1. **cdでskillディレクトリに移動**
+   ```bash
+   cd /home/node/.openclaw/workspace/skills/discord-daily-report
+   ```
+
+2. **git addで変更を追加**
+   ```bash
+   git add data/reports/YYYY-MM-DD.json
+   ```
+
+3. **git commitでコミット**
+   ```bash
+   git commit -m "Daily report: YYYY-MM-DD"
+   ```
+
+4. **git pushでリモートにpush**
+   ```bash
+   git push
+   ```
+
+## Discord通知
+
+git pushの後、Discordチャンネル（ID: 1466318222843318282）に通知を送ってください：
+
+### 通知内容
+
+以下の形式で通知を送信：
+
+```
+📊 Discord Daily Report - {YYYY-MM-DD}
+
+【全体の要約】
+{channelSummary}
+
+【ユーザー別】
+{usersの内容を簡潔に表示}
+
+🔗 Web閲覧: https://discord-digihara-daily-report.vercel.app/
+```
+
+### 方法
+
+message toolを使って送信（action=send, channel=discord, to=1466318222843318282）
+
+- channelSummaryはそのまま表示
+- usersは各ユーザーのprogress・interestsAndQuestions・adviceReceivedを簡潔に表示
+- 長すぎる場合は要約して表示

@@ -74,6 +74,14 @@ Cron Jobは既に設定済み：
 sessions_spawn --task "/home/node/.openclaw/workspace/skills/discord-daily-report/scripts/daily_report_task.md の内容に従って、Discord Daily Reportを生成してください。" --model "anthropic/claude-haiku-4-5-20251001"
 ```
 
+### 自動実行 & Git Push
+
+Cron Jobは日報生成後に自動的にgit pushを行います（daily_report_task.mdの手順に従います）：
+1. 日報を `data/reports/YYYY-MM-DD.json` に保存
+2. 変更をgit add
+3. git commit（メッセージ: "Daily report: YYYY-MM-DD"）
+4. git push origin
+
 ### Cron Job管理
 
 ```bash

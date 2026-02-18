@@ -17,14 +17,30 @@ from openai import OpenAI
 # Configuration
 # Load from environment (set by run_daily.sh or manually source .env)
 DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
-CHANNEL_ID = "1473262637419593771"
 ZAI_API_KEY = os.getenv("ZAI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+# Load channel ID from config file
+def load_discord_config():
+    """Discord設定を読み込む"""
+    config_path = os.path.join(os.path.dirname(__file__), "../config/discord-config.json")
+    try:
+        with open(config_path) as f:
+            data = json.load(f)
+            return data.get("targetChannels", {}).get("test", "")
+    except FileNotFoundError:
+        print("Warning: discord-config.json not found.")
+        return ""
+
+CHANNEL_ID = load_discord_config()
+if not CHANNEL_ID:
+    print("Error: Could not load CHANNEL_ID from config.")
+    sys.exit(1)
+
 # Determine API Key and Base URL
 API_KEY = ZAI_API_KEY or OPENAI_API_KEY
-BASE_URL = os.getenv("OPENAI_BASE_URL", "https://open.bigmodel.cn/api/paas/v4/")
-MODEL_NAME = "glm-4-plus"
+BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.z.ai/api/coding/paas/v4")
+MODEL_NAME = "glm-4.7"
 
 def get_discord_messages(channel_id, limit=100):
     """Discord APIからメッセージを取得"""
@@ -41,13 +57,38 @@ def get_discord_messages(channel_id, limit=100):
     # 過去24時間分のメッセージを取得するためにlimitを多めに設定するか、
     # timestampでフィルタリングするロジックが必要だが、まずはlimitで簡易実装
     # 本来は after/before パラメータや timestamp 判定が必要
-    response = requests.get(url, headers=headers, params={"limit": limit})
-    if response.status_code == 200:
-        return response.json()
-    else:
-        print(f"Error fetching messages: {response.status_code}")
-        print(response.text)
-        return []
+    all_messages = []
+    has_more = True
+    last_id = None
+    fetch_limit = 20  # Batch size
+    
+    while len(all_messages) < limit and has_more:
+        params = {"limit": min(fetch_limit, limit - len(all_messages))}
+        if last_id:
+            params["before"] = last_id
+            
+        print(f"Fetching batch... (current count: {len(all_messages)})")
+        try:
+            response = requests.get(url, headers=headers, params=params)
+            if response.status_code == 200:
+                batch = response.json()
+                if not batch:
+                    has_more = False
+                else:
+                    all_messages.extend(batch)
+                    last_id = batch[-1]["id"]
+                    # If we got fewer than requested, we reached the end
+                    if len(batch) < params["limit"]:
+                        has_more = False
+            else:
+                print(f"Error fetching messages: {response.status_code}")
+                print(response.text)
+                has_more = False
+        except Exception as e:
+            print(f"Exception during fetch: {e}")
+            has_more = False
+            
+    return all_messages
 
 def load_user_mapping():
     """ユーザーマッピングを読み込む"""

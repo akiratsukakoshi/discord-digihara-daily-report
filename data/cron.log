@@ -63,3 +63,51 @@ Git push successful.
 Sending notification to Discord...
 Notification sent successfully.
 Done!
+[main bc89f26] chore: add daily report for 2026-02-21
+ 25 files changed, 3512 insertions(+), 1 deletion(-)
+ create mode 100644 data/reports/2026-02-21.json
+ create mode 100644 node_modules/.package-lock.json
+ create mode 100644 node_modules/dotenv/CHANGELOG.md
+ create mode 100644 node_modules/dotenv/LICENSE
+ create mode 100644 node_modules/dotenv/README-es.md
+ create mode 100644 node_modules/dotenv/README.md
+ create mode 100644 node_modules/dotenv/SECURITY.md
+ create mode 100644 node_modules/dotenv/config.d.ts
+ create mode 100644 node_modules/dotenv/config.js
+ create mode 100644 node_modules/dotenv/lib/cli-options.js
+ create mode 100644 node_modules/dotenv/lib/env-options.js
+ create mode 100644 node_modules/dotenv/lib/main.d.ts
+ create mode 100644 node_modules/dotenv/lib/main.js
+ create mode 100644 node_modules/dotenv/package.json
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 scripts/generate_report.js
+ create mode 100644 test_api.js
+ create mode 120000 venv/bin/python
+ create mode 120000 venv/bin/python3
+ create mode 120000 venv/bin/python3.11
+ create mode 120000 venv/lib64
+ create mode 100644 venv/pyvenv.cfg
+To github.com:akiratsukakoshi/discord-digihara-daily-report.git
+   563d5ef..bc89f26  main -> main
+Starting Daily Report Task at 2026-02-21 00:00:04.886488
+Fetching Discord messages...
+Fetching batch... (current count: 0)
+Fetching batch... (current count: 20)
+Fetching batch... (current count: 40)
+Fetching batch... (current count: 60)
+Fetching batch... (current count: 80)
+Fetched 100 messages
+Loading user mapping...
+Generating daily report...
+Generating report using model: glm-4.7
+Saving report...
+Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-report/scripts/../data/reports/2026-02-21.json
+Updating index...
+Generated index.json with 5 reports.
+Path: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-report/data/index.json
+Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!

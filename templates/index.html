@@ -231,6 +231,37 @@
                 transform: rotate(360deg);
             }
         }
+
+        .project-item {
+            background: #f0f4ff;
+            border: 1px solid #d0daff;
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+        }
+
+        .project-name {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+
+        .project-description {
+            font-size: 0.85em;
+            color: #888;
+            margin-bottom: 6px;
+        }
+
+        .project-progress {
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .project-progress.no-change {
+            color: #aaa;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -355,6 +386,17 @@
             }
         }
 
+        // XSS対策: HTMLエスケープ
+        function escapeHtml(str) {
+            if (typeof str !== 'string') return str || '';
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
         // レポートを表示
         function renderReport(report) {
             document.getElementById('channelSummary').textContent = report.channelSummary || '要約なし';
@@ -369,32 +411,52 @@
                 return;
             }
 
-            Object.values(users).forEach(user => {
+            Object.entries(users).forEach(([userId, user]) => {
                 const card = document.createElement('div');
                 card.className = 'user-card';
 
+                // 案件別進捗HTML
+                let projectsHtml = '';
+                if (user.projects && user.projects.length > 0) {
+                    projectsHtml = user.projects.map(project => {
+                        const isNoChange = !project.progress || project.progress === '変化なし';
+                        return `
+                        <div class="project-item">
+                            <div class="project-name">${escapeHtml(project.name)}</div>
+                            ${project.description ? `<div class="project-description">${escapeHtml(project.description)}</div>` : ''}
+                            <div class="project-progress${isNoChange ? ' no-change' : ''}">${escapeHtml(project.progress || '変化なし')}</div>
+                        </div>`;
+                    }).join('');
+                } else if (user.progress) {
+                    // 後方互換: 旧フォーマット（progressフィールド）にも対応
+                    projectsHtml = `<div class="user-section-content">${escapeHtml(user.progress)}</div>`;
+                } else {
+                    projectsHtml = '<div class="user-section-content" style="color:#aaa;">なし</div>';
+                }
+
+                // アドバイスHTML
                 let adviceHtml = '';
                 if (user.adviceReceived && user.adviceReceived.length > 0) {
                     adviceHtml = user.adviceReceived.map(advice => `
                         <div class="advice-item">
-                            <span class="advice-from">${advice.from}からのアドバイス:</span>
-                            ${advice.content}
+                            <span class="advice-from">${escapeHtml(advice.from)}からのアドバイス:</span>
+                            ${escapeHtml(advice.content)}
                         </div>
                     `).join('');
                 }
 
                 card.innerHTML = `
                     <div class="user-card-header">
-                        <span class="user-name">${user.name}</span>
-                        <span class="user-role">${user.role}</span>
+                        <span class="user-name">${escapeHtml(user.name)}</span>
+                        <span class="user-role">${escapeHtml(user.role)}</span>
                     </div>
                     <div class="user-section">
-                        <h3>📈 進捗</h3>
-                        <div class="user-section-content">${user.progress || 'なし'}</div>
+                        <h3>📋 開発案件の進捗</h3>
+                        <div>${projectsHtml}</div>
                     </div>
                     <div class="user-section">
                         <h3>🤔 興味・疑問</h3>
-                        <div class="user-section-content">${user.interestsAndQuestions || 'なし'}</div>
+                        <div class="user-section-content">${escapeHtml(user.interestsAndQuestions || 'なし')}</div>
                     </div>
                     ${user.adviceReceived && user.adviceReceived.length > 0 ? `
                         <div class="user-section">

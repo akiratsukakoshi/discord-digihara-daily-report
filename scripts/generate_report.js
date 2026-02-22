@@ -49,6 +49,17 @@ const loadUserMapping = () => {
 const CHANNEL_ID = loadDiscordConfig();
 const USER_MAPPING = loadUserMapping();
 
+// 除外ボットIDリスト（user-mapping.jsonのexcludedBotsから読み込む）
+const EXCLUDED_BOT_IDS = (() => {
+  const configPath = path.join(CONFIG_DIR, 'user-mapping.json');
+  try {
+    const data = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    return data.excludedBots || [];
+  } catch {
+    return [];
+  }
+})();
+
 // Environment variables
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 const ZAI_API_KEY = process.env.ZAI_API_KEY;
@@ -124,6 +135,19 @@ async function getDiscordMessages(channelId, limit = 100) {
 }
 
 /**
+ * 活動日の日付を返す（JST基準）
+ * cron実行が深夜0時台のため、JST午前4時未満は前日を活動日とみなす
+ */
+function getActivityDate() {
+  const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000); // UTC → JST
+  const jstHour = jstNow.getUTCHours();
+  if (jstHour < 4) {
+    jstNow.setUTCDate(jstNow.getUTCDate() - 1);
+  }
+  return jstNow.toISOString().split('T')[0];
+}
+
+/**
  * LLMを使って日報を生成
  */
 async function generateDailyReport(messages, userMapping) {
@@ -136,6 +160,10 @@ async function generateDailyReport(messages, userMapping) {
   const formattedMessages = [];
   for (const msg of messages.reverse()) {
     const userId = msg.author.id;
+    // 除外ボットはスキップ
+    if (EXCLUDED_BOT_IDS.includes(userId)) {
+      continue;
+    }
     const userInfo = userMapping[userId] || {
       name: msg.author.username,
       role: '参加者'
@@ -150,29 +178,49 @@ async function generateDailyReport(messages, userMapping) {
     console.log('No messages to report.');
     // 空の日報を返す
     return {
-      date: new Date().toISOString().split('T')[0],
+      date: getActivityDate(),
       channelSummary: '本日の会話はありません。',
       users: {}
     };
   }
 
   const messagesText = formattedMessages.join('\n');
-  const today = new Date().toISOString().split('T')[0];
+  const activityDate = getActivityDate();
+
+  // 各ユーザーの案件リストをプロンプト用テキストに変換
+  const userProjectsText = Object.entries(userMapping)
+    .filter(([id]) => !EXCLUDED_BOT_IDS.includes(id))
+    .map(([id, info]) => {
+      if (!info.projects || info.projects.length === 0) return null;
+      const projectList = info.projects.map(p => `    - ${p.name}: ${p.description}`).join('\n');
+      return `- ${info.name} (ID: ${id})\n${projectList}`;
+    })
+    .filter(Boolean)
+    .join('\n');
 
   const prompt = `以下はDiscordチャンネルでの対話ログです。このログを分析して、以下の形式で日報を生成してください。
 
 対話ログ:
 ${messagesText}
 
+【各人の既知開発案件リスト】
+${userProjectsText}
+
 JSON形式で出力してください:
 {
-  "date": "${today}",
+  "date": "${activityDate}",
   "channelSummary": "チャンネル全体の会話の要約",
   "users": {
-    "ユーザーID": {
+    "DiscordユーザーID（数字のみ）": {
       "name": "表示名",
-      "role": "参加者/運営/AIアシスタント",
-      "progress": "開発の進捗がある場合は要約（ない場合は「なし」）",
+      "role": "運営/参加者",
+      "projects": [
+        {
+          "name": "案件名",
+          "description": "案件の説明",
+          "progress": "本日のこの案件に関する進捗（会話ログに該当内容がない場合は「変化なし」）"
+        }
+      ],
       "interestsAndQuestions": "進捗以外の会話から興味や疑問を抽出（ない場合は「なし」）",
       "adviceReceived": [
         {
@@ -185,9 +233,11 @@ JSON形式で出力してください:
 }
 
 注意点:
-- ユーザーIDはDiscordのユーザーIDを使用
-- ユーザーごとの情報は実際の会話内容に基づいて抽出
-- ボッチーや他AIからのアドバイスは「adviceReceived」に記録
+- usersのキーは必ずDiscordのユーザーID（数字のみ）を使用すること。名前は使わない。
+- ユーザーIDが不明な場合は「unknown_<名前>」形式を使用
+- 各ユーザーの「projects」には【各人の既知開発案件リスト】に載っている案件をすべて含める
+- ログ中に既知リストにない新規案件が登場した場合は、その案件もprojectsに追加する（descriptionは会話から推測して記載）
+- 各案件のprogressには、その案件に関して本日実際にあった進捗・変化のみを書く（ない場合は「変化なし」）
 - JSONのみを出力（コードブロックや余計なテキストなし）`;
 
   console.log(`Generating report using model: ${MODEL_NAME}`);
@@ -228,7 +278,17 @@ JSON形式で出力してください:
 
     const data = await response.json();
     const content = data.choices[0].message.content;
-    return JSON.parse(content);
+    console.log("Raw LLM output:", content);
+
+    // Strip markdown code blocks if present
+    let cleanContent = content.trim();
+    if (cleanContent.startsWith('```json')) {
+      cleanContent = cleanContent.replace(/^```json\n?/, '').replace(/\n?```$/, '');
+    } else if (cleanContent.startsWith('```')) {
+      cleanContent = cleanContent.replace(/^```\n?/, '').replace(/\n?```$/, '');
+    }
+
+    return JSON.parse(cleanContent);
   } catch (error) {
     console.error(`Error generating report: ${error}`);
     return null;
@@ -243,7 +303,7 @@ function saveReport(report) {
 
   fs.mkdirSync(DATA_DIR, { recursive: true });
 
-  const dateStr = report.date || new Date().toISOString().split('T')[0];
+  const dateStr = report.date || getActivityDate();
   const filepath = path.join(DATA_DIR, `${dateStr}.json`);
 
   fs.writeFileSync(filepath, JSON.stringify(report, null, 2), 'utf8');

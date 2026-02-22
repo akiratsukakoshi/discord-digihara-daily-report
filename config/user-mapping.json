@@ -1,20 +1,36 @@
 {
+  "excludedBots": [
+    "1360187059544920115",
+    "1467518015326130470"
+  ],
   "users": {
     "1337662562283683861": {
       "name": "ガクチョ",
-      "role": "運営"
-    },
-    "1467518015326130470": {
-      "name": "ガクコ",
-      "role": "AIアシスタント"
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群"
+        }
+      ]
     },
     "1016907741018726470": {
       "name": "もっちゃん",
-      "role": "運営"
-    },
-    "1360187059544920115": {
-      "name": "ボッチー",
-      "role": "AI"
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール"
+        }
+      ]
     }
   }
 }

@@ -47,6 +47,7 @@ const loadUserMapping = () => {
 };
 
 const CHANNEL_ID = loadDiscordConfig();
+const NOTIFICATION_THREAD_ID = '1475108738456354816'; // 運営の記録スレッド
 const USER_MAPPING = loadUserMapping();
 
 // 除外ボットIDリスト（user-mapping.jsonのexcludedBotsから読み込む）
@@ -339,17 +340,20 @@ async function gitPushChanges(dateStr) {
 /**
  * Discordに通知を送る
  */
-async function notifyDiscord(dateStr) {
+async function notifyDiscord(report) {
   console.log('Sending notification to Discord...');
-  const url = `https://discord.com/api/v10/channels/${CHANNEL_ID}/messages`;
+  const url = `https://discord.com/api/v10/channels/${NOTIFICATION_THREAD_ID}/messages`;
   const headers = {
     'Authorization': `Bot ${DISCORD_BOT_TOKEN}`,
     'Content-Type': 'application/json'
   };
 
-  const content = `📊 **DigiHara Daily Report (${dateStr})** が完成しました！
+  const content = `📊 **DigiHara Daily Report (${report.date})** が完成しました！
 URL: https://discord-digihara-daily-report.vercel.app/
-Pass: \`harappa2026\``;
+Pass: \`harappa2026\`
+
+📝 **本日の概要**:
+${report.channelSummary || 'なし'}`;
 
   const payload = { content };
 
@@ -412,7 +416,7 @@ async function main() {
     }
 
     // Discord Notification
-    await notifyDiscord(report.date);
+    await notifyDiscord(report);
   } else {
     console.error('Failed to generate report.');
   }

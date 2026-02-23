@@ -15,5 +15,5 @@ if [ -f .env ]; then
     set +a
 fi
 
-# Run the python script
-/usr/bin/python3 "$SCRIPT_DIR/generate_report.py" >> "$REPO_DIR/data/cron.log" 2>&1
+# Run the node.js script
+/usr/bin/node "$SCRIPT_DIR/generate_report.js" >> "$REPO_DIR/data/cron.log" 2>&1

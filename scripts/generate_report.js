@@ -69,7 +69,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 // OpenAI Configuration
 const API_KEY = ZAI_API_KEY || OPENAI_API_KEY;
 const BASE_URL = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4';
-const MODEL_NAME = 'glm-4.7';
+const MODEL_NAME = 'glm-4-plus';
 
 /**
  * Discord APIからメッセージを取得
@@ -239,6 +239,8 @@ JSON形式で出力してください:
 - 各ユーザーの「projects」には【各人の既知開発案件リスト】に載っている案件をすべて含める
 - ログ中に既知リストにない新規案件が登場した場合は、その案件もprojectsに追加する（descriptionは会話から推測して記載）
 - 各案件のprogressには、その案件に関して本日実際にあった進捗・変化のみを書く（ない場合は「変化なし」）
+- 文字列内の改行は生の改行コードではなく、必ず「\\n」にエスケープしてください。
+- 文字列内のダブルクォーテーションは必ず「\\"」にエスケープしてください。
 - JSONのみを出力（コードブロックや余計なテキストなし）`;
 
   console.log(`Generating report using model: ${MODEL_NAME}`);

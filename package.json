@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "毎日24:00（JST）にDiscordコミュニティの会話を自動記録・要約するskill。",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

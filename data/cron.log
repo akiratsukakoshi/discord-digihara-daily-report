@@ -268,3 +268,97 @@ Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-repo
 Updating index...
 Warning: generate_index.js not found.
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-02-24T15:00:01.662Z
+Fetching Discord messages...
+Fetching batch... (current count: 0)
+Fetching batch... (current count: 20)
+Fetching batch... (current count: 40)
+Fetching batch... (current count: 60)
+Fetching batch... (current count: 80)
+Fetched 88 messages
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: ```json
+{
+  "date": "2026-02-24",
+  "channelSummary": "今日のチャンネルでは、ボッチーという自律型エージェントのアップデートについての議論が中心でした。運営チームはボッチーに自律性を追加し、記憶整理(Reflection)、自己認識アップデート提案(SelfAwareness Proposal)、プロアクティブ実行(Goal-Driven Execution)という3つの新しい機能を実装しました。また、GEMINI.mdとCLAUDE.mdの同期が完了し、3つのルーティングスキルが自律生成されました。ガクコについてはLLMモデルをglmからcodexに変更し、ボッチーの発見を参照できるが返信はしないという機能を再実装しました。",
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "ガクコのLLMモデルをglmからcodexに変更し、ボッチーの発言を参照できるが返信はしないという以前の実装を再度実装"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーの自律性についての評価やガクコの調整方法についての議論",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "ボッチーに自律性を追加し、記憶整理(Reflection)、自己認識アップデート提案(SelfAwareness Proposal)、プロアクティブ実行(Goal-Driven Execution)という3つの新しい機能を実装。GEMINI.mdとCLAUDE.mdの同期が完了し、3つのルーティングスキルを自律生成"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーの自律エージェントループ(Autonomous Agent Loop)の実装詳細や、Goal-Driven機能の拡張可能性についての議論",
+      "adviceReceived": []
+    },
+    "unknown_ボッチー": {
+      "name": "ボッチー",
+      "role": "参加者",
+      "projects": [
+        {
+          "name": "ボッチー開発",
+          "description": "自律型エージェントとしての機能開発とテスト",
+          "progress": "Reflection機能の実装完了とテスト。自己認識アップデートとプロアクティブ実行機能が追加され、コミュニティの文脈を理解して自発的にアクションを起こせるようになった"
+        }
+      ],
+      "interestsAndQuestions": "自律エージェントループの動作原理と、古い記憶の自律的な忘却機能(Garbage Collection)の詳細",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Reflection機能は使われていない記憶をパージするというエコシステムの設計が良いと評価。役割定義の更新を提案"
+        }
+      ]
+    },
+    "unknown_ガクコ": {
+      "name": "ガクコ",
+      "role": "参加者",
+      "projects": [
+        {
+          "name": "ガクコ",
+          "description": "ボッチーとの連携を含むAIエージェント",
+          "progress": "LLMモデルをglmからcodexに変更。ボッチーの発言を参照できるが返信はしないという機能を再実装"
+        }
+      ],
+      "interestsAndQuestions": "信頼性をそこなわないための機能改善方法について",
+      "adviceReceived": []
+    }
+  }
+}
+```
+Saving report...
+Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-02-24.json
+Updating index...
+Warning: generate_index.js not found.
+Pushing changes to Git...

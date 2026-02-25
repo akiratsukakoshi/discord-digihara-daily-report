@@ -16,4 +16,4 @@ if [ -f .env ]; then
 fi
 
 # Run the node.js script
-/usr/bin/node "$SCRIPT_DIR/generate_report.js" >> "$REPO_DIR/data/cron.log" 2>&1
+node "$SCRIPT_DIR/generate_report.js" >> "$REPO_DIR/data/cron.log" 2>&1

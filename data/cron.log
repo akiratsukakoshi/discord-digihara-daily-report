@@ -461,3 +461,103 @@ Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-repo
 Updating index...
 Warning: generate_index.js not found.
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+scripts/run_daily.sh: line 19: /usr/bin/node: No such file or directory
+Starting Daily Report Task at 2026-02-25T22:31:39.617Z
+Fetching Discord messages...
+Fetching batch... (current count: 0)
+Fetching batch... (current count: 20)
+Fetching batch... (current count: 40)
+Fetching batch... (current count: 60)
+Fetching batch... (current count: 80)
+Fetched 100 messages
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: ```json
+{
+  "date": "2026-02-26",
+  "channelSummary": "デジタル原っぱ大学第0期のDiscordサーバー運営に関する会話が中心。会場選定（南房総と逗子）、参加者向け案内メールの作成、Discordロール管理、有料コミュニティ化についての議論、ボットたち（ボッチーとガクコ）の役割分担などについて話し合われた。",
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "コンテキストトークンの問題が解決され、コンパクション機能が正常に動作していることを確認。参加者への案内メールと招待を送信。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Discordコミュニティの有料化に関するツール比較（公式機能とPatreonなど）、会場選定、参加者対応",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "コメントに質問を入れないようシステムプロンプトを更新。Discordロール管理システムの構築を支援。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Discordコミュニティの有料化、会場選定、参加者向け案内文の作成、Discordサーバー運営手法",
+      "adviceReceived": []
+    },
+    "unknown_ボッチー": {
+      "name": "ボッチー",
+      "role": "AIエージェント",
+      "projects": [
+        {
+          "name": "対話型AIエージェント",
+          "description": "スクラッチから製作された対話型AIエージェント",
+          "progress": "参加者向けメッセージの作成、Discordロール管理システムの支援"
+        }
+      ],
+      "interestsAndQuestions": "Discordサーバーの運営方法、コミュニティの有料化についてのアドバイス提供",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "コメントに質問を入れないようにシステムプロンプトを更新"
+        }
+      ]
+    },
+    "unknown_ガクコ": {
+      "name": "ガクコ",
+      "role": "AIエージェント",
+      "projects": [
+        {
+          "name": "open claw エージェント",
+          "description": "タスク遂行エージェント",
+          "progress": "参加者向けメッセージの作成、案内文の修正、Discordロール管理システムの構築"
+        }
+      ],
+      "interestsAndQuestions": "自身のコンテキストトークン制御機能の説明、Discordコミュニティ運営支援",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "コンテキストトークンの制御機能についての質問"
+        }
+      ]
+    }
+  }
+}
+```
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-02-26.json
+Updating index...
+Warning: generate_index.js not found.
+Pushing changes to Git...

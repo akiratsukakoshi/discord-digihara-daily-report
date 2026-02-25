@@ -8,7 +8,7 @@
 
 1. **日報生成スクリプトの実行**
    - 以下のコマンドを実行して、メッセージ取得・生成・保存・GitPush・通知を一括で行う。
-   - `python3 scripts/generate_report.py`
+   - `bash scripts/run_daily.sh`
    - エラーが発生した場合は、エラーメッセージを確認して対処する。
 
 2. **(完了)**

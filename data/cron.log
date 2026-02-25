@@ -362,3 +362,102 @@ Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-repo
 Updating index...
 Warning: generate_index.js not found.
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-02-25T15:00:01.474Z
+Fetching Discord messages...
+Fetching batch... (current count: 0)
+Fetching batch... (current count: 20)
+Fetching batch... (current count: 40)
+Fetching batch... (current count: 60)
+Fetching batch... (current count: 80)
+Fetched 100 messages
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: ```json
+{
+  "date": "2026-02-25",
+  "channelSummary": "デジタル原っぱ大学第0期の運営会話が中心。会場選定（南房総と逗子）、参加者向け案内文作成、Discordサーバーのロール設定、有料コミュニティ化の検討などについて議論。ボットの挙動確認やコンテキストトークン管理の改善にも言及。",
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "Discord内でのタスク遂行を支援するAIエージェント",
+          "progress": "コンテキストトークンの制御機能が改善され、長文やり取りが可能に。コンパクション機能が自律実装されていることが確認された。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC): 業務管理application群",
+          "description": "業務管理アプリケーション群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボットの挙動確認、コンテキストトークン管理の改善、コミュニティの有料化についての検討",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "コミュニティの有料化についてはDiscordの公式機能を優先的に検討するよう提案。"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "対話型AIエージェント",
+          "progress": "参加者へのメッセージ作成指示を送信。Discord内でのロール設定を担当。"
+        },
+        {
+          "name": "Insight Scope (IS): マーケティングツール",
+          "description": "マーケティング分析ツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "会場選定（南房総と逗子）、参加者向け案内文作成、Discordサーバーのロール設定、有料コミュニティ化の検討",
+      "adviceReceived": []
+    },
+    "unknown_ボッチー": {
+      "name": "ボッチー",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "対話型AIエージェント",
+          "progress": "参加者へのメッセージ作成を依頼。Discordサーバーのロール設定を担当。"
+        }
+      ],
+      "interestsAndQuestions": "Discordサーバーの運用、有料コミュニティ化の検討（Discord公式機能とPatreonの違いを説明）",
+      "adviceReceived": []
+    },
+    "unknown_ガクコ": {
+      "name": "ガクコ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "Discord内でのタスク遂行を支援するAIエージェント",
+          "progress": "参加者向け案内文の誤字脱字修正、Discordのロール作成を実施。"
+        }
+      ],
+      "interestsAndQuestions": "コンテキストトークン管理の改善、参加者向け案内文の作成修正、Discordサーバーのロール設定",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "コンテキストトークンの制御方法について説明を求められる。"
+        }
+      ]
+    }
+  }
+}
+```
+Saving report...
+Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-02-25.json
+Updating index...
+Warning: generate_index.js not found.
+Pushing changes to Git...

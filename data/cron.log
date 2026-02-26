@@ -561,3 +561,81 @@ Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data
 Updating index...
 Warning: generate_index.js not found.
 Pushing changes to Git...
+Git operation failed: Error: Command failed: git push origin main
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-02-26T15:00:01.494Z
+Fetching Discord messages...
+Fetching batch... (current count: 0)
+Fetching batch... (current count: 20)
+Fetching batch... (current count: 40)
+Fetching batch... (current count: 60)
+Fetching batch... (current count: 80)
+Fetched 99 messages
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: ```json
+{
+  "date": "2026-02-26",
+  "channelSummary": "本日の会話では、Discordサーバーの招待リンク設定に関する問題解決、参加者の迎え方に関する議論、ボットガクコの機能調整、サーバー通知設定の変更などが行われました。特に、ボッチーという対話型AIエージェントのSelfAwareness機能や最新情報提供能力についての活発な議論が注目されます。",
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Discordサーバーの招待リンク設定の問題解決と参加者迎え方の最適化に注力。ボットガクコの機能調整と通知設定の変更を指示。",
+      "adviceReceived": []
+    },
+    "1018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "SelfAwareness機能の改善や最新情報提供能力の向上について議論。特に生成AIに関する最新情報提供能力の強化が期待される。",
+          "interestsAndQuestions": "ボッチーの生成AIに関する最新情報提供能力の強化や、SelfAwareness機能の改善に特に興味。心理的ハードルを下げるためのスクリーンレコーディングやオリエンテーションの可能性についても言及。",
+          "adviceReceived": []
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーのAI機能の改善やSelfAwarenessの向上に強い興味を持つ。特に、Discordサーバーでのユーザーオリエンテーション方法について具体的な提案を行う。",
+      "adviceReceived": []
+    },
+    "1260001270173925459": {
+      "name": "若村雄介",
+      "role": "参加者",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+```
+Saving report...
+Report saved to: /home/vps-harappa/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-02-26.json
+Updating index...
+Warning: generate_index.js not found.
+Pushing changes to Git...

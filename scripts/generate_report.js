@@ -332,7 +332,15 @@ async function gitPushChanges(dateStr) {
     }
 
     await execAsync(`git commit -m "chore: add daily report for ${dateStr}"`, { cwd: repoDir });
-    await execAsync('git push origin main', { cwd: repoDir });
+
+    const githubToken = process.env.GITHUB_TOKEN;
+    if (githubToken) {
+      const remoteUrl = `https://${githubToken}@github.com/akiratsukakoshi/discord-digihara-daily-report.git`;
+      await execAsync(`git push ${remoteUrl} main`, { cwd: repoDir });
+    } else {
+      await execAsync('git push origin main', { cwd: repoDir });
+    }
+
     console.log('Git push successful.');
   } catch (error) {
     console.error(`Git operation failed: ${error}`);

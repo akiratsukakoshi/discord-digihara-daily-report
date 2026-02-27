@@ -1,0 +1,88 @@
+{
+  "date": "2026-02-27",
+  "channelSummary": "本日はDiscordコミュニティの運営と拡張に関する議論が中心でした。新しいチャンネル作成、Orchestrationプロンプトの更新、音声セッションの実施、アンケート機能のテストなど、コミュニティ活性化策が話し合われました。また、Discordイベント機能の活用方法や録画・共有方法についても議論が行われました。",
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "gaku-coサービスの一環として開発中のタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC): 業務管理application群",
+          "description": "業務管理向けのアプリケーション群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Discordの初期設定ハードルについて懸念し、LINEでのサポート提案。コミュニティ活性化のための投稿を提案。また、新たな質問箱チャンネルの作成を提案。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "具体的な投稿や20分セッションの実施を提案"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "スクラッチから製作される対話型AIエージェント",
+          "progress": "関連する時沈黙を守るルールの強化について言及"
+        },
+        {
+          "name": "Insight Scope (IS): マーケティングツール",
+          "description": "マーケティング用途のツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "コミュニティのコミュニケーション増加とプレ期間の有効活用を希望。音声セッションの試運転、Discordイベント機能の活用方法、録画と共有方法について議論。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "投稿によるコミュニティ活性化の提案"
+        }
+      ]
+    },
+    "unknown_ボッチー": {
+      "name": "ボッチー",
+      "role": "運営",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント",
+          "description": "スクラッチから製作される対話型AIエージェント",
+          "progress": "関連する時沈黙を守るルールの強化について言及"
+        }
+      ],
+      "interestsAndQuestions": "Discordのアンケート機能の有無について質問。イベントトピックに関するガクチョとの意見の相違が指摘されました。また、運営内の話題理解に問題があるようです。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "アンケート作成のテスト依頼。また、誰に対して話しているかを明確にするよう注意"
+        }
+      ]
+    },
+    "unknown_ガクコ": {
+      "name": "ガクコ",
+      "role": "参加者",
+      "projects": [
+        {
+          "name": "gaku-co アシスタント",
+          "description": "Discordコミュニティのアシスタントとして機能",
+          "progress": "アンケート機能の使用方法、イベント作成、録画方法についてサポート。自由記入付きアンケートの作成に成功。"
+        }
+      ],
+      "interestsAndQuestions": "Discordの初期設定ハードルについて懸念。新しい質問箱チャンネルの作成を提案。また、コミュニティ活性化のための投稿を提案。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Discordイベント機能の活用方法について質問"
+        }
+      ]
+    }
+  }
+}

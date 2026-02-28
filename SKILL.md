@@ -71,7 +71,7 @@
 
 - **Discord Bot:** gaku-co3.0 (ID: 1467518015326130470)
 - **Guild ID:** 1466302866854641824
-- **Notification Thread:** ID: 1475108738456354816
+- **Notification Channel:** #日報／ふりかえり ID: 1466309154607202339
 - **Cron:** 毎日24:00 JST実行
 
 ## 必要な環境変数（.env）

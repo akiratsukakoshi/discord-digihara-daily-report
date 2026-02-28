@@ -9,6 +9,6 @@
     {"id": "1466308919197565111", "name": "雑談"},
     {"id": "1476829649798565959", "name": "質問箱"}
   ],
-  "notificationThreadId": "1475108738456354816",
+  "notificationThreadId": "1466309154607202339",
   "token": "${DISCORD_BOT_TOKEN}"
 }

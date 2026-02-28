@@ -1,0 +1,191 @@
+{
+  "date": "2026-02-28",
+  "channelSummaries": {
+    "自己紹介": "新しい参加者として「としたん」「かおるん」「ひげ」「シンジ」「CB2(いずみ)」が自己紹介を投稿。各々の開発テーマや興味関心が共有されました。「としたん」は地元名物をヒーロー化するプロジェクト、「かおるん」は診療所の秘書AI開発、「ひげ」はAI派遣業のアイデア、「シンジ」は会計管理アプリ、「CB2」は読解力問題アプリを目指しています。",
+    "開発ラボ": "もっちゃんがボッチーの自己認識能力やAdmin権限について確認。ボッチーのSelfAwareness機能の動作を確認し、翌日のリファクタリングを計画。",
+    "成果物": "本日の活動に関する投稿はありません。",
+    "雑談": "ひげさんがSlackとの比較について言及。日常的な雑談が行われています。",
+    "質問箱": "本日の質問はありません。"
+  },
+  "users": {
+    "1333026240877039706": {
+      "name": "かいと",
+      "role": "参加者",
+      "theme": "バレエ技術管理アプリ",
+      "projects": [
+        {
+          "name": "バレエ技術管理アプリ",
+          "description": "バレエの技術レベルを記録し、次の課題を提案するアプリ",
+          "progress": "Antigravityをインストールし、Agent Manager機能について相談"
+        }
+      ],
+      "interestsAndQuestions": "ボットとChatGPTなどのチャットサービスの違いについて理解を深めたい",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ペースを急がず、ゆっくりと取り組むようにアドバイス"
+        }
+      ]
+    },
+    "1466307902611390579": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "バレエ技術管理アプリ",
+      "projects": [
+        {
+          "name": "バレエ技術管理アプリ",
+          "description": "バレエの技術レベルを記録し、次の課題を提案するアプリ",
+          "progress": "Antigravityをインストールし、Agent Manager機能について相談"
+        }
+      ],
+      "interestsAndQuestions": "ボットとChatGPTなどのチャットサービスの違い、簡単なボットやアプリの作り方",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ChatGPTやGeminiなどのチャットサービスとボッチーやガクコのようなボットの違いを説明してもらう"
+        }
+      ]
+    },
+    "1467518015326130470": {
+      "name": "としたん",
+      "role": "参加者",
+      "theme": "地元名物ヒーロー自動生成",
+      "projects": [
+        {
+          "name": "地元名物ヒーロー自動生成",
+          "description": "各県の名物をヒーロー化してリブライディングするプロジェクト",
+          "progress": "SORAで地元名物ヒーロー動画を生成し、Capcutで編集。Antigravityの導入準備中"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityの使い方、プロジェクトの自動化方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityをインストールし、パーソナルメモリをON/OFFしつつ、自分仕様に調整するアドバイス"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "マークダウン形式のファイルをAIが使いやすい形で作成する方法を解説"
+        }
+      ]
+    },
+    "1477082098232721480": {
+      "name": "CB2(いずみ)",
+      "role": "参加者",
+      "theme": "読解力問題アプリ",
+      "projects": [
+        {
+          "name": "読解力問題アプリ",
+          "description": "毎日1問だけ通知され、2分で終わる読解力問題を出題するアプリ",
+          "progress": "gaku-coとボッチーと三者間での認識合わせを行い、確信スキーマについて議論"
+        }
+      ],
+      "interestsAndQuestions": "確信スキーマの概念、普遍的確信スキーマと個的確信の違い",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボッチーとガクコの三者間で議論する際の交通整理方法を提案"
+        }
+      ]
+    },
+    "1476947425921990801": {
+      "name": "hige0911",
+      "role": "参加者",
+      "theme": "AI派遣業",
+      "projects": [
+        {
+          "name": "AI派遣業",
+          "description": "AIエージェントやAIクローンを人材派遣会社のように派遣するビジネス",
+          "progress": "基本的なイメージを共有"
+        }
+      ],
+      "interestsAndQuestions": "具体的なアプリ開発方法についての相談",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "具体的なアプリなど作られたか尋ねられる"
+        }
+      ]
+    },
+    "1476947425921990802": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "地元名物ヒーロー自動生成",
+      "projects": [
+        {
+          "name": "地元名物ヒーロー自動生成",
+          "description": "各県の名物をヒーロー化してリブライディングするプロジェクト",
+          "progress": "SORAで地元名物ヒーロー動画を生成し、Capcutで編集。Antigravityの導入準備中"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityの使い方、プロジェクトの自動化方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityをインストールし、パーソナルメモリをON/OFFしつつ、自分仕様に調整するアドバイス"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "マークダウン形式のファイルをAIが使いやすい形で作成する方法を解説"
+        }
+      ]
+    },
+    "1477082098232721481": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "読解力問題アプリ",
+      "projects": [
+        {
+          "name": "読解力問題アプリ",
+          "description": "毎日1問だけ通知され、2分で終わる読解力問題を出題するアプリ",
+          "progress": "gaku-coとボッチーと三者間での認識合わせを行い、確信スキーマについて議論"
+        }
+      ],
+      "interestsAndQuestions": "確信スキーマの概念、普遍的確信スキーマと個的確信の違い",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボッチーとガクコの三者間で議論する際の交通整理方法を提案"
+        }
+      ]
+    },
+    "1466317347374628929": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "AIエージェント開発・管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open clawを用いたタスク遂行エージェント",
+          "progress": "動的なcron処理能力を実装、3モード制御の仕組みについて議論"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ガクコの回答制御方法についての議論、参加者との対話方法の改善",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "SelfAwareness機能の確認、動的なcron処理能力の実装確認"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーの認識能力の強化、参加者との対話方法の最適化",
+      "adviceReceived": []
+    }
+  }
+}

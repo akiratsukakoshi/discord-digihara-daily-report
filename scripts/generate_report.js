@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Discord Daily Report Generator (Node.js版)
- * Discordメッセージを取得して、日報を生成する。
- * 生成後、GitへのプッシュとDiscordへの通知を行う。
+ * Discord Daily Report Generator (Node.js版) - 本番版
+ * 複数チャンネルのDiscordメッセージを取得して、日報を生成する。
  */
 
 import 'dotenv/config';
@@ -28,10 +27,15 @@ const loadDiscordConfig = () => {
   const configPath = path.join(CONFIG_DIR, 'discord-config.json');
   try {
     const data = JSON.parse(fs.readFileSync(configPath, 'utf8'));
-    return data.targetChannels?.test || '';
+    return {
+      kichiCategoryId: data.kichiCategoryId || '',
+      otherChannels: data.otherChannels || [],
+      notificationThreadId: data.notificationThreadId || '',
+      guildId: data.guildId || process.env.DISCORD_GUILD_ID || ''
+    };
   } catch (error) {
     console.error('Warning: discord-config.json not found.');
-    return '';
+    return null;
   }
 };
 
@@ -46,12 +50,11 @@ const loadUserMapping = () => {
   }
 };
 
-const CHANNEL_ID = loadDiscordConfig();
-const NOTIFICATION_THREAD_ID = '1475108738456354816'; // 運営の記録スレッド
+const DISCORD_CONFIG = loadDiscordConfig();
 const USER_MAPPING = loadUserMapping();
 
-// 除外ボットIDリスト（user-mapping.jsonのexcludedBotsから読み込む）
-const EXCLUDED_BOT_IDS = (() => {
+// 除外ユーザーIDリスト
+const EXCLUDED_IDS = (() => {
   const configPath = path.join(CONFIG_DIR, 'user-mapping.json');
   try {
     const data = JSON.parse(fs.readFileSync(configPath, 'utf8'));
@@ -63,16 +66,16 @@ const EXCLUDED_BOT_IDS = (() => {
 
 // Environment variables
 const DISCORD_BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
+const DISCORD_GUILD_ID = process.env.DISCORD_GUILD_ID || '';
 const ZAI_API_KEY = process.env.ZAI_API_KEY;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-// OpenAI Configuration
 const API_KEY = ZAI_API_KEY || OPENAI_API_KEY;
 const BASE_URL = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4';
 const MODEL_NAME = 'glm-4-plus';
 
 /**
- * Discord APIからメッセージを取得
+ * Discord APIからメッセージを取得（過去24時間分）
  */
 async function getDiscordMessages(channelId, limit = 100) {
   if (!DISCORD_BOT_TOKEN) {
@@ -93,11 +96,7 @@ async function getDiscordMessages(channelId, limit = 100) {
 
   while (allMessages.length < limit && hasMore) {
     const params = new URLSearchParams({ limit: Math.min(fetchLimit, limit - allMessages.length).toString() });
-    if (lastId) {
-      params.append('before', lastId);
-    }
-
-    console.log(`Fetching batch... (current count: ${allMessages.length})`);
+    if (lastId) params.append('before', lastId);
 
     try {
       const response = await fetch(`${url}?${params}`, { headers });
@@ -108,13 +107,10 @@ async function getDiscordMessages(channelId, limit = 100) {
         } else {
           allMessages.push(...batch);
           lastId = batch[batch.length - 1].id;
-          if (batch.length < fetchLimit) {
-            hasMore = false;
-          }
+          if (batch.length < fetchLimit) hasMore = false;
         }
       } else {
-        console.error(`Error fetching messages: ${response.status}`);
-        console.error(await response.text());
+        console.error(`Error fetching messages from ${channelId}: ${response.status}`);
         hasMore = false;
       }
     } catch (error) {
@@ -123,16 +119,38 @@ async function getDiscordMessages(channelId, limit = 100) {
     }
   }
 
-  // 過去24時間分のみを抽出（現在時刻から24時間前以降のメッセージ）
+  // 過去24時間分のみ抽出
   const twentyFourHoursAgo = Date.now() - 24 * 60 * 60 * 1000;
   const snowflakeEpoch = 1420070400000;
-
-  const filteredMessages = allMessages.filter(msg => {
+  return allMessages.filter(msg => {
     const timestamp = (parseInt(msg.id) / 4194304) + snowflakeEpoch;
     return timestamp >= twentyFourHoursAgo;
   });
+}
 
-  return filteredMessages;
+/**
+ * 基地カテゴリ配下のテキストチャンネル一覧を取得
+ */
+async function getKichiChannels(guildId, categoryId) {
+  if (!DISCORD_BOT_TOKEN || !guildId) {
+    console.error('Warning: Cannot fetch kichi channels (missing guildId or token).');
+    return [];
+  }
+  const url = `https://discord.com/api/v10/guilds/${guildId}/channels`;
+  const headers = { 'Authorization': `Bot ${DISCORD_BOT_TOKEN}` };
+  try {
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      console.error(`Error fetching guild channels: ${response.status}`);
+      return [];
+    }
+    const channels = await response.json();
+    // type=0: テキストチャンネル、parent_id: 所属カテゴリID
+    return channels.filter(ch => ch.type === 0 && ch.parent_id === categoryId);
+  } catch (e) {
+    console.error(`Error fetching kichi channels: ${e}`);
+    return [];
+  }
 }
 
 /**
@@ -140,57 +158,54 @@ async function getDiscordMessages(channelId, limit = 100) {
  * cron実行が深夜0時台のため、JST午前4時未満は前日を活動日とみなす
  */
 function getActivityDate() {
-  const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000); // UTC → JST
+  const jstNow = new Date(Date.now() + 9 * 60 * 60 * 1000);
   const jstHour = jstNow.getUTCHours();
-  if (jstHour < 4) {
-    jstNow.setUTCDate(jstNow.getUTCDate() - 1);
-  }
+  if (jstHour < 4) jstNow.setUTCDate(jstNow.getUTCDate() - 1);
   return jstNow.toISOString().split('T')[0];
 }
 
 /**
- * LLMを使って日報を生成
+ * メッセージをテキストに整形（除外ユーザーをスキップ）
  */
-async function generateDailyReport(messages, userMapping) {
+function formatMessages(messages) {
+  const lines = [];
+  for (const msg of [...messages].reverse()) {
+    if (EXCLUDED_IDS.includes(msg.author.id)) continue;
+    const userInfo = USER_MAPPING[msg.author.id] || { name: msg.author.username, role: '参加者' };
+    const content = msg.content || '';
+    if (content) lines.push(`${userInfo.name} (${userInfo.role}): ${content}`);
+  }
+  return lines.join('\n');
+}
+
+/**
+ * LLMを使って日報を生成（複数チャンネル対応）
+ */
+async function generateDailyReport(kichiMessagesMap, otherMessagesMap) {
   if (!API_KEY) {
-    console.error('Error: API Key (ZAI_API_KEY or OPENAI_API_KEY) is not set.');
+    console.error('Error: API Key is not set.');
     return null;
   }
 
-  // メッセージを整形
-  const formattedMessages = [];
-  for (const msg of messages.reverse()) {
-    const userId = msg.author.id;
-    // 除外ボットはスキップ
-    if (EXCLUDED_BOT_IDS.includes(userId)) {
-      continue;
-    }
-    const userInfo = userMapping[userId] || {
-      name: msg.author.username,
-      role: '参加者'
-    };
-    const content = msg.content || '';
-    if (content) {
-      formattedMessages.push(`${userInfo.name} (${userInfo.role}): ${content}`);
-    }
+  // 基地チャンネルのメッセージをまとめる
+  const kichiLines = [];
+  for (const [chName, msgs] of Object.entries(kichiMessagesMap)) {
+    const text = formatMessages(msgs);
+    if (text) kichiLines.push(`【#${chName}】\n${text}`);
   }
+  const kichiText = kichiLines.join('\n\n') || '（本日の発言なし）';
 
-  if (formattedMessages.length === 0) {
-    console.log('No messages to report.');
-    // 空の日報を返す
-    return {
-      date: getActivityDate(),
-      channelSummary: '本日の会話はありません。',
-      users: {}
-    };
+  // その他チャンネルのメッセージ
+  const otherSections = [];
+  for (const [chName, msgs] of Object.entries(otherMessagesMap)) {
+    const text = formatMessages(msgs);
+    otherSections.push({ name: chName, text: text || '（本日の発言なし）' });
   }
+  const otherText = otherSections.map(s => `【#${s.name}】\n${s.text}`).join('\n\n') || '（本日の発言なし）';
 
-  const messagesText = formattedMessages.join('\n');
-  const activityDate = getActivityDate();
-
-  // 各ユーザーの案件リストをプロンプト用テキストに変換
-  const userProjectsText = Object.entries(userMapping)
-    .filter(([id]) => !EXCLUDED_BOT_IDS.includes(id))
+  // ユーザープロジェクト情報
+  const userProjectsText = Object.entries(USER_MAPPING)
+    .filter(([id]) => !EXCLUDED_IDS.includes(id))
     .map(([id, info]) => {
       if (!info.projects || info.projects.length === 0) return null;
       const projectList = info.projects.map(p => `    - ${p.name}: ${p.description}`).join('\n');
@@ -199,22 +214,31 @@ async function generateDailyReport(messages, userMapping) {
     .filter(Boolean)
     .join('\n');
 
-  const prompt = `以下はDiscordチャンネルでの対話ログです。このログを分析して、以下の形式で日報を生成してください。
+  const activityDate = getActivityDate();
+  const otherChannelNames = otherSections.map(s => s.name);
 
-対話ログ:
-${messagesText}
+  const prompt = `以下はDiscordコミュニティの各チャンネルの対話ログです。このログを分析して、以下の形式で日報をJSON形式で生成してください。
+
+=== 基地カテゴリのチャンネル（複数チャンネルをまとめて提供、参加者の進捗把握に使う）===
+${kichiText}
+
+=== その他のチャンネル（各チャンネルのサマリを生成する） ===
+${otherText}
 
 【各人の既知開発案件リスト】
-${userProjectsText}
+${userProjectsText || '（なし）'}
 
-JSON形式で出力してください:
+JSON形式で出力してください（JSONのみ、コードブロックなし）:
 {
   "date": "${activityDate}",
-  "channelSummary": "チャンネル全体の会話の要約",
+  "channelSummaries": {
+${otherChannelNames.map(n => `    "${n}": "このチャンネルの要約"`).join(',\n')}
+  },
   "users": {
     "DiscordユーザーID（数字のみ）": {
-      "name": "表示名",
+      "name": "表示名（自己紹介チャンネルで使っているニックネームがあればそれ、なければアカウント名）",
       "role": "運営/参加者",
+      "theme": "開発テーマ名（基地のやり取りから推測、不明の場合は「未定」）",
       "projects": [
         {
           "name": "案件名",
@@ -234,20 +258,19 @@ JSON形式で出力してください:
 }
 
 注意点:
-- usersのキーは必ずDiscordのユーザーID（数字のみ）を使用すること。名前は使わない。
+- usersのキーは必ずDiscordのユーザーID（数字のみ）を使用。名前は使わない。
 - ユーザーIDが不明な場合は「unknown_<名前>」形式を使用
-- 各ユーザーの「projects」には【各人の既知開発案件リスト】に載っている案件をすべて含める
-- ログ中に既知リストにない新規案件が登場した場合は、その案件もprojectsに追加する（descriptionは会話から推測して記載）
-- 各案件のprogressには、その案件に関して本日実際にあった進捗・変化のみを書く（ない場合は「変化なし」）
-- 文字列内の改行は生の改行コードではなく、必ず「\\n」にエスケープしてください。
-- 文字列内のダブルクォーテーションは必ず「\\"」にエスケープしてください。
-- JSONのみを出力（コードブロックや余計なテキストなし）`;
+- 除外ユーザー（ボッチー ID:1360187059544920115, ガクコ ID:1467518015326130470）はusersに含めない
+- 各ユーザーの「projects」には【各人の既知開発案件リスト】の案件をすべて含める
+- ログに既知リストにない新規案件が登場した場合はprojectsに追加する（descriptionは会話から推測）
+- 運営ユーザー（ガクチョ・もっちゃん）はusers内で最後に記載すること
+- 文字列内の改行は必ず「\\n」にエスケープ、ダブルクォートは「\\"」にエスケープ`;
 
   console.log(`Generating report using model: ${MODEL_NAME}`);
 
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 120000); // 2 minutes timeout
+    const timeoutId = setTimeout(() => controller.abort(), 120000);
 
     const response = await fetch(`${BASE_URL}/chat/completions`, {
       method: 'POST',
@@ -274,16 +297,15 @@ JSON形式で出力してください:
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`OpenAI API error: ${response.status}`);
+      console.error(`API error: ${response.status}`);
       console.error(errorText);
       return null;
     }
 
     const data = await response.json();
     const content = data.choices[0].message.content;
-    console.log("Raw LLM output:", content);
+    console.log('Raw LLM output:', content);
 
-    // Strip markdown code blocks if present
     let cleanContent = content.trim();
     if (cleanContent.startsWith('```json')) {
       cleanContent = cleanContent.replace(/^```json\n?/, '').replace(/\n?```$/, '');
@@ -291,7 +313,17 @@ JSON形式で出力してください:
       cleanContent = cleanContent.replace(/^```\n?/, '').replace(/\n?```$/, '');
     }
 
-    return JSON.parse(cleanContent);
+    const report = JSON.parse(cleanContent);
+
+    // 運営を最後にソート
+    const users = report.users || {};
+    const nonManagement = Object.entries(users).filter(([, u]) => u.role !== '運営');
+    const management = Object.entries(users).filter(([, u]) => u.role === '運営');
+    const sortedUsers = {};
+    [...nonManagement, ...management].forEach(([id, u]) => { sortedUsers[id] = u; });
+    report.users = sortedUsers;
+
+    return report;
   } catch (error) {
     console.error(`Error generating report: ${error}`);
     return null;
@@ -303,36 +335,28 @@ JSON形式で出力してください:
  */
 function saveReport(report) {
   if (!report) return null;
-
   fs.mkdirSync(DATA_DIR, { recursive: true });
-
   const dateStr = report.date || getActivityDate();
   const filepath = path.join(DATA_DIR, `${dateStr}.json`);
-
   fs.writeFileSync(filepath, JSON.stringify(report, null, 2), 'utf8');
   console.log(`Report saved to: ${filepath}`);
   return filepath;
 }
 
 /**
- * Gitに変更をコミットしてプッシュ
+ * Gitにコミットしてプッシュ
  */
 async function gitPushChanges(dateStr) {
   console.log('Pushing changes to Git...');
   const repoDir = SKILL_DIR;
-
   try {
     await execAsync('git add .', { cwd: repoDir });
-
-    // コミットする変更があるか確認
     const { stdout: statusOutput } = await execAsync('git status --porcelain', { cwd: repoDir });
     if (!statusOutput.trim()) {
       console.log('No changes to commit.');
       return;
     }
-
     await execAsync(`git commit -m "chore: add daily report for ${dateStr}"`, { cwd: repoDir });
-
     const githubToken = process.env.GITHUB_TOKEN;
     if (githubToken) {
       const remoteUrl = `https://${githubToken}@github.com/akiratsukakoshi/discord-digihara-daily-report.git`;
@@ -340,7 +364,6 @@ async function gitPushChanges(dateStr) {
     } else {
       await execAsync('git push origin main', { cwd: repoDir });
     }
-
     console.log('Git push successful.');
   } catch (error) {
     console.error(`Git operation failed: ${error}`);
@@ -348,37 +371,40 @@ async function gitPushChanges(dateStr) {
 }
 
 /**
- * Discordに通知を送る
+ * Discordに通知
  */
 async function notifyDiscord(report) {
+  const threadId = DISCORD_CONFIG?.notificationThreadId || '1475108738456354816';
   console.log('Sending notification to Discord...');
-  const url = `https://discord.com/api/v10/channels/${NOTIFICATION_THREAD_ID}/messages`;
+  const url = `https://discord.com/api/v10/channels/${threadId}/messages`;
   const headers = {
     'Authorization': `Bot ${DISCORD_BOT_TOKEN}`,
     'Content-Type': 'application/json'
   };
+
+  // チャンネルサマリをまとめる
+  const summaries = report.channelSummaries || {};
+  const summaryText = Object.entries(summaries)
+    .map(([ch, s]) => `• #${ch}: ${s}`)
+    .join('\n') || report.channelSummary || 'なし';
 
   const content = `📊 **DigiHara Daily Report (${report.date})** が完成しました！
 URL: https://discord-digihara-daily-report.vercel.app/
 Pass: \`harappa2026\`
 
 📝 **本日の概要**:
-${report.channelSummary || 'なし'}`;
-
-  const payload = { content };
+${summaryText}`;
 
   try {
     const response = await fetch(url, {
       method: 'POST',
       headers,
-      body: JSON.stringify(payload)
+      body: JSON.stringify({ content })
     });
-
     if (response.ok || response.status === 201) {
       console.log('Notification sent successfully.');
     } else {
       console.error(`Failed to send notification: ${response.status}`);
-      console.error(await response.text());
     }
   } catch (error) {
     console.error(`Error sending notification: ${error}`);
@@ -391,23 +417,48 @@ ${report.channelSummary || 'なし'}`;
 async function main() {
   console.log(`Starting Daily Report Task at ${new Date().toISOString()}`);
 
-  if (!CHANNEL_ID) {
-    console.error('Error: Could not load CHANNEL_ID from config.');
+  if (!DISCORD_CONFIG) {
+    console.error('Error: Could not load discord config.');
     process.exit(1);
   }
 
-  console.log('Fetching Discord messages...');
-  const messages = await getDiscordMessages(CHANNEL_ID);
-  console.log(`Fetched ${messages.length} messages`);
+  const { kichiCategoryId, otherChannels } = DISCORD_CONFIG;
+  const effectiveGuildId = DISCORD_CONFIG.guildId || DISCORD_GUILD_ID;
+
+  // 基地チャンネル一覧を取得
+  console.log('Fetching kichi category channels...');
+  const kichiChannels = await getKichiChannels(effectiveGuildId, kichiCategoryId);
+  console.log(`Found ${kichiChannels.length} kichi channels: ${kichiChannels.map(c => c.name).join(', ')}`);
+
+  // 基地チャンネルのメッセージを取得
+  const kichiMessagesMap = {};
+  for (const ch of kichiChannels) {
+    console.log(`Fetching messages from kichi channel: #${ch.name}`);
+    kichiMessagesMap[ch.name] = await getDiscordMessages(ch.id);
+    console.log(`  → ${kichiMessagesMap[ch.name].length} messages`);
+  }
+
+  // その他チャンネルのメッセージを取得
+  const otherMessagesMap = {};
+  for (const ch of otherChannels) {
+    console.log(`Fetching messages from channel: #${ch.name}`);
+    otherMessagesMap[ch.name] = await getDiscordMessages(ch.id);
+    console.log(`  → ${otherMessagesMap[ch.name].length} messages`);
+  }
+
+  const totalMessages = [
+    ...Object.values(kichiMessagesMap),
+    ...Object.values(otherMessagesMap)
+  ].reduce((sum, msgs) => sum + msgs.length, 0);
+  console.log(`Total messages fetched: ${totalMessages}`);
 
   console.log('Generating daily report...');
-  const report = await generateDailyReport(messages, USER_MAPPING);
+  const report = await generateDailyReport(kichiMessagesMap, otherMessagesMap);
 
   if (report) {
     console.log('Saving report...');
     const filepath = saveReport(report);
 
-    // インデックスを更新（generate_index.jsがある場合）
     console.log('Updating index...');
     try {
       const indexPath = path.join(SKILL_DIR, 'scripts', 'generate_index.js');
@@ -420,12 +471,7 @@ async function main() {
       console.error(`Error updating index: ${error}`);
     }
 
-    // Git Push
-    if (filepath) {
-      await gitPushChanges(report.date);
-    }
-
-    // Discord Notification
+    if (filepath) await gitPushChanges(report.date);
     await notifyDiscord(report);
   } else {
     console.error('Failed to generate report.');

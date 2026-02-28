@@ -289,7 +289,8 @@ ${otherChannelNames.map(n => `    "${n}": "このチャンネルの要約"`).joi
           { role: 'user', content: prompt }
         ],
         temperature: 0.3,
-        max_tokens: 4096
+        max_tokens: 4096,
+        response_format: { type: 'json_object' }
       })
     });
 

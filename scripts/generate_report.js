@@ -164,6 +164,77 @@ function getActivityDate() {
   return jstNow.toISOString().split('T')[0];
 }
 
+
+function buildAuthorDirectory(kichiMessagesMap, otherMessagesMap) {
+  const dir = {};
+  const all = [
+    ...Object.values(kichiMessagesMap || {}),
+    ...Object.values(otherMessagesMap || {})
+  ];
+  for (const msgs of all) {
+    for (const msg of msgs || []) {
+      const a = msg.author || {};
+      if (!a.id) continue;
+      dir[a.id] = {
+        username: a.username || '',
+        globalName: a.global_name || '',
+        displayName: a.display_name || ''
+      };
+    }
+  }
+  return dir;
+}
+
+function mergeUserRecords(base = {}, incoming = {}) {
+  const merged = { ...base };
+  for (const [k, v] of Object.entries(incoming)) {
+    if (v == null || v === '' || v === 'なし' || v === '未定') continue;
+    if (Array.isArray(v)) {
+      const current = Array.isArray(merged[k]) ? merged[k] : [];
+      const seen = new Set(current.map(x => JSON.stringify(x)));
+      for (const item of v) {
+        const key = JSON.stringify(item);
+        if (!seen.has(key)) {
+          current.push(item);
+          seen.add(key);
+        }
+      }
+      merged[k] = current;
+    } else if (!merged[k] || merged[k] === '' || merged[k] === 'なし' || merged[k] === '未定') {
+      merged[k] = v;
+    }
+  }
+  return merged;
+}
+
+function resolveUserId(rawId, user, authorDirectory) {
+  if (/^\d{16,20}$/.test(rawId)) return rawId;
+
+  // Case: model outputs short numeric suffix like "64330" from username "kazumik_64330"
+  if (/^\d{3,10}$/.test(rawId)) {
+    const suffix = `_${rawId}`;
+    for (const [id, info] of Object.entries(authorDirectory)) {
+      const uname = (info.username || '').toLowerCase();
+      if (uname.endsWith(suffix.toLowerCase()) || uname.includes(suffix.toLowerCase())) {
+        return id;
+      }
+    }
+  }
+
+  // Case: unknown_<name>
+  if (rawId.startsWith('unknown_')) {
+    const hinted = (rawId.replace(/^unknown_/, '') || user?.name || '').toLowerCase();
+    if (hinted) {
+      for (const [id, info] of Object.entries(authorDirectory)) {
+        const cands = [info.username, info.globalName, info.displayName].filter(Boolean).map(v => v.toLowerCase());
+        if (cands.some(v => v === hinted || v.includes(hinted) || hinted.includes(v))) return id;
+      }
+    }
+  }
+
+  return rawId;
+}
+
 /**
  * メッセージをテキストに整形（除外ユーザーをスキップ）
  */
@@ -316,10 +387,27 @@ ${otherChannelNames.map(n => `    "${n}": "このチャンネルの要約"`).joi
 
     const report = JSON.parse(cleanContent);
 
+    // LLMのユーザーIDゆれを補正（例: 64330 -> 1466317347374628929）
+    const authorDirectory = buildAuthorDirectory(kichiMessagesMap, otherMessagesMap);
+    const normalizedUsers = {};
+    for (const [rawId, user] of Object.entries(report.users || {})) {
+      const resolvedId = resolveUserId(rawId, user, authorDirectory);
+      normalizedUsers[resolvedId] = normalizedUsers[resolvedId]
+        ? mergeUserRecords(normalizedUsers[resolvedId], user)
+        : user;
+    }
+
+    // DiscordユーザーID形式以外は除外
+    for (const id of Object.keys(normalizedUsers)) {
+      if (!/^\d{16,20}$/.test(id)) {
+        console.warn(`Dropping non-discord user id from report: ${id}`);
+        delete normalizedUsers[id];
+      }
+    }
+
     // 運営を最後にソート
-    const users = report.users || {};
-    const nonManagement = Object.entries(users).filter(([, u]) => u.role !== '運営');
-    const management = Object.entries(users).filter(([, u]) => u.role === '運営');
+    const nonManagement = Object.entries(normalizedUsers).filter(([, u]) => u.role !== '運営');
+    const management = Object.entries(normalizedUsers).filter(([, u]) => u.role === '運営');
     const sortedUsers = {};
     [...nonManagement, ...management].forEach(([id, u]) => { sortedUsers[id] = u; });
     report.users = sortedUsers;

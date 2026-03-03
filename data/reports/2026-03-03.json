@@ -1,0 +1,111 @@
+{
+  "date": "2026-03-03",
+  "channelSummaries": {
+    "自己紹介": "ガクチョが自己紹介を促す投稿があり、複数のユーザーに自己紹介を呼びかけ。対象ユーザーは<@1092347707634503700>、<@706285990876282941>、<@1125768765007745104>、<@1260001270173925459>。",
+    "開発ラボ": "本日の発言なし。",
+    "成果物": "本日の発言なし。",
+    "雑談": "本日の発言なし。",
+    "質問箱": "本日の発言なし。"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "レシートアシスタント開発",
+      "projects": [
+        {
+          "name": "レシートアシスタント",
+          "description": "買い物のレシートをスマホで読み込み、品名をマッピングするアプリ",
+          "progress": "Geminiにレシートアシスタントのプロンプト作成中。Antigravityのスマホ対応可能性について検討中。"
+        }
+      ],
+      "interestsAndQuestions": "AntigravityがiPhoneで動くか、スマホアプリとして完結可能かどうかの技術的検討",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "文脈の交通整理が必要と指摘され、カズミさんの構想とガクチョの事例を切り分けるよう促された"
+        }
+      ]
+    },
+    "1092347707634503700": {
+      "name": "unknown_1092347707634503700",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "706285990876282941": {
+      "name": "unknown_706285990876282941",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1125768765007745104": {
+      "name": "unknown_1125768765007745104",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1260001270173925459": {
+      "name": "unknown_1260001270173925459",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "gaku-coとHarappa Management Cockpitの開発",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーの構造解明、ガクコのリファクタリング方法、AWS障害の影響調査",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ボッチーのブラックボックスを開いてくれたことで、エコシステム構築の可能性が見えると評価された"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチーとInsight Scopeの開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "日報生成機能の開発中。Cron設定のバグ修正後、本日の日報生成を予定。AWS障害の影響についても調査中。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "AWS障害によるサービスへの影響、ボッチーの長期記憶とCron設定の最適化",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボッチーのインプットトークン消費問題について、軽量LLMでの事前評価の必要性を指摘"
+        }
+      ]
+    }
+  }
+}

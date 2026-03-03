@@ -881,3 +881,51 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-03.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-03T01:01:17.813Z
+Fetching kichi category channels...
+Found 11 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 100 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 100 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 16 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 1 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 217
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-03","channelSummaries":{"自己紹介":"ガクチョから自己紹介が促されている。一部メンバーはまだ自己紹介をしていない状態で、ガクチョは全メンバーの名前を把握したいと考えている。","開発ラボ":"本日の発言はなかった。","成果物":"本日の発言はなかった。","雑談":"本日の発言はなかった。","質問箱":"本日の発言はなかった。"},"users":{"kazumik_64330":{"name":"kazumik_64330","role":"参加者","theme":"レシートアシスタント開発","projects":[{"name":"レシートアシスタント","description":"Geminiを用いたレシートアシスタントのプロンプト開発。スマホで完結できるアプリを構想中。","progress":"B案を前提にGeminiにレシートアシスタントのプロンプトを作成してもらう段階。Antigravityがスマホ対応かを調査中。"}],"interestsAndQuestions":"AntigravityがiPhoneで動かせるか、スマホで完結するアプリの実現可能性について","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"AIエージェント開発","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"ボッチーとガクコの仕組みに関する議論を行い、トークン消費問題について理解を深める。"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"AIエージェントの効率的な構造、特にトークン消費の削減方法について","adviceReceived":[{"from":"もっちゃん","content":"ボッチーの仕組みに「軽量LLMによる意図評価」が存在し、それがガクコにも必要かもしれないと提案。"}]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"AIエージェント開発","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Cronによる日報自動生成の仕組みを構築中。テスト段階でバグ修正を行った。"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"日報自動化システムの構築と改善、AWSの大規模障害に関する情報収集","adviceReceived":[{"from":"ガクチョ","content":"ボッチーに発話前に軽量LLMで意図を評価する制御弁のようなものを導入した方がコスト削減につながる可能性があると指摘。"}]}}}
+Dropping non-discord user id from report: kazumik_64330
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-03.json
+Updating index...
+Pushing changes to Git...

@@ -1015,3 +1015,78 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-04T15:05:07.504Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 10 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 10 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 43 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 4 messages
+Fetching messages from channel: #自己紹介
+  → 5 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 1 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 73
+Generating daily report...
+Generating report using model: glm-4-plus
+Starting Daily Report Task at 2026-03-04T15:05:32.121Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 10 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 10 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 43 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+Raw LLM output: {"date":"2026-03-04","channelSummaries":{"自己紹介":"じぞーさんが新しいメンバーとして参加。写真・動画の自動整理整頓システムと地域通貨「ありがとうポイントプログラム」のデジタル版の構築を目標としている。10年ぶりの原っぱ大学参加を楽しみにしている。","開発ラボ":"本日の発言なし","成果物":"本日の発言なし","雑談":"もっちゃんがデフォルトの音声入力機能（Win+H）を使っていることや、LINEでは誤字脱字を気にせず使っていることについて話していた。","質問箱":"本日の発言なし"},"users":{"743542349439313920":{"name":"じぞー（小島@市川市）","role":"参加者","theme":"写真・動画の自動整理整頓システム、地域通貨プログラム","projects":[{"name":"写真・動画の自動整理整頓システム","description":"クラウドに貯まっている写真や動画をAIで自動的に整理整頓し、思い出スライドショーを定期的に自動生成するシステム","progress":"要らないものの判断基準を明確化し、AIによる良い/悪いの基準を学習させる段階"},{"name":"ありがとうポイントプログラム","description":"藤野町の地域通貨よろず屋の通帳のデジタル版で、人のためにやったことの見える化と承認を促すプログラム","progress":"変化なし"}],"interestsAndQuestions":"AIによる写真の評価基準の明確化方法","adviceReceived":[{"from":"もっちゃん","content":"ガクコが作る基地でアイディアを壁打ちし始めるよう促された"}]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"タスク遂行エージェント、業務管理アプリ群","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"日報のcronの録音設定の調整","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"対話型AIエージェント、マーケティングツール","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"ボッチーが運営ユーザーとして活躍"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"経費計上するレシートのAI処理機能の実装に取り組んでいる"}],"interestsAndQuestions":"Antigravityの導入方法、Google AI Studioの無料枠活用方法","adviceReceived":[]}}}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
+Updating index...
+Pushing changes to Git...

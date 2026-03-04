@@ -1090,3 +1090,28 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
 Updating index...
 Pushing changes to Git...
+  → 4 messages
+Fetching messages from channel: #自己紹介
+Git push successful.
+Sending notification to Discord...
+  → 5 messages
+Fetching messages from channel: #開発ラボ
+Notification sent successfully.
+Done!
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 1 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 73
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-04","channelSummaries":{"自己紹介":"じぞーさん（小島@市川市）が新規参加。クラウド写真・動画の自動整理整頓と地域通貨「ありがとうポイントプログ�ラム」のデジタル版の開発を目指していることを発表。10年ぶりの原っぱ大学参加とのこと。","開発ラボ":"本日の発言なし","成果物":"本日の発言なし","雑談":"もっちゃんが音声入力機能について話題に。WindowsのWin+HとAndroidのデフォルト機能を使用していることを共有。対外的なコミュニケーションではAIで文字を濾過していることを明らかに。","質問箱":"本日の発言なし"},"users":{"1022513070662234133":{"name":"じぞー（小島@市川市）","role":"参加者","theme":"クラウド写真・動画の自動整理整頓と地域通貨デジタル化","projects":[{"name":"クラウド写真・動画の自動整理整頓","description":"クラウドに貯まっている写真や動画をAIで自動的に定期整理整頓するシステム","progress":"計画段階。要るもの・不要ものの判断基準と、思い出スライドショーの自動生成について検討中"},{"name":"ありがとうポイントプログザムデジタル化","description":"藤野町の地域通貨よろず屋の通帳をデジタル版にするプログザム","progress":"計画段階。人のためにやったことの見える化と、そのような行動を承認して増やす仕組みを構想中"}],"interestsAndQuestions":"AIによる写真・動画の整理整頓方法、地域通貨デジタル化の具体策","adviceReceived":[{"from":"もっちゃん","content":"AIによる主観の定義が悩ましそうであること、創造的な取り組みが楽しそうであるとのコメント"}]},"20854":{"name":"cb20854","role":"参加者","theme":"2-Minute Reading App開発","projects":[{"name":"2-Minute Reading App","description":"毎日2分で読解力を高めるためのアプリ。1日1問の読解問題を提供し、継続習慣を作る","progress":"詳細な要件定義書と指示書を作成。Antigravity上での開発を計画中"}],"interestsAndQuestions":"Antigravity上でのアプリ開発方法、APIコスト、環境構築手順、独立アプリvs Antigravityでの開発比較","adviceReceived":[{"from":"もっちゃん","content":"Google AI Studioには無料枠があること、Gemini2.5までのモデルは十分に賢いこと、Antigravityにも無料枠があることの指摘"},{"from":"ガクチョ","content":"定型業務をAIに任せるための「skills」機能についての提案"}]},"64330":{"name":"kazumik_64330","role":"参加者","theme":"経費精算システム","projects":[{"name":"経費精算レシート処理","description":"スマホで撮影したレシートをAIで自動処理し、経費計上データに変換するシステム","progress":"AntigravityのInsight Scopeによるレシート読み込み機能の実装中。画像の読み取り精度が高いことに驚き"}],"interestsAndQuestions":"経費精算システムのAI活用方法、Antigravityのスキル機能活用","adviceReceived":[{"from":"ガクチョ","content":"skills機能についての提案"}]},"2771":{"name":"jizou2771","role":"参加者","theme":"写真整理・地域通貨","projects":[{"name":"クラウド写真整理","description":"クラウドに保存された写真・動画の自動整理整頓システム","progress":"計画段階。AIによる要・不要の判断基準構想中"},{"name":"ありがとうポイントプログザム","description":"地域通貨よろず屋の通帳デジタル化","progress":"計画段階"}],"interestsAndQuestions":"AIによる写真整理方法、主観的な判断のAI化","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"業務管理アプリケーション群","projects":[{"name":"gaku-co","description":"open clawを用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理アプリケーション群","progress":"変化なし"}],"interestsAndQuestions":"日報のcron設定調整","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"対話型AIエージェントとマーケティングツール","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"変化なし"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"レシート読み込み機能の実装に取りかかっている"}],"interestsAndQuestions":"環境構築手順、Google AI Studioの無料枠","adviceReceived":[]}}}
+Dropping non-discord user id from report: 2771
+Dropping non-discord user id from report: 20854
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
+Updating index...
+Pushing changes to Git...

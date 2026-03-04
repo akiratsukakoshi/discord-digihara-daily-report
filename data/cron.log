@@ -929,3 +929,89 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-03.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-04T01:00:06.476Z
+Fetching kichi category channels...
+Found 11 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 43 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 4 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 14 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 1 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 5 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 67
+Generating daily report...
+Generating report using model: glm-4-plus
+Starting Daily Report Task at 2026-03-04T01:01:16.683Z
+Fetching kichi category channels...
+Found 11 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 43 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 4 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 14 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 1 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 5 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 67
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-04","channelSummaries":{"自己紹介":"新規ユーザーが参加し、自己紹介の呼びかけが行われた。サーバーの使い方について質問がある場合はボッチーかガクコに声をかけるよう案内されている。","開発ラボ":"本日の発言はなかった","成果物":"本日の発言はなかった","雑談":"もっちゃんがガクチョのnote記事について言及し、手書きとテキスト化のコントラストについて触れた。もっちゃんはこれを機にnoteを再開した。音声入力についての議論があり、その使いやすさや精度の高さについて話し合われた。","質問箱":"本日の発言はなかった"},"users":{"1022513070662234133":{"name":"unknown_1022513070662234133","role":"参加者","theme":"未定","projects":[],"interestsAndQuestions":"なし","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"AntigravityとAIネイティブ開発","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"大規模なリファクタリングが完了し、保守性が向上、今後の機能付与に対して柔軟に対応できるようになった"},{"name":"Insight Scope (IS)","description":"マーケティングツール、各種APIを統合したプロダクト","progress":"助走段階に入り、freee会計との連携を計画中。バックエンドはできつつあるのでUI作成が楽しみ"}],"interestsAndQuestions":"データセンターの需給バランスと太陽光エネルギーの有効活用に関する情報収集、AIネイティブPCの選定","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"タスク管理と業務自動化","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"手紙の開封支援機能を新たに実装し、開封した手紙を写真撮影してドライブにアップし、タスク管理と連携させる"}],"interestsAndQuestions":"音声入力の導入、手書き文章のデジタル化","adviceReceived":[]},"kazumik_64330":{"name":"kazumik_64330","role":"参加者","theme":"買い物アシスタントの開発","projects":[{"name":"買い物アシスタント","description":"買わなきゃリストとレシートベースの実際に買ったものリストを分離・管理するアプリ","progress":"レシート読み込み機能をカスタムGPTで試した後、GeminiとAntigravityを活用してより高精度な読み取りに成功。スマホ操作の不向きさを認識し、PCをマスターにしたシステムへ移行中"}],"interestsAndQuestions":"Antigravityの画像読み取り能力の高さ、システムの拡張可能性","adviceReceived":[{"from":"ガクチョ","content":"タスク管理の方法として、PCのローカルをマスターデータにしつつ、その日のタスクをgoogle keepで分離して管理する方式を提案"},{"from":"もっちゃん","content":"経費精算のワークフローとして、スマホで撮影したレシートをGドライブに保存し、Antigravity上のアプリでAI処理する方法を共有"},{"from":"ガクチョ","content":"定型業務をAIに任せる指示書として「skills」の利用を提案"}]}}}
+Dropping non-discord user id from report: kazumik_64330
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
+Updating index...
+Pushing changes to Git...

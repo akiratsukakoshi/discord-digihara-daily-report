@@ -1115,3 +1115,77 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-04.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-05T15:05:05.381Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 80 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 6 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 11 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 10 messages
+Fetching messages from channel: #自己紹介
+  → 1 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 2 messages
+Fetching messages from channel: #質問箱
+  → 7 messages
+Total messages fetched: 117
+Generating daily report...
+Generating report using model: glm-4-plus
+Starting Daily Report Task at 2026-03-05T15:05:42.361Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 80 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 6 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 11 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+Raw LLM output: {"date":"2026-03-05","channelSummaries":{"自己紹介":"じぞーさんが新規参加し、ようこそと歓迎されました。ボットたちの挙動について学び始めています。","開発ラボ":"本日の発言はありませんでした。","成果物":"本日の発言はありませんでした。","雑談":"cb20854さんによる生成AIに関する哲学的な疑問の投稿がありました。また、バイブコーディングについての深い議論が行われていました。","質問箱":"cb20854さんからMVP開発環境構築に関する質問がありました。AntigravityはVScodeのフォークと説明されました。"},"users":{"64330":{"name":"kazumik_64330","role":"参加者","theme":"買い物ゴノアナリシスシステム開発","projects":[{"name":"買い物ゴノアナリシスシステム","description":"レシート分析アプリの開発、在庫管理と栄養バランスを考慮した献立生成への発展を目指している","progress":"レシート取り込み部分の改良と連携機能の作成を完了。GeminiとAntigravityの連携を計画中"}],"interestsAndQuestions":"システムの改善と新たなライトなプロジェクトの計画","adviceReceived":[{"from":"ガクチョ","content":"人間が判断する仕組みとすぐに移植できる作り方、Skillsの考え方を踏まえた設計アドバイス"}]},"2771":{"name":"jizou2771","role":"参加者","theme":"感情メモリの活用方法","projects":[{"name":"感情メモリの活用方法","description":"写真をAIに見せる際の具体的方法についての質問","progress":"感情メモリ視点でのAIへの記述方法と写真アップロード方法について質問中"}],"interestsAndQuestions":"感情メモリの具体的な活用方法とAIへの写真提示の方法","adviceReceived":[]},"20854":{"name":"cb20854","role":"参加者","theme":"バイブコーディングと生成AIの哲学的考察","projects":[{"name":"MVP開発環境構築","description":"アプリ開発初心者向けの開発環境構築の提案要請","progress":"要件定義と指示書作成段階。環境構築の概念図作成を依頼中"}],"interestsAndQuestions":"生成AIと自然言語コミュニケーションの哲学的考察、バイブコーディングの概念","adviceReceived":[{"from":"もっちゃん","content":"AntigravityはVScodeのIDEのフォーク（カスタム）アプリであり、VScode向けの拡張機能が使えるという説明"}]},"994395047589558346":{"name":"toshitan","role":"参加者","theme":"ヒーロー動画の自動生成","projects":[{"name":"ヒーロー動画の自動生成","description":"36ヒーロー分のプロンプトと動画作成の自動化","progress":"ChatGPTでプロンプト生成とInstagramキャプション作成を検討中。Antigravityでの統合方法を模索"}],"interestsAndQuestions":"Instagram投稿の自動化と動画編集工程の自動化","adviceReceived":[]},"1018726470":{"name":"もっちゃん","role":"運営","theme":"ボッチーの能力開発とCronシステムの改善","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Cronシステムの大規模リファクタ完了。ボッチーの自覚能力の向上と内部ロジックの確認を行っている"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"ボッチーの特異性や優位性、Cronシステムの最適化","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"タスク遂行エージェントと業務管理アプリ","projects":[{"name":"gaku-co: open claw を用いたタスク遂行エージェント","description":"open clawを用いたタスク遂行エージェントの開発","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"ボットたちの返信抑制チューニング","adviceReceived":[]}}}
+Dropping non-discord user id from report: 2771
+Dropping non-discord user id from report: 20854
+Dropping non-discord user id from report: 1018726470
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-05.json
+Updating index...
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+Pushing changes to Git...

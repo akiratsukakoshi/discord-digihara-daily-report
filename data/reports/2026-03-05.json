@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-05",
+  "channelSummaries": {
+    "自己紹介": "じぞーさんが新規参加し、ようこそと歓迎されました。ボットたちの挙動について学び始めています。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "本日の発言はありませんでした。",
+    "雑談": "cb20854さんによる生成AIに関する哲学的な疑問の投稿がありました。また、バイブコーディングについての深い議論が行われていました。",
+    "質問箱": "cb20854さんからMVP開発環境構築に関する質問がありました。AntigravityはVScodeのフォークと説明されました。"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "買い物ゴノアナリシスシステム開発",
+      "projects": [
+        {
+          "name": "買い物ゴノアナリシスシステム",
+          "description": "レシート分析アプリの開発、在庫管理と栄養バランスを考慮した献立生成への発展を目指している",
+          "progress": "レシート取り込み部分の改良と連携機能の作成を完了。GeminiとAntigravityの連携を計画中"
+        }
+      ],
+      "interestsAndQuestions": "システムの改善と新たなライトなプロジェクトの計画",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "人間が判断する仕組みとすぐに移植できる作り方、Skillsの考え方を踏まえた設計アドバイス"
+        }
+      ]
+    },
+    "994395047589558346": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "ヒーロー動画の自動生成",
+      "projects": [
+        {
+          "name": "ヒーロー動画の自動生成",
+          "description": "36ヒーロー分のプロンプトと動画作成の自動化",
+          "progress": "ChatGPTでプロンプト生成とInstagramキャプション作成を検討中。Antigravityでの統合方法を模索"
+        }
+      ],
+      "interestsAndQuestions": "Instagram投稿の自動化と動画編集工程の自動化",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク遂行エージェントと業務管理アプリ",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "open clawを用いたタスク遂行エージェントの開発",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボットたちの返信抑制チューニング",
+      "adviceReceived": []
+    }
+  }
+}

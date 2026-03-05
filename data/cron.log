@@ -1189,3 +1189,32 @@ Updating index...
   → 0 messages
 Fetching messages from kichi channel: #みほこの基地
 Pushing changes to Git...
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 10 messages
+Fetching messages from channel: #自己紹介
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+  → 1 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 2 messages
+Fetching messages from channel: #質問箱
+  → 7 messages
+Total messages fetched: 117
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-05","channelSummaries":{"自己紹介":"じぞーさんが新しくコミュニティに参加。ガクチョが歓迎し、ボットたちは過度な返信を抑制中とのこと。","開発ラボ":"本日の発言なし","成果物":"本日の発言なし","雑談":"cb20854がバイブコーディングに関する4つの深い疑問を提起。生成AIと自然言語の関係性について探究的な議論が展開され、ガクチョも同様の質問を投げかけた。","質問箱":"cb20854がボッチーに対して、MVP開発向けの開発環境構築に関する質問。具体的には「有料プランの選び」「Antigravityの初期設定」「ツール選びの判断基準」を求めている。もっちゃんが補足としてAntigravityはVScodeのカスタム版であると説明。"},"users":{"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"デジタルツール開発","projects":[{"name":"gaku-co","description":"open clawを用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"生成AIとの自然言語コミュニケーションの深い理解、特にバイブコーディングに関する疑問","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"AIエージェント開発","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Cronシステムのリファクタリングとデバッグを完了。ボッチーの自覚能力が大幅に改善したと評価。"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"ボッチーのCronシステム最適化、Anthropicのプロトコル化されたSkillsの研究、Antigravityの特異性や優位性","adviceReceived":[]},"64330":{"name":"kazumik","role":"参加者","theme":"買い物ゴノアナリシスシステム開発","projects":[{"name":"買い物ゴノアナリシス","description":"DBに依存せず、JSONファイルとAIプロンプトを外部に切り出して運用するポータブルなレシート分析ツール","progress":"レシート取り込み部分の改善完了。Antigravityに概要をまとめられ、現在理解度確認中。"}],"interestsAndQuestions":"在庫管理と栄養バランスを考慮した献立生成への発展、次はライトな何かを作りたい意向","adviceReceived":[{"from":"ガクチョ","content":"人間が判断する仕組みとすぐに移植できる作り方、Skillsの考え方を取り入れるべきとのアドバイスを受けている"}]},"2771":{"name":"jizou","role":"参加者","theme":"動画生成AIツール活用","projects":[{"name":"ヒーロー形式の動画生成","description":"36ヒーロー分のプロンプト生成、SUNOでBGM生成、Capcatで編集、Instagram投稿","progress":"プロンプト生成はChatGPTで完了。BGMとロゴの品質問題からCapcatでの編集が必要。Instagramへの投稿は手動で行っている。"}],"interestsAndQuestions":"Instagramキャプションの自動生成、Antigravityによる個別生成要素の統合方法","adviceReceived":[]},"20854":{"name":"cb20854（いずみ）","role":"参加者","theme":"開発環境構築","projects":[{"name":"未特定プロジェクト","description":"MVP開発向けの開発環境構築","progress":"要件定義と指示書作成段階。Antigravityを使用した開発環境構築提案を求めている。"}],"interestsAndQuestions":"バイブコーディングと生成AIの関係性、自然言語の抽象化と生成AIの処理メカニズム","adviceReceived":[{"from":"もっちゃん","content":"AntigravityはVScodeのカスタム版（フォーク）であるという補助情報"}]}}}
+Dropping non-discord user id from report: 2771
+Dropping non-discord user id from report: 20854
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-05.json
+Updating index...
+Pushing changes to Git...

@@ -1218,3 +1218,57 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-05.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-06T15:05:06.066Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 47 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 46 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 5 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 9 messages
+Fetching messages from channel: #質問箱
+  → 11 messages
+Total messages fetched: 118
+Generating daily report...
+Generating report using model: glm-4-plus
+Starting Daily Report Task at 2026-03-06T15:05:44.883Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+Raw LLM output: {"date":"2026-03-06","channelSummaries":{"自己紹介":"本日の発言はありませんでした。","開発ラボ":"本日の発言はありませんでした。","成果物":"本日の発言はありませんでした。","雑談":"Google公式CLIのリリースに関する話題が中心でした。ガクチョともっちゃんがgogcliとの違いについて議論し、MCPサーバーとしての統合可能性について言及しました。","質問箱":"Gemini APIの無料枠に関する相談がありました。ガクチョがAPIコストの比較と予算キャップの設定を提案。また、kazumik_64330が食材アプリ開発中にAPI利用が跳ね上がった問題について報告しました。"},"users":{"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"タスク遂行エージェント開発","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"Google公式CLIとgogcliの比較検討。Gemini/ChatGPT/ClaudeのAPIコスト比較。Discord返信交通ルールの改善","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"ボッチーエージェント開発","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Cron処理のリファクタリング完了。レポート生成のロジック簡略化を指示。画像処理能力の確認と改善点の特定"},{"name":"Insight Scope","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"Google公式CLIのリリースに興奮。AIが自律運用するプロジェクトの分析。画像処理能力の限界認識","adviceReceived":[]},"jizou2771":{"name":"jizou2771","role":"参加者","theme":"写真整理システム","projects":[{"name":"写真整理AIシステム","description":"GoogleフォトやYouTubeの写真や動画をAIで自動的に整理整頓するシステム","progress":"Geminiとの相談を経て、まずは「お気に入り」フラグを50枚程度登録することを決定"}],"interestsAndQuestions":"Googleフォトの写真を気分に合わせたスライドショーや記念日の動画作成機能","adviceReceived":[{"from":"ボッチー","content":"GoogleフォトのAI整理機能を活用し、自分の価値観を言語化するためのプロンプト作成を推奨"}]}}}
+Dropping non-discord user id from report: jizou2771
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-06.json
+Updating index...
+Pushing changes to Git...

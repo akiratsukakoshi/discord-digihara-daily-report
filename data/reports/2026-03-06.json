@@ -1,0 +1,50 @@
+{
+  "date": "2026-03-06",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "本日の発言はありませんでした。",
+    "雑談": "Google公式CLIのリリースに関する話題が中心でした。ガクチョともっちゃんがgogcliとの違いについて議論し、MCPサーバーとしての統合可能性について言及しました。",
+    "質問箱": "Gemini APIの無料枠に関する相談がありました。ガクチョがAPIコストの比較と予算キャップの設定を提案。また、kazumik_64330が食材アプリ開発中にAPI利用が跳ね上がった問題について報告しました。"
+  },
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク遂行エージェント開発",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Google公式CLIとgogcliの比較検討。Gemini/ChatGPT/ClaudeのAPIコスト比較。Discord返信交通ルールの改善",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチーエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "Cron処理のリファクタリング完了。レポート生成のロジック簡略化を指示。画像処理能力の確認と改善点の特定"
+        },
+        {
+          "name": "Insight Scope",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Google公式CLIのリリースに興奮。AIが自律運用するプロジェクトの分析。画像処理能力の限界認識",
+      "adviceReceived": []
+    }
+  }
+}

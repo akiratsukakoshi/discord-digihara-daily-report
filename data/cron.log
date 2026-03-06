@@ -1272,3 +1272,50 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-06.json
 Updating index...
 Pushing changes to Git...
+  → 47 messages
+Fetching messages from kichi channel: #ガクチョの基地
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+  → 46 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 5 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 9 messages
+Fetching messages from channel: #質問箱
+  → 11 messages
+Total messages fetched: 118
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-06","channelSummaries":{"自己紹介":"本日は自己紹介チャンネルでの発言はありませんでした。","開発ラボ":"本日は開発ラボチャンネルでの発言はありませんでした。","成果物":"本日は成果物チャンネルでの発言はありませんでした。","雑談":"Google Workspaceの公式CLIが公開されたという大きなニュース共有がありました。gogcliとの違いやMCPサーバーとしての統合可能性について議論が行われました。","質問箱":"Gemini APIの無料枠の使い切りの問題について相談がありました。APIコストに関するアドバイスや、JSONファイルを利用したAPI効率化の重要性が指摘されました。"},"users":{"1018726470":{"name":"もっちゃん","role":"運営","theme":"ボッチー開発・AIエージェント","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Cronの盛り上がり判定レポート機能のリファクタリング完了。Google公式CLIの情報共有。Gemini API活用のアドバイス提供"},{"name":"Insight Scope","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"AIエージェントの自律運用可能性の考察。不要な情報を自動的にスキップするCron機能の最適化。","adviceReceived":[]},"1337662562283683861":{"name":"kazumik_64330","role":"参加者","theme":"食材分析アプリ","projects":[{"name":"食材栄養タグ付けアプリ","description":"食材に栄養素のタグづけをし、おすすめ食材を表示するアプリ","progress":"API利用が跳ね上がっていた部分があったことが判明。JSONファイルを利用した効率的なAPI使用の見直しが必要"}],"interestsAndQuestions":"Gemini APIの無料枠の使い切りの問題。APIコストの削減方法。","adviceReceived":[{"from":"ガクチョ","content":"各社の予算枠（10ドル程度）を設定してAPI利用を試みるのがおすすめ。軽いモデルで試してみることで料金感覚がつかめる"}]},"jizou2771":{"name":"じぞー","role":"参加者","theme":"写真・動画整理AI","projects":[{"name":"Googleフォト自動整理AI","description":"GoogleフォトやYouTubeの写真・動画をAIで自動整理し、思い出スライドショーを生成","progress":"Geminiとの相談を開始。まずはGoogleフォトの写真50枚に「お気に入り」フラグ登録を開始"}],"interestsAndQuestions":"写真の価値観をAIで判断できるか？気分に応じたスライドショー作成の自動化方法","adviceReceived":[{"from":"Gemini","content":"GoogleフォトのAI整理機能を活用し、「絶対に要らないもの」の定義から始めるのが有効。まずは「お気に入り」の徹底を推奨"}]},"1467518015326130470":{"name":"ガクチョ","role":"運営","theme":"タスク遂行エージェント・業務管理","projects":[{"name":"gaku-co","description":"open clawを用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"Discordからのインプット処理フローとmemory.mdの記載との整合性確認。Google Workspace CLIのMCP統合可能性の検討。","adviceReceived":[]}}}
+Dropping non-discord user id from report: 1018726470
+Dropping non-discord user id from report: jizou2771
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-06.json
+Updating index...
+Pushing changes to Git...

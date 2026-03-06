@@ -1,21 +1,40 @@
 {
   "date": "2026-03-06",
   "channelSummaries": {
-    "自己紹介": "本日の発言はありませんでした。",
-    "開発ラボ": "本日の発言はありませんでした。",
-    "成果物": "本日の発言はありませんでした。",
-    "雑談": "Google公式CLIのリリースに関する話題が中心でした。ガクチョともっちゃんがgogcliとの違いについて議論し、MCPサーバーとしての統合可能性について言及しました。",
-    "質問箱": "Gemini APIの無料枠に関する相談がありました。ガクチョがAPIコストの比較と予算キャップの設定を提案。また、kazumik_64330が食材アプリ開発中にAPI利用が跳ね上がった問題について報告しました。"
+    "自己紹介": "本日は自己紹介チャンネルでの発言はありませんでした。",
+    "開発ラボ": "本日は開発ラボチャンネルでの発言はありませんでした。",
+    "成果物": "本日は成果物チャンネルでの発言はありませんでした。",
+    "雑談": "Google Workspaceの公式CLIが公開されたという大きなニュース共有がありました。gogcliとの違いやMCPサーバーとしての統合可能性について議論が行われました。",
+    "質問箱": "Gemini APIの無料枠の使い切りの問題について相談がありました。APIコストに関するアドバイスや、JSONファイルを利用したAPI効率化の重要性が指摘されました。"
   },
   "users": {
     "1337662562283683861": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "食材分析アプリ",
+      "projects": [
+        {
+          "name": "食材栄養タグ付けアプリ",
+          "description": "食材に栄養素のタグづけをし、おすすめ食材を表示するアプリ",
+          "progress": "API利用が跳ね上がっていた部分があったことが判明。JSONファイルを利用した効率的なAPI使用の見直しが必要"
+        }
+      ],
+      "interestsAndQuestions": "Gemini APIの無料枠の使い切りの問題。APIコストの削減方法。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "各社の予算枠（10ドル程度）を設定してAPI利用を試みるのがおすすめ。軽いモデルで試してみることで料金感覚がつかめる"
+        }
+      ]
+    },
+    "1467518015326130470": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "タスク遂行エージェント開発",
+      "theme": "タスク遂行エージェント・業務管理",
       "projects": [
         {
           "name": "gaku-co",
-          "description": "open claw を用いたタスク遂行エージェント",
+          "description": "open clawを用いたタスク遂行エージェント",
           "progress": "変化なし"
         },
         {
@@ -24,26 +43,7 @@
           "progress": "変化なし"
         }
       ],
-      "interestsAndQuestions": "Google公式CLIとgogcliの比較検討。Gemini/ChatGPT/ClaudeのAPIコスト比較。Discord返信交通ルールの改善",
-      "adviceReceived": []
-    },
-    "1016907741018726470": {
-      "name": "もっちゃん",
-      "role": "運営",
-      "theme": "ボッチーエージェント開発",
-      "projects": [
-        {
-          "name": "ボッチー",
-          "description": "対話型AIエージェント（スクラッチから製作）",
-          "progress": "Cron処理のリファクタリング完了。レポート生成のロジック簡略化を指示。画像処理能力の確認と改善点の特定"
-        },
-        {
-          "name": "Insight Scope",
-          "description": "マーケティングツール",
-          "progress": "変化なし"
-        }
-      ],
-      "interestsAndQuestions": "Google公式CLIのリリースに興奮。AIが自律運用するプロジェクトの分析。画像処理能力の限界認識",
+      "interestsAndQuestions": "Discordからのインプット処理フローとmemory.mdの記載との整合性確認。Google Workspace CLIのMCP統合可能性の検討。",
       "adviceReceived": []
     }
   }

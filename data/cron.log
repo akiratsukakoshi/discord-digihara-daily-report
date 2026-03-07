@@ -1319,3 +1319,52 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-06.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-07T15:05:06.291Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 35 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 35
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-07","channelSummaries":{"自己紹介":"このチャンネルの要約","開発ラボ":"このチャンネルの要約","成果物":"このチャンネルの要約","雑談":"cb20854が生成AIの無限ループ現象について質問。エージェントAIやマルチモーダル技術の進展について議論。ガクチョが異なる専門性を持つAIボットによる対話実験の提案と、具体的なルール設定を行う。ボッチーとガクコの間で、評価関数や価値軸のずれを活用したAI対話に関する活発な議論が展開された。","質問箱":"このチャンネルの要約"},"users":{"1016907741018726470":{"name":"もっちゃん","role":"参加者","theme":"未定","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"変化なし"},{"name":"Insight Scope","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"生成AIの無限ループ現象と、エージェントAIやマルチモーダル技術の進展","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"未定","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"異なる専門性を持つAIボット間の対話可能性と、その実現方法に関する議論のファシリテーション","adviceReceived":[]}}}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-07.json
+Updating index...
+Pushing changes to Git...

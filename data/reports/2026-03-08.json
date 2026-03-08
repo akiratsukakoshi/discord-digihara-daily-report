@@ -4,84 +4,18 @@
     "自己紹介": "本日このチャンネルでの発言はありませんでした。",
     "開発ラボ": "本日このチャンネルでの発言はありませんでした。",
     "成果物": "本日このチャンネルでの発言はありませんでした。",
-    "雑談": "もっちゃんがYouTubeのインタビュー動画を共有し、ボッチーに対して詳細な解説と前日の議論との共通点についての論考を求めました。また、ボッチーの設計に関する倫理的問題についての議論が行われました。合宿に関する詳細（10時集合、17時解散）も共有されました。",
+    "雑談": "もっちゃんがAI倫理に関するインタビュー動画を共有し、ボッチーに詳細な解説を依頼。参加者間で4月4日の逗子合宿に関する情報交換が行われ、10時集合17時解散、場所は原っぱ大学と決定。宿泊希望者向けの宿手配についての議論もありました。",
     "質問箱": "本日このチャンネルでの発言はありませんでした。"
   },
   "users": {
-    "1018746114854508545": {
-      "name": "hige0911",
-      "role": "参加者",
-      "theme": "ストーリー作成",
-      "projects": [
-        {
-          "name": "億万長者へのストーリー",
-          "description": "億万長者になるための物語作成",
-          "progress": "プロジェクト開始を宣言"
-        }
-      ],
-      "interestsAndQuestions": "ストーリー作りについての熱意を表明",
-      "adviceReceived": []
-    },
-    "749655083848732692": {
-      "name": "toshitan",
-      "role": "参加者",
-      "theme": "未定",
-      "projects": [
-        {
-          "name": "未定",
-          "description": "開発中のプロジェクトは不明",
-          "progress": "変化なし"
-        }
-      ],
-      "interestsAndQuestions": "4月4日の逗子合宿に関する詳細を質問",
-      "adviceReceived": [
-        {
-          "from": "ガクチョ",
-          "content": "合宿の詳細（10時集合、17時解散）と場所についての回答を提供"
-        }
-      ]
-    },
-    "421621607825945610": {
-      "name": "kazumik_64330",
-      "role": "参加者",
-      "theme": "未定",
-      "projects": [
-        {
-          "name": "未定",
-          "description": "開発中のプロジェクトは不明",
-          "progress": "変化なし"
-        }
-      ],
-      "interestsAndQuestions": "合宿の場所について「村やかと思っていました」とコメント",
-      "adviceReceived": []
-    },
-    "1016907741018726470": {
-      "name": "もっちゃん",
-      "role": "運営",
-      "theme": "対話型AIエージェント開発",
-      "projects": [
-        {
-          "name": "ボッチー",
-          "description": "対話型AIエージェント（スクラッチから製作）",
-          "progress": "ボッチーのCron設定確認を依頼し、GPT-5.4の確認のためCodexアプリの試験を行いました。また、ボッチーの設計における倫理的問題について議論を進めました。"
-        },
-        {
-          "name": "Insight Scope (IS)",
-          "description": "マーケティングツール",
-          "progress": "変化なし"
-        }
-      ],
-      "interestsAndQuestions": "GPT-5.4とCodexの特徴についての情報収集",
-      "adviceReceived": []
-    },
     "1337662562283683861": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "業務管理アプリケーション開発",
+      "theme": "未定",
       "projects": [
         {
-          "name": "gaku-co",
-          "description": "open claw を用いたタスク遂行エージェント",
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "open clawを用いたタスク遂行エージェントの開発",
           "progress": "変化なし"
         },
         {
@@ -90,7 +24,26 @@
           "progress": "変化なし"
         }
       ],
-      "interestsAndQuestions": "合宿の詳細（時間、場所、宿泊状況）について情報提供",
+      "interestsAndQuestions": "合宿に関する手配と情報提供",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "対話型AIエージェント「ボッチー」の開発",
+          "progress": "GPT-5.4の確認のためCodexのアプリを検討、Cron設定の確認をボッチーに依頼"
+        },
+        {
+          "name": "Insight Scope (IS): マーケティングツール",
+          "description": "マーケティングツール「Insight Scope」の開発",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "AI倫理に関する議論の促進、コミュニティ参加者の進捗管理",
       "adviceReceived": []
     }
   }

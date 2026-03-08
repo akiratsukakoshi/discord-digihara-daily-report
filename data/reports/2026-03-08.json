@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-08",
+  "channelSummaries": {
+    "自己紹介": "本日このチャンネルでの発言はありませんでした。",
+    "開発ラボ": "本日このチャンネルでの発言はありませんでした。",
+    "成果物": "本日このチャンネルでの発言はありませんでした。",
+    "雑談": "もっちゃんがYouTubeのインタビュー動画を共有し、ボッチーに対して詳細な解説と前日の議論との共通点についての論考を求めました。また、ボッチーの設計に関する倫理的問題についての議論が行われました。合宿に関する詳細（10時集合、17時解散）も共有されました。",
+    "質問箱": "本日このチャンネルでの発言はありませんでした。"
+  },
+  "users": {
+    "1018746114854508545": {
+      "name": "hige0911",
+      "role": "参加者",
+      "theme": "ストーリー作成",
+      "projects": [
+        {
+          "name": "億万長者へのストーリー",
+          "description": "億万長者になるための物語作成",
+          "progress": "プロジェクト開始を宣言"
+        }
+      ],
+      "interestsAndQuestions": "ストーリー作りについての熱意を表明",
+      "adviceReceived": []
+    },
+    "749655083848732692": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "未定",
+          "description": "開発中のプロジェクトは不明",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "4月4日の逗子合宿に関する詳細を質問",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "合宿の詳細（10時集合、17時解散）と場所についての回答を提供"
+        }
+      ]
+    },
+    "421621607825945610": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "未定",
+          "description": "開発中のプロジェクトは不明",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "合宿の場所について「村やかと思っていました」とコメント",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "ボッチーのCron設定確認を依頼し、GPT-5.4の確認のためCodexアプリの試験を行いました。また、ボッチーの設計における倫理的問題について議論を進めました。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "GPT-5.4とCodexの特徴についての情報収集",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "業務管理アプリケーション開発",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "合宿の詳細（時間、場所、宿泊状況）について情報提供",
+      "adviceReceived": []
+    }
+  }
+}

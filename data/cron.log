@@ -1417,3 +1417,52 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-07.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-08T15:05:07.100Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 6 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 6 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 20 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 32
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-08","channelSummaries":{"自己紹介":"本日このチャンネルでの発言はありませんでした。","開発ラボ":"本日このチャンネルでの発言はありませんでした。","成果物":"本日このチャンネルでの発言はありませんでした。","雑談":"もっちゃんがYouTubeのインタビュー動画を共有し、ボッチーに対して詳細な解説と前日の議論との共通点についての論考を求めました。また、ボッチーの設計に関する倫理的問題についての議論が行われました。合宿に関する詳細（10時集合、17時解散）も共有されました。","質問箱":"本日このチャンネルでの発言はありませんでした。"},"users":{"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"対話型AIエージェント開発","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"ボッチーのCron設定確認を依頼し、GPT-5.4の確認のためCodexアプリの試験を行いました。また、ボッチーの設計における倫理的問題について議論を進めました。"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"GPT-5.4とCodexの特徴についての情報収集","adviceReceived":[]},"1018746114854508545":{"name":"hige0911","role":"参加者","theme":"ストーリー作成","projects":[{"name":"億万長者へのストーリー","description":"億万長者になるための物語作成","progress":"プロジェクト開始を宣言"}],"interestsAndQuestions":"ストーリー作りについての熱意を表明","adviceReceived":[]},"749655083848732692":{"name":"toshitan","role":"参加者","theme":"未定","projects":[{"name":"未定","description":"開発中のプロジェクトは不明","progress":"変化なし"}],"interestsAndQuestions":"4月4日の逗子合宿に関する詳細を質問","adviceReceived":[{"from":"ガクチョ","content":"合宿の詳細（10時集合、17時解散）と場所についての回答を提供"}]},"421621607825945610":{"name":"kazumik_64330","role":"参加者","theme":"未定","projects":[{"name":"未定","description":"開発中のプロジェクトは不明","progress":"変化なし"}],"interestsAndQuestions":"合宿の場所について「村やかと思っていました」とコメント","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"業務管理アプリケーション開発","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"合宿の詳細（時間、場所、宿泊状況）について情報提供","adviceReceived":[]}}}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-08.json
+Updating index...
+Pushing changes to Git...

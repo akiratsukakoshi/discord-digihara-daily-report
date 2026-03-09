@@ -1,0 +1,50 @@
+{
+  "date": "2026-03-09",
+  "channelSummaries": {
+    "自己紹介": "本日、自己紹介チャンネルでの発言はありませんでした。",
+    "開発ラボ": "本日、開発ラボチャンネルでの発言はありませんでした。",
+    "成果物": "本日、成果物チャンネルでの発言はありませんでした。",
+    "雑談": "hige0911がコケコッコーと鳴いて参加し、温泉や居酒屋情報についての相談を行いました。また、tatsuyasuda_95818がAIエージェントの議論について考察を共有し、4月4日のキックオフ会への参加表明と終了後の食事の希望を表明しました。もっちゃんが前夜祭の検知と日程について返事しました。",
+    "質問箱": "本日、質問箱チャンネルでの発言はありませんでした。"
+  },
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "open clawを用いたタスク遂行エージェントの開発",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC): 業務管理application群",
+          "description": "業務管理アプリケーション群の開発",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "スクラッチから製作する対話型AIエージェント",
+          "progress": "GitHubとDiscordの連携テスト中。Issue #2 に対してClaude CodeにREADME.mdへの記載を依頼。OIDCエラーの修正を試行中。"
+        },
+        {
+          "name": "Insight Scope (IS): マーケティングツール",
+          "description": "マーケティングツールの開発",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": " DiscordとGitHubの連携機能のテストとデバッグ",
+      "adviceReceived": []
+    }
+  }
+}

@@ -1,17 +1,17 @@
 {
   "date": "2026-03-09",
   "channelSummaries": {
-    "自己紹介": "本日、自己紹介チャンネルでの発言はありませんでした。",
-    "開発ラボ": "本日、開発ラボチャンネルでの発言はありませんでした。",
-    "成果物": "本日、成果物チャンネルでの発言はありませんでした。",
-    "雑談": "hige0911がコケコッコーと鳴いて参加し、温泉や居酒屋情報についての相談を行いました。また、tatsuyasuda_95818がAIエージェントの議論について考察を共有し、4月4日のキックオフ会への参加表明と終了後の食事の希望を表明しました。もっちゃんが前夜祭の検知と日程について返事しました。",
-    "質問箱": "本日、質問箱チャンネルでの発言はありませんでした。"
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "本日の発言はありませんでした。",
+    "雑談": "hige0911さんが野湯や露天風呂の情報を求め、面白い温泉や居酒屋などの情報を共有しました。また、参加表明と「未定義の実態」という言葉で会話を締めくくりました。tatsuyasuda_95818さんは通勤中にDiscordのチャットを読んでいること、AIに関する議論（複数AIエージェントでの議論における人間のファシリテーターの役割、LLMの本質とルールによる制御の必要性）についての考察を共有し、4月4日のキックオフ会とその後の食事への期待を表明しました。もっちゃんさんが前夜祭の検討を通知しました。",
+    "質問箱": "本日の発言はありませんでした。"
   },
   "users": {
     "1337662562283683861": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "未定",
+      "theme": "業務管理とタスク遂行",
       "projects": [
         {
           "name": "gaku-co: open claw を用いたタスク遂行エージェント",
@@ -19,8 +19,8 @@
           "progress": "変化なし"
         },
         {
-          "name": "Harappa Management Cockpit (HMC): 業務管理application群",
-          "description": "業務管理アプリケーション群の開発",
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
           "progress": "変化なし"
         }
       ],
@@ -30,20 +30,20 @@
     "1016907741018726470": {
       "name": "もっちゃん",
       "role": "運営",
-      "theme": "未定",
+      "theme": "対話型AIとマーケティングツール",
       "projects": [
         {
-          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
-          "description": "スクラッチから製作する対話型AIエージェント",
-          "progress": "GitHubとDiscordの連携テスト中。Issue #2 に対してClaude CodeにREADME.mdへの記載を依頼。OIDCエラーの修正を試行中。"
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "Discord→GitHub連携のテスト実施、Claude Codeへの依頼コメント投稿、Antigravityへのデバッグ指示作成"
         },
         {
-          "name": "Insight Scope (IS): マーケティングツール",
-          "description": "マーケティングツールの開発",
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
           "progress": "変化なし"
         }
       ],
-      "interestsAndQuestions": " DiscordとGitHubの連携機能のテストとデバッグ",
+      "interestsAndQuestions": "DiscordとGitHubの連携、OIDCエラーの解消、A2A出力",
       "adviceReceived": []
     }
   }

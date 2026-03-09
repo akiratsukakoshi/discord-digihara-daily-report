@@ -1569,3 +1569,54 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-09.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-09T15:05:47.972Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 24 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 6 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 30
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-09","channelSummaries":{"自己紹介":"本日の発言はありませんでした。","開発ラボ":"本日の発言はありませんでした。","成果物":"本日の発言はありませんでした。","雑談":"hige0911さんが野湯や露天風呂の情報を求め、面白い温泉や居酒屋などの情報を共有しました。また、参加表明と「未定義の実態」という言葉で会話を締めくくりました。tatsuyasuda_95818さんは通勤中にDiscordのチャットを読んでいること、AIに関する議論（複数AIエージェントでの議論における人間のファシリテーターの役割、LLMの本質とルールによる制御の必要性）についての考察を共有し、4月4日のキックオフ会とその後の食事への期待を表明しました。もっちゃんさんが前夜祭の検討を通知しました。","質問箱":"本日の発言はありませんでした。"},"users":{"hige0911":{"name":"hige0911","role":"参加者","theme":"未定","projects":[{"name":"温泉旅行の計画","description":"野湯や露天風呂を巡る旅の計画","progress":"駐車場がある居酒屋や変な店、ジャズ喫茶などの情報収集"}],"interestsAndQuestions":"温泉、居酒屋、ジャズ喫茶に関する情報収集","adviceReceived":[]},"tatsuyasuda_95818":{"name":"tatsuyasuda_95818","role":"参加者","theme":"AIと人間の協調","projects":[{"name":"複数AIエージェントの議論分析","description":"AIエージェント間の議論における人間のファシリテーション効果の研究","progress":"LLMの本質とルールによる制御の必要性についての考察"}],"interestsAndQuestions":"AIエージェント間の議論における人間の役割、LLMの確率的性質と制御方法","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"業務管理とタスク遂行","projects":[{"name":"gaku-co: open claw を用いたタスク遂行エージェント","description":"open clawを用いたタスク遂行エージェントの開発","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"なし","adviceReceived":[]},"1016907741018726470":{"name":"もっちゃん","role":"運営","theme":"対話型AIとマーケティングツール","projects":[{"name":"ボッチー","description":"対話型AIエージェント（スクラッチから製作）","progress":"Discord→GitHub連携のテスト実施、Claude Codeへの依頼コメント投稿、Antigravityへのデバッグ指示作成"},{"name":"Insight Scope (IS)","description":"マーケティングツール","progress":"変化なし"}],"interestsAndQuestions":"DiscordとGitHubの連携、OIDCエラーの解消、A2A出力","adviceReceived":[]}}}
+Dropping non-discord user id from report: hige0911
+Dropping non-discord user id from report: tatsuyasuda_95818
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-09.json
+Updating index...
+Pushing changes to Git...

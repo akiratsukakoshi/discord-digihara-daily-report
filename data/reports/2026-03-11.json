@@ -1,49 +1,64 @@
 {
   "date": "2026-03-11",
   "channelSummaries": {
-    "自己紹介": "本日の活動記録なし",
-    "開発ラボ": "GoogleのGemini Embedding-2について議論。ラズパイロボットとagency-agentsの適用性について検討。A2AプロトコルとAntigravityの連携について詳細な議論が行われた。",
-    "成果物": "本日の活動記録なし",
-    "雑談": "南場さんと安宅先生の記事を基に、AIとの協働におけるガードレールの重要性と人間の役割について議論。\"あいだ\"という概念が物事の理解に重要であるとの見方が共有された。",
-    "質問箱": "本日の活動記録なし"
+    "自己紹介": "このチャンネルの要約",
+    "開発ラボ": "もっちゃんがGeminiの新しいembedding機能とGitHubのagency-agentsについて情報共有。A2Aプロトコルの説明とボッチーとの技術的な議論が行われた。Googleの新リリース、Geminiの裏技、AIエージェントの実装方法などについて議論された。",
+    "成果物": "このチャンネルの要約",
+    "雑談": "ガクチョがAIとの対話における批判的思考の重要性を指摘。DeNA南場さんと安宅先生の記事について議論し、AIとの協働における「あいだ」の重要性に言及。cb20854も「あいだ」の概念に関心を示し、社会的・個人的な文脈での重要性を考察。",
+    "質問箱": "このチャンネルの要約"
   },
   "users": {
     "1476436458779705375": {
       "name": "kazumik_64330",
       "role": "参加者",
-      "theme": "献立提案アプリ",
+      "theme": "Antigravityアプリの開発、スマホ版のUI改善",
       "projects": [
         {
-          "name": "献立提案アプリ",
-          "description": "栄養タグ付けから献立を提案するアプリ",
-          "progress": "supabaseへのデータ移行を完了し、スマホ版のUI調整を開始。AI提案の献立を改善するための指示書を整備中"
+          "name": "Antigravity",
+          "description": "献立提案アプリ、栄養タグ付けからの献立提案機能",
+          "progress": "次の段階に進める段階にあり、supabaseデータ移行とUI調整を実施中。GeminiProとClaudeのQuota制限対策としてGoogleの別アカウント作成とファミリー追加方法を確認"
         }
       ],
-      "interestsAndQuestions": "GeminiProとClaudeのクォータ管理、Antigravityの拡張機能",
+      "interestsAndQuestions": "スマホでのアプリの使いやすさ、GeminiProとClaudeのQuota管理",
       "adviceReceived": [
         {
           "from": "もっちゃん",
-          "content": "GeminiProのクォータ管理の裏技として、開発用にGoogleの別アカウントを作成しファミリーに追加することでクォータを復活させる方法"
+          "content": "GeminiProの裏技として、開発用にGoogleの別アカウントを作成し、メインアカウントのファミリーに追加することでQuotaを復活させる方法を教えてもらった"
         },
         {
-          "from": "ガクチョ",
-          "content": "Antigravityの拡張機能で全てのアカウントのQuataを確認できる方法"
-        },
-        {
-          "from": "ガクチョ",
-          "content": "指示書をきっちり書いてから開発を進めることの重要性"
+          "from": "もっちゃん",
+          "content": "Antigravityの拡張機能で全てのアカウントのQuataを確認できる方法をアドバイスしてもらった"
         }
       ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェント（ボッチー）の開発、経営総合プラットフォーム、A2Aオーケストレーション",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "GitHubのウロボロス進捗報告を依頼、Git HUBのトークン更新の確認、おしゃべり部屋アーカイブチャンネルのメッセージ欠落問題を調査"
+        },
+        {
+          "name": "Insight Scope",
+          "description": "マーケティングツール",
+          "progress": "Skillsの分化について考察、Antigravityの拡張機能として機能"
+        }
+      ],
+      "interestsAndQuestions": "Googleの新しいembedding機能、GitHubのagency-agents、A2Aプロトコルの詳細、AIエージェントの実装方法",
+      "adviceReceived": []
     },
     "1337662562283683861": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "タスク遂行エージェント",
+      "theme": "open clawを用いたタスク遂行エージェント、Harappa Management Cockpit（HMC）",
       "projects": [
         {
           "name": "gaku-co",
           "description": "open claw を用いたタスク遂行エージェント",
-          "progress": "変化なし"
+          "progress": "ラズパイロボットにインストールして見て聞いて考えて喋るようなロボットにする計画"
         },
         {
           "name": "Harappa Management Cockpit (HMC)",
@@ -51,7 +66,7 @@
           "progress": "変化なし"
         }
       ],
-      "interestsAndQuestions": "AIとの協働におけるガードレールの設計、個人としてのバイブコーディングの重要性",
+      "interestsAndQuestions": "AIとの対話における批判的思考、ガードレールの設計、AIとの協働における「あいだ」の重要性",
       "adviceReceived": []
     }
   }

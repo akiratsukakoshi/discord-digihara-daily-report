@@ -1,0 +1,58 @@
+{
+  "date": "2026-03-11",
+  "channelSummaries": {
+    "自己紹介": "本日の活動記録なし",
+    "開発ラボ": "GoogleのGemini Embedding-2について議論。ラズパイロボットとagency-agentsの適用性について検討。A2AプロトコルとAntigravityの連携について詳細な議論が行われた。",
+    "成果物": "本日の活動記録なし",
+    "雑談": "南場さんと安宅先生の記事を基に、AIとの協働におけるガードレールの重要性と人間の役割について議論。\"あいだ\"という概念が物事の理解に重要であるとの見方が共有された。",
+    "質問箱": "本日の活動記録なし"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "献立提案アプリ",
+      "projects": [
+        {
+          "name": "献立提案アプリ",
+          "description": "栄養タグ付けから献立を提案するアプリ",
+          "progress": "supabaseへのデータ移行を完了し、スマホ版のUI調整を開始。AI提案の献立を改善するための指示書を整備中"
+        }
+      ],
+      "interestsAndQuestions": "GeminiProとClaudeのクォータ管理、Antigravityの拡張機能",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "GeminiProのクォータ管理の裏技として、開発用にGoogleの別アカウントを作成しファミリーに追加することでクォータを復活させる方法"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "Antigravityの拡張機能で全てのアカウントのQuataを確認できる方法"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "指示書をきっちり書いてから開発を進めることの重要性"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク遂行エージェント",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "AIとの協働におけるガードレールの設計、個人としてのバイブコーディングの重要性",
+      "adviceReceived": []
+    }
+  }
+}

@@ -1719,3 +1719,94 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-10.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-03-11T15:05:07.992Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 12 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 9 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 34 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 5 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 60
+Generating daily report...
+Generating report using model: glm-4-plus
+Starting Daily Report Task at 2026-03-11T15:05:45.141Z
+Fetching kichi category channels...
+Found 12 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 12 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 9 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 34 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 5 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 60
+Generating daily report...
+Generating report using model: glm-4-plus
+Raw LLM output: {"date":"2026-03-11","channelSummaries":{"自己紹介":"本日の活動記録なし","開発ラボ":"GoogleのGemini Embedding-2について議論。ラズパイロボットとagency-agentsの適用性について検討。A2AプロトコルとAntigravityの連携について詳細な議論が行われた。","成果物":"本日の活動記録なし","雑談":"南場さんと安宅先生の記事を基に、AIとの協働におけるガードレールの重要性と人間の役割について議論。\"あいだ\"という概念が物事の理解に重要であるとの見方が共有された。","質問箱":"本日の活動記録なし"},"users":{"1018726470":{"name":"もっちゃん","role":"運営","theme":"経営総合プラットフォーム","projects":[{"name":"ボッチー","description":"対話型AIエージェント","progress":"A2Aオーケストレーションについての説明を行い、各AIが並列に起動してコーディングする仕組みについて議論"},{"name":"Insight Scope","description":"マーケティングツール","progress":"各部門に専門家ペルソナを配置"}],"interestsAndQuestions":"Gemini Embedding-2の価格設定、agency-agentsの具体的な実装方法","adviceReceived":[]},"1337662562283683861":{"name":"ガクチョ","role":"運営","theme":"タスク遂行エージェント","projects":[{"name":"gaku-co","description":"open claw を用いたタスク遂行エージェント","progress":"変化なし"},{"name":"Harappa Management Cockpit (HMC)","description":"業務管理application群","progress":"変化なし"}],"interestsAndQuestions":"AIとの協働におけるガードレールの設計、個人としてのバイブコーディングの重要性","adviceReceived":[]},"64330":{"name":"kazumik_64330","role":"参加者","theme":"献立提案アプリ","projects":[{"name":"献立提案アプリ","description":"栄養タグ付けから献立を提案するアプリ","progress":"supabaseへのデータ移行を完了し、スマホ版のUI調整を開始。AI提案の献立を改善するための指示書を整備中"}],"interestsAndQuestions":"GeminiProとClaudeのクォータ管理、Antigravityの拡張機能","adviceReceived":[{"from":"もっちゃん","content":"GeminiProのクォータ管理の裏技として、開発用にGoogleの別アカウントを作成しファミリーに追加することでクォータを復活させる方法"},{"from":"ガクチョ","content":"Antigravityの拡張機能で全てのアカウントのQuataを確認できる方法"},{"from":"ガクチョ","content":"指示書をきっちり書いてから開発を進めることの重要性"}]},"20854":{"name":"cb20854","role":"参加者","theme":"未定","projects":[{"name":"未定","description":"個人にフォーカスした考察","progress":"変化なし"}],"interestsAndQuestions":"人間と社会における\"あいだ\"の概念、AIと人間の協働関係","adviceReceived":[]}}}
+Dropping non-discord user id from report: 20854
+Dropping non-discord user id from report: 1018726470
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-03-11.json
+Updating index...
+Pushing changes to Git...

@@ -1,0 +1,50 @@
+{
+  "date": "2026-03-14",
+  "channelSummaries": {
+    "自己紹介": "本日、自己紹介チャンネルには新しい投稿はありませんでした。",
+    "開発ラボ": "本日、開発ラボチャンネルには新しい投稿はありませんでした。",
+    "成果物": "本日、成果物チャンネルには新しい投稿はありませんでした。",
+    "雑談": "本日、雑談チャンネルには新しい投稿はありませんでした。",
+    "質問箱": "本日、質問箱チャンネルには新しい投稿はありませんでした。"
+  },
+  "users": {
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク遂行エージェントと業務管理アプリケーション",
+      "projects": [
+        {
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
+          "description": "open clawを用いたタスク遂行エージェントの開発",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェントとマーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
+          "description": "スクラッチから製作した対話型AIエージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}

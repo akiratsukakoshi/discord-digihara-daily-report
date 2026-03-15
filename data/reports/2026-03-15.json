@@ -14,7 +14,7 @@
       "theme": "未定",
       "projects": [
         {
-          "name": "gaku-co",
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
           "description": "open claw を用いたタスク遂行エージェント",
           "progress": "変化なし"
         },

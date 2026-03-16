@@ -1,11 +1,11 @@
 {
   "date": "2026-03-16",
   "channelSummaries": {
-    "自己紹介": "このチャンネルの要約",
-    "開発ラボ": "このチャンネルの要約",
-    "成果物": "このチャンネルの要約",
-    "雑談": "このチャンネルの要約",
-    "質問箱": "このチャンネルの要約"
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "本日の発言なし",
+    "質問箱": "本日の発言なし"
   },
   "users": {
     "1337662562283683861": {
@@ -14,12 +14,12 @@
       "theme": "未定",
       "projects": [
         {
-          "name": "gaku-co",
+          "name": "gaku-co: open claw を用いたタスク遂行エージェント",
           "description": "open claw を用いたタスク遂行エージェント",
           "progress": "変化なし"
         },
         {
-          "name": "Harappa Management Cockpit (HMC)",
+          "name": "Harappa Management Cockpit (HMC): 業務管理application群",
           "description": "業務管理application群",
           "progress": "変化なし"
         }
@@ -33,12 +33,12 @@
       "theme": "未定",
       "projects": [
         {
-          "name": "ボッチー",
+          "name": "ボッチー: 対話型AIエージェント（スクラッチから製作）",
           "description": "対話型AIエージェント（スクラッチから製作）",
           "progress": "変化なし"
         },
         {
-          "name": "Insight Scope (IS)",
+          "name": "Insight Scope (IS): マーケティングツール",
           "description": "マーケティングツール",
           "progress": "変化なし"
         }

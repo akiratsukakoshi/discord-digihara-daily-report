@@ -1,0 +1,252 @@
+{
+  "date": "2026-04-05",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "もっちゃんから初日の労いの言葉があり、Claudeの有料契約者向けクーポン情報が共有されました。シンジさんがAntigravityのデバイス間引き継ぎについて質問し、もっちゃんがプロジェクトフォルダベースの仕組みであることを説明しました。",
+    "成果物": "ひげさんが問診チャットボット「にゃんた」のVer0.1を公開しました。将来的な機能追加（猫の動作、CSV入力、カメラによる顔認証など）についての提案や、UIへの高評価がありました。",
+    "雑談": "scope_lightさんが次回開催（5月9日、南房総）について質問しました。カズミさんがデジハラの感想を述べ、複雑なアイデアが形になっていく過程を楽しんでいると語りました。",
+    "質問箱": "たかのりさんがAntigravityのQuota制限を回避するためのファミリーアカウント利用方法について質問し、もっちゃんがアカウント切り替えによるリセット手順を説明しました。"
+  },
+  "users": {
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "Antigravity game",
+          "description": "ローカル環境で作成したゲーム",
+          "progress": "ローカルファイルのパスを共有した。リモートプレイの可否について相談中。"
+        }
+      ],
+      "interestsAndQuestions": "南房総からもプレイ可能にする方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityに聞いてみれば南房総でもプレイできるかも"
+        }
+      ]
+    },
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "アプリ開発（バレエ、買い物）",
+      "projects": [
+        {
+          "name": "バレエノートアプリ",
+          "description": "ボットとの会話でレッスン記録を行うアプリ",
+          "progress": "マスターデータ（バレエ用語）のJSONを作成した。買い物アプリよりも先にバレエノートの実装を優先する方針を固めた。仕様書v3の作成を依頼した。"
+        },
+        {
+          "name": "買い物アプリ",
+          "description": "家計簿機能を排除し、食材管理と献立提案に特化したアプリ",
+          "progress": "スマホで使うメニューに絞って機能を洗い出し、Claude Codeで詳細仕様書を作成中。"
+        }
+      ],
+      "interestsAndQuestions": "バレエ用語のマスターデータ設計（エイリアスの扱い、カテゴリ分けの必要性）、DB設計",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "マスターデータを作成し、予測変換による入力補完を実装するのが良い"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "AIとチャットしているように見せつつ、ロジックはJSONファイルベースで完結させる"
+        }
+      ]
+    },
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "般若心経チャットボット",
+      "projects": [
+        {
+          "name": "般若心経チャットボット",
+          "description": "般若心経サイトに来訪者にオススメを教えるツンデレチャットボット",
+          "progress": "GitHub Pages + Cloudflare Workers + Gemini APIの構成で実装した。「アン」というツンデレキャラが完成し、動作確認済み。"
+        }
+      ],
+      "interestsAndQuestions": "コスト、セキュリティ、Node.jsとCloudflare Workersの比較",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "AIに依頼する際は前提条件（無料でやるなど）を明確に伝える"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "キャラクターが良く、Discordへの召喚を望む"
+        }
+      ]
+    },
+    "1476775208059932744": {
+      "name": "kaoruhirose",
+      "role": "参加者",
+      "theme": "メール・ドメイン管理",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "GitHubアカウント用のメールサービス推奨、Google Workspace解約時のドメインロックリスク",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ボッチーにGoogle Workspaceとドメインの関係をリソース付きで説明させた"
+        }
+      ]
+    },
+    "1477085988588359690": {
+      "name": "sjinkoji_69904",
+      "role": "参加者",
+      "theme": "IoTダッシュボード",
+      "projects": [
+        {
+          "name": "スイッチボット・ダッシュボード",
+          "description": "SwitchBotの温湿度センサーをWeb上でグラフ化して見るダッシュボード",
+          "progress": "Web上で固定URLを取得してデプロイ完了。センサーのグラフを場所ごとに色分け表示できるようにした。"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityの会話履歴のデバイス間引き継ぎ方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityはプロジェクトフォルダに対して作業するため、会話の引き継ぎという概念はない（ドライブが別なら引き継げない）"
+        }
+      ]
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "アプリ開発環境・アーキテクチャ",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "OneDrive同期環境の良し悪し、同期除外方法、iOS通知機能の要件、コスパの良いクラウドDB",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Railway（プログラム）とSupabase（DB）を使用している。Antigravityアレルギー解消のためローカルアプリから始めると良い"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "学習目的ならSupabase、簡易的なものならFirebaseがおすすめ"
+        }
+      ]
+    },
+    "1477089679709966407": {
+      "name": "hige0911",
+      "role": "参加者",
+      "theme": "チャットボット開発",
+      "projects": [
+        {
+          "name": "にゃんた",
+          "description": "問診チャットボット",
+          "progress": "Ver0.1の成果物URLを公開した。猫キャラの動作、質問管理画面、カメラ利用などの機能追加案を出した。"
+        }
+      ],
+      "interestsAndQuestions": "編集機能の有無、顔認証などのセキュリティ",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "UIが気に入り、操作して問診票ができ上がるのが面白い"
+        }
+      ]
+    },
+    "1477526506099179521": {
+      "name": "tatsuyasuda_95818",
+      "role": "参加者",
+      "theme": "コンテンツ制作",
+      "projects": [
+        {
+          "name": "架空会社HP",
+          "description": "Tatis Production&Consultingの会社HP",
+          "progress": "企画立案"
+        },
+        {
+          "name": "宮廷音楽家オットー",
+          "description": "クラシック風ファンファーレを生成するアプリ",
+          "progress": "企画立案"
+        },
+        {
+          "name": "紋章職人フリードリヒ",
+          "description": "質問に答えて紋章風エンブレムを作るアプリ",
+          "progress": "企画立案"
+        },
+        {
+          "name": "汎用チャットボット、荀彧",
+          "description": "三国志の軍師キャラの汎用エージェント",
+          "progress": "企画立案"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "異なるジャンルに挑戦するのは学びが広がるので全てGO"
+        }
+      ]
+    },
+    "706285990876282941": {
+      "name": "scope_light",
+      "role": "参加者",
+      "theme": "一般",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "次回イベント（5月9日南房総）の場所と時間",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "次回は5月9日の南房総会場での発表会であることを伝えた"
+        }
+      ]
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ツール活用",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "AntigravityのQuota制限をファミリーアカウントで拡張する実装方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ファミリーアカウントを追加し、Antigravityでアカウントを切り替えることでQuotaがリセットされる"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "運営・業務管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "運営・AIエージェント",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "Antigravityの利用方法やQuota回避方法についてコミュニティに解説した。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}

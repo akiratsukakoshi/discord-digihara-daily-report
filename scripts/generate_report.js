@@ -72,7 +72,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 const API_KEY = ZAI_API_KEY || OPENAI_API_KEY;
 const BASE_URL = process.env.OPENAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4';
-const MODEL_NAME = 'glm-4-plus';
+const MODEL_NAME = 'glm-4.7';
 
 /**
  * Discord APIからメッセージを取得（過去24時間分）
@@ -341,7 +341,7 @@ ${otherChannelNames.map(n => `    "${n}": "このチャンネルの要約"`).joi
 
   try {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 120000);
+    const timeoutId = setTimeout(() => controller.abort(), 300000);
 
     const response = await fetch(`${BASE_URL}/chat/completions`, {
       method: 'POST',
@@ -360,8 +360,7 @@ ${otherChannelNames.map(n => `    "${n}": "このチャンネルの要約"`).joi
           { role: 'user', content: prompt }
         ],
         temperature: 0.3,
-        max_tokens: 4096,
-        response_format: { type: 'json_object' }
+        max_tokens: 32768
       })
     });
 
@@ -560,8 +559,13 @@ async function main() {
       console.error(`Error updating index: ${error}`);
     }
 
-    if (filepath) await gitPushChanges(report.date);
-    await notifyDiscord(report);
+    const dryRun = process.argv.includes('--dry-run');
+    if (!dryRun) {
+      if (filepath) await gitPushChanges(report.date);
+      await notifyDiscord(report);
+    } else {
+      console.log('Dry-run mode: skipped git push and Discord notification.');
+    }
   } else {
     console.error('Failed to generate report.');
   }

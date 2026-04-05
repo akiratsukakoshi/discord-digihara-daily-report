@@ -4415,3 +4415,252 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-05.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-05",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "もっちゃんからClaudeのクーポン情報が共有されました。Antigravityの会話引き継ぎ方法について質問があり、プロジェクトフォルダベースであることが確認されました。また、「Antigraffiti」というタイポ訂正や、非エンジニア向けのAIハラスメント（SQLコード等の直接的提示）についての注意喚起が行われました。",
+    "成果物": "ひげさんが「Nyanta」という猫キャラクターの問診チャットボット（Ver0.1）を公開しました。機能追加案として、CSVインポート、カメラでの保険証読み取り・顔認証などが提案され、運営から高評価を得ました。",
+    "雑談": "次回イベント（5月9日南房総）の日程に関する質問がありました。カズミさんからキックオフイベントを通じた刺激と感謝の言葉が共有されました。",
+    "質問箱": "Antigravityのクォータ制限を回避するための「ファミリーリンクを使ったアカウント切り替え」手法についての質問と、もっちゃんによる具体的な手順解説が行われました。"
+  },
+  "users": {
+    "unknown_kaito_15370": {
+      "name": "かいと",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "Antigravity Game",
+          "description": "昨日作成したゲーム",
+          "progress": "ローカルファイルの保存場所を共有。リモートプレイの可否についてもっちゃんと相談した。"
+        }
+      ],
+      "interestsAndQuestions": "Antigravity経由で南房総のもっちゃんにもゲームをプレイしてもらえるか。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityを経由すればリモートプレイが可能かもしれない。"
+        }
+      ]
+    },
+    "unknown_kazumik_64330": {
+      "name": "カズミ",
+      "role": "参加者",
+      "theme": "アプリ開発",
+      "projects": [
+        {
+          "name": "バレエノートアプリ",
+          "description": "ボットとの会話でレッスン記録を行い、年単位のゴール管理やトレーニング提案を行うアプリ",
+          "progress": "バレエ用語のマスターデータとエイリアス（別表記）をGeminiに作成させ、JSONファイルベースでのフロント実装（予測変換機能など）を含むv3仕様書の更新依頼を出した。"
+        },
+        {
+          "name": "買い物アプリ",
+          "description": "栄養バランスを考慮した献立提案に特化した食材管理アプリ",
+          "progress": "機能の洗い出しを完了。Claude Codeで作成したロジックを詳細仕様書（MDファイル）化し、デプロイ構成を検討する段階。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "バレエ用語のマスタ作成、入力UIの予測変換実装、タスク期間判定の簡素化、キャラクター口調のセッション固定など、仕様の具体化に関する助言。"
+        }
+      ]
+    },
+    "unknown_toshitan": {
+      "name": "としたん",
+      "role": "参加者",
+      "theme": "チャットボット開発",
+      "projects": [
+        {
+          "name": "般若心経チャットボット",
+          "description": "来訪者の状況に応じて般若心経をレコメンドするツンデレキャラのボット",
+          "progress": "GitHub Pages + Cloudflare Workers + Gemini APIの構成で実装を完了。「聞き流し般若心経」サイトとボット「アン」を公開した。"
+        }
+      ],
+      "interestsAndQuestions": "コストを抑えつつ安全な構成、Node.jsとCloudflare Workersの使い分け。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "AIに依頼する際は「無料でやる」といった前提条件を明確に伝えること。"
+        },
+        {
+          "from": "ボッチー",
+          "content": "GitHub Pagesは静的サイトホスティングのためNode.jsサーバは動かないこと。Cloudflare Workersの方が無料枠が大きくスリープがないというメリットがあること。"
+        }
+      ]
+    },
+    "unknown_kaoruhirose": {
+      "name": "かおるん",
+      "role": "参加者",
+      "theme": "インフラ整備・アカウント管理",
+      "projects": [
+        {
+          "name": "インフラ整備",
+          "description": "GitHub等のアカウント作成、ドメイン・メール管理環境の整備",
+          "progress": "Google Workspaceの解約と独自ドメインメールの移行（Xserver）について検討中。解約時のドメイン消失リスクについて懸念している。"
+        }
+      ],
+      "interestsAndQuestions": "Google Workspace解約時のドメインへの影響、推奨されるメールサービス。",
+      "adviceReceived": []
+    },
+    "unknown_hige0911": {
+      "name": "ひげ",
+      "role": "参加者",
+      "theme": "問診チャットボット",
+      "projects": [
+        {
+          "name": "Nyanta",
+          "description": "猫キャラクターによる問診チャットボット",
+          "progress": "Ver0.1を公開。今後の機能追加として、猫キャラの動作追加、CSV管理画面、カメラでの保険証読み取り・顔認証などを構想中。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "sjinkoji_69904": {
+      "name": "シンジ",
+      "role": "参加者",
+      "theme": "IoTダッシュボード",
+      "projects": [
+        {
+          "name": "SwitchBotダッシュボード",
+          "description": "SwitchBotのセンサーデータをAPIで取得し可視化するダッシュボード",
+          "progress": "Web上での固定URLデプロイを完了。センサーのグラフを場所ごとに色分け表示する機能を実装した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "気象庁のデータなど外部情報と紐付けることで拡張性が高まるというアイデア。"
+        }
+      ]
+    },
+    "unknown_cb20854": {
+      "name": "cb2",
+      "role": "参加者",
+      "theme": "マルチユーザーアプリ開発",
+      "projects": [
+        {
+          "name": "マルチユーザーアプリ",
+          "description": "クラウドDBで同期する複数人入力型アプリ",
+          "progress": "OneDrive環境の確認を行い、DBサービスとしてSupabaseの利用を決定。ローカル開発から始め、構造を理解しながら進める方針を固めた。初心者向けのアーキテクチャ図を要望中。"
+        }
+      ],
+      "interestsAndQuestions": "OneDrive同期環境の良し悪し、iOS開発の制約、コスパの良いクラウドDB、初心者向けアーキテクチャ図。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "自分はRailwayとSupabaseを使用。RAG学習にはSupabaseが適している。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "DBをしっかり学ぶならSupabase推奨。簡易的ならFirebaseも可。"
+        }
+      ]
+    },
+    "tatsuyasuda_95818": {
+      "name": "たつや",
+      "role": "参加者",
+      "theme": "コンテンツ制作・アプリ企画",
+      "projects": [
+        {
+          "name": "架空会社HP",
+          "description": "映像やITサービスの企画制作会社「Tatis Production&Consulting」のサイト",
+          "progress": "企画案を立案。"
+        },
+        {
+          "name": "宮廷音楽家オットー",
+          "description": "キャラクターや気分に合わせてクラシック風ファンファーレを生成するアプリ",
+          "progress": "企画案を立案。"
+        },
+        {
+          "name": "紋章職人フリードリヒ",
+          "description": "質問に答えて紋章風のエンブレムを作成する画像生成アプリ",
+          "progress": "企画案を立案。"
+        },
+        {
+          "name": "荀彧（Jyun-i-KUN）",
+          "description": "三国志の軍師キャラクターによる汎用チャットボット",
+          "progress": "企画案を立案。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "全ジャンル異なるのでぜんぶやることを勧める。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma": {
+      "name": "たかのり",
+      "role": "参加者",
+      "theme": "Antigravity運用",
+      "projects": [
+        {
+          "name": "Quota管理",
+          "description": "Antigravityの使用上限（Quota）の管理とリセット",
+          "progress": "ファミリーリンクを利用したアカウント切り替えによるクォータリセット方法を学習した。"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityのモデル設定におけるクォータ倍増の実装方法。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Google AI Proのファミリー機能を使い、別アカウントでログインし直すことでクォータをリセットできる方法の提案。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "業務管理・AIエージェント",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント開発・マーケティング",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Dropping non-discord user id from report: sjinkoji_69904
+Dropping non-discord user id from report: tatsuyasuda_95818
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-05.json
+Updating index...
+Pushing changes to Git...

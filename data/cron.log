@@ -5082,3 +5082,259 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-06.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-06",
+  "channelSummaries": {
+    "自己紹介": "ジャックさんが参加。議事録作成ツールをはじめ、タスク管理や健康管理など仕事効率化と人生を豊かにするシステム作りを目指している。",
+    "開発ラボ": "本日の発言なし。",
+    "成果物": "たつやさんが「般若心経」と「猫キャラ問診アプリ」に対してフィードバックを行った。としさんは問診アプリをリファクタリングしたと報告。",
+    "雑談": "キックオフイベントへの感謝と、AI活用における「基本のキ」の重要性について議論された。ガクチョよりローカルLLMに関する記事が共有された。",
+    "質問箱": "まこりんさんがファミリーアカウントの設定（1アカウント完了）と今後の進め方について報告した。"
+  },
+  "users": {
+    "unknown_kaito_15370": {
+      "name": "かいと",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "Antigravity Game (ネコの大冒険)",
+          "description": "ブラウザゲーム",
+          "progress": "ローカルファイルからのシェアに難航していたが、ガクチョのアドバイスのもとGitHubとVercelを導入。無事に公開URLを取得してデプロイに成功した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "GitHubとVercelのアカウント取得と、Antigravity経由でのデプロイ手順のレクチャー。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "Vercelのアクセスリクエスト送信。"
+        }
+      ]
+    },
+    "unknown_kazumik_64330": {
+      "name": "カズミ",
+      "role": "参加者",
+      "theme": "バレエノート、献立アプリ",
+      "projects": [
+        {
+          "name": "バレエノート",
+          "description": "バレエ練習用記録アプリ",
+          "progress": "ローカルJSONとSupabaseを組み合わせ、Vercelデプロイでスマホ動作を確認。GitHub Issuesを用いて課題管理を開始。"
+        },
+        {
+          "name": "献立アプリ",
+          "description": "献立管理アプリ",
+          "progress": "各機能の詳細仕様の再定義に取り掛かった。"
+        }
+      ],
+      "interestsAndQuestions": "GitHub Issuesを活用した現代的な課題管理手法。",
+      "adviceReceived": []
+    },
+    "532761858843607041": {
+      "name": "たつや",
+      "role": "参加者",
+      "theme": "複数プロジェクトの並行開発",
+      "projects": [
+        {
+          "name": "早寝報酬アプリ",
+          "description": "早寝習慣化のための報酬アプリ",
+          "progress": "V1.1をアップデート完了。V2.0に向けて時計機能連携、データ同期、UI向上を計画中。"
+        },
+        {
+          "name": "番組おすすめチャットボット「羊（しつじ）のヨージ」",
+          "description": "番組表APIを用いたレコメンドチャットボット",
+          "progress": "プロトタイプを作成した。"
+        },
+        {
+          "name": "鬼ごっこゲーム",
+          "description": "娘との共同開発ゲーム",
+          "progress": "娘が要件定義に熱中しており、定義中。"
+        },
+        {
+          "name": "架空事業会社HP",
+          "description": "会社サイトの制作",
+          "progress": "構想・計画段階。"
+        },
+        {
+          "name": "ARMS（アンチリモートワークマネジメントシステム）",
+          "description": "勤怠管理システム",
+          "progress": "要件定義と実装検討のみ行う方針。"
+        },
+        {
+          "name": "宮廷音楽家オットー",
+          "description": "音楽生成AIプロジェクト",
+          "progress": "要件定義のみ行う方針。"
+        },
+        {
+          "name": "紋章職人フリードリヒ",
+          "description": "兄弟プロジェクト",
+          "progress": "要件定義のみ行う方針。"
+        },
+        {
+          "name": "汎用チャットボット",
+          "description": "汎用的なボット",
+          "progress": "検討保留。"
+        }
+      ],
+      "interestsAndQuestions": "Outlook（Microsoft系）での外部操作の可否に興味を持った。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "8プロジェクト並行によるToken消費への言及と、沼へようこそという歓迎。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "娘との共同開発の学びへの肯定と、Outlook連携への興味表明。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "まこりん",
+      "role": "参加者",
+      "theme": "環境構築",
+      "projects": [
+        {
+          "name": "ファミリーアカウント設定",
+          "description": "開発用Googleアカウント環境整備",
+          "progress": "ファミリーアカウントを1つ作成完了（所要1時間）。残り4つも同様に進める予定。"
+        }
+      ],
+      "interestsAndQuestions": "感想文の記載場所についての質問。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "感想の記載場所はどこでも良いという回答。"
+        }
+      ]
+    },
+    "unknown_jackwild0811": {
+      "name": "ジャック",
+      "role": "参加者",
+      "theme": "業務効率化システム",
+      "projects": [
+        {
+          "name": "日々の打ち合わせの議事録作成＆格納",
+          "description": "会議自動議事録システム",
+          "progress": "基地を作成し、開発を開始する準備をした。"
+        },
+        {
+          "name": "仕事効率化・人生を豊かにするシステム",
+          "description": "タスク管理、健康管理、運動推進、資産運用など",
+          "progress": "アイデア出し段階。"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーのできること、サポート内容についての質問。",
+      "adviceReceived": []
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "開発における「基本のキ」の重要性、ローカルLLMのセットアップ方法。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "リープフロッグ現象（基本をすっ飛ばして進むこと）と、AIを活用した作り直しの容易さについてのコメント。"
+        }
+      ]
+    },
+    "unknown_kaoruhirose": {
+      "name": "kaoruhirose",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "猫キャラによる問診アプリのハードルの下がり方への感心。",
+      "adviceReceived": []
+    },
+    "unknown_toshitan": {
+      "name": "としさん",
+      "role": "参加者",
+      "theme": "医療系アプリ",
+      "projects": [
+        {
+          "name": "猫キャラ問診アプリ",
+          "description": "事前に問診を取るためのアプリ",
+          "progress": "フィードバックを受けてアプリを作り直した（リファクタリング）。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "tatsuyasuda_95818",
+          "content": "フルネーム入力時の誤送信防止（Enterキー挙動）に関する改善提案。"
+        }
+      ]
+    },
+    "unknown_sjinkoji_69904": {
+      "name": "sjinkoji_69904",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "Antigravity（AI）との対話体験。",
+      "adviceReceived": []
+    },
+    "unknown_scope_light": {
+      "name": "scope_light",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "ローカルLLMのセットアップ。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "Antigravity運営、HMC、gaku-co",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ローカルLLMへの興味。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチー開発、IS、食×AI",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-06.json
+Updating index...
+Pushing changes to Git...

@@ -1,0 +1,254 @@
+{
+  "date": "2026-04-06",
+  "channelSummaries": {
+    "自己紹介": "jackwild0811（ジャック）が自己紹介を行った。議事録作成ツールをはじめ、仕事効率化や人生を豊かにするシステムの作成を目指している。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "tatsuyasuda_95818が「般若心経」と「問診アプリ」について評価を行い、UIやキャラクター設定への称賛と、Enterキー送信のバグ報告を行った。toshitanは問診アプリを作り直したと報告した。",
+    "雑談": "cb20854がキックオフイベントの感想を述べ、開発における「基本のキ」の重要性を指摘した。もっちゃんは「リープフロッグ現象」やリファクタリングについて言及。ガクチョはローカルLLMの導入に関する記事を共有した。sjinkoji_69904はAIからの褒め言葉を報告した。",
+    "質問箱": "takanorinaganuma_15823がGoogleファミリーアカウントの設定（モデル100％化）に1時間かけ完了したことを報告し、残り4つも同様に進める意向を示した。"
+  },
+  "users": {
+    "1333026240877039706": {
+      "name": "かいと",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "Antigravity game（ネコの大冒険）",
+          "description": "ゲーム開発",
+          "progress": "Vercelへのデプロイに成功し、URLを共有した。ガクチョともっちゃんがアクセスリクエストを送信済み。"
+        }
+      ],
+      "interestsAndQuestions": "GitHubとVercelの利用方法について。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ファイルのシェアにはGitHubとVercelの利用が最適であること、かいと（10歳）でも理解できるようAntigravity経由で行う方法を提案された。"
+        }
+      ]
+    },
+    "1476436458779705375": {
+      "name": "カズミ",
+      "role": "参加者",
+      "theme": "アプリ開発",
+      "projects": [
+        {
+          "name": "バレエノート",
+          "description": "バレエの練習記録アプリ",
+          "progress": "ローカルJSONとSupabase、GitHub、Vercelを組み合わせてスマホで動作するようになった。GitHub Issuesを使って課題管理を開始。"
+        },
+        {
+          "name": "献立アプリ",
+          "description": "献立作成支援アプリ",
+          "progress": "機能の詳細仕様を再定義するフェーズに入った。"
+        }
+      ],
+      "interestsAndQuestions": "Geminiによるリスト作成や、GitHub Issuesを用いた現代的な課題管理手法。",
+      "adviceReceived": []
+    },
+    "1477520654411628544": {
+      "name": "みほこ",
+      "role": "参加者",
+      "theme": "食×AI活用（コーヒー焙煎事業）",
+      "projects": [
+        {
+          "name": "事業コンテンツのデータ化",
+          "description": "既存事業のDX推進",
+          "progress": "もっちゃんからサポートの申し出があり、AI活用やデータ化のフォローアップを受けることになった。"
+        }
+      ],
+      "interestsAndQuestions": "コーヒー焙煎事業およびECサイト運営におけるAI活用。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "自身の食品・コーヒー業界での経験に基づき、事業のデータ化やAI活用について具体的にサポートすると申し出があった。"
+        }
+      ]
+    },
+    "1477526506099179521": {
+      "name": "たつや",
+      "role": "参加者",
+      "theme": "マルチプロジェクト開発",
+      "projects": [
+        {
+          "name": "早寝報酬アプリ",
+          "description": "早寝習慣化を促す報酬アプリ",
+          "progress": "V1.1を更新。V2.0（実時間時計連動、マルチデバイス同期、UI改善）に向けた優先開発プロジェクトとして設定。"
+        },
+        {
+          "name": "番組おすすめチャットボット「羊（しつじ）のヨージ」",
+          "description": "番組表APIを活用したチャットボット",
+          "progress": "プロトタイプを作成し、公共放送感のあるUIを共有した。"
+        },
+        {
+          "name": "鬼ごっこゲーム",
+          "description": "娘との共同開発ゲーム",
+          "progress": "娘が要件定義に没頭中。"
+        },
+        {
+          "name": "ARMS",
+          "description": "アンチリモートワークマネジメントシステム",
+          "progress": "要件定義のみ実施予定。"
+        },
+        {
+          "name": "架空事業会社HP",
+          "description": "架空企業のウェブサイト",
+          "progress": "自作能力のトライアルとして作成予定。"
+        },
+        {
+          "name": "宮廷音楽家オットー",
+          "description": "音楽生成AIプロジェクト",
+          "progress": "要件定義のみ実施予定。"
+        },
+        {
+          "name": "紋章職人フリードリヒ",
+          "description": "オットーの兄弟プロジェクト",
+          "progress": "要件定義のみ実施予定。"
+        },
+        {
+          "name": "汎用チャットボット",
+          "description": "汎用的なボットシステム",
+          "progress": "羊のヨージの進展に合わせて検討。"
+        }
+      ],
+      "interestsAndQuestions": "仕事に直接使わない多様なジャンルの開発を通じて、システム構成のパターンを学ぶこと。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ARMSについて、Outlook（Microsoft系）での外部連携の可否に興味があるとコメントされた。"
+        }
+      ]
+    },
+    "1182194493479460929": {
+      "name": "まこりん",
+      "role": "参加者",
+      "theme": "環境設定",
+      "projects": [
+        {
+          "name": "未定",
+          "description": "開発目標と感想の投稿",
+          "progress": "Googleファミリーアカウントの設定完了。開発目標と感想を近日中にアップする予定。"
+        }
+      ],
+      "interestsAndQuestions": "Googleアカウントの設定手順。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "感想の投稿場所はどこでも良い（雑談でも可）と助言された。"
+        }
+      ]
+    },
+    "1260001270173925459": {
+      "name": "ジャック",
+      "role": "参加者",
+      "theme": "業務効率化システム",
+      "projects": [
+        {
+          "name": "日々の打ち合わせの議事録作成＆格納",
+          "description": "議事録自動作成・管理システム",
+          "progress": "構想段階。ボッチーへのサポート依頼を検討中。"
+        },
+        {
+          "name": "タスク管理・仕事効率化ツール",
+          "description": "業務効率化アプリ",
+          "progress": "構想段階。"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーができること、サポートしてくれること。",
+      "adviceReceived": []
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "AI開発における「基本のキ」の重要性。",
+      "adviceReceived": []
+    },
+    "1476775208059932744": {
+      "name": "kaoruhirose",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "問診アプリの機能（事前問診）。",
+      "adviceReceived": []
+    },
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "問診アプリ",
+      "projects": [
+        {
+          "name": "問診アプリ",
+          "description": "猫キャラを使った問診システム",
+          "progress": "UIを作り直した。入力時のEnterキー送信バグを指摘された。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "tatsuyasuda_95818",
+          "content": "フルネーム入力時などにEnterキーを押すと誤送信されてしまうUIの不具合を指摘された。"
+        }
+      ]
+    },
+    "706285990876282941": {
+      "name": "scope_light",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "ローカルLLMに関する情報。",
+      "adviceReceived": []
+    },
+    "1477085988588359690": {
+      "name": "sjinkoji_69904",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "AIとの対話経験。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク管理、業務自動化",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ローカルLLMの導入、Outlook（Microsoft系）の外部連携可能性。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェント、DX推進",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "かいとのGitHub/Vercel導入サポート用プロンプト作成など、教育面での活用。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "食×AI活用、リファクタリング、コードのスパゲッティ化の回避。",
+      "adviceReceived": []
+    }
+  }
+}

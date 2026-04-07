@@ -1,0 +1,203 @@
+{
+  "date": "2026-04-07",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "sjinkoji氏がアプリのワンクリック起動について質問し、Mocchan氏がAntigravityを活用した解決策を提案しました。",
+    "成果物": "Mocchan氏が「Echo Note」を完成・公開しました。m4a音声の文字起こし（Gemini 2.5 Flash）と要約（Claude）、パスワード認証、限定公開機能を備え、Railwayにデプロイされています。話者識別機能も確認されています。",
+    "雑談": "Gakucho氏がGitHub教科書のリンクを共有。cb20854氏がClaudeとGeminiを使い分ける際のトークン消費と要件定義の進め方について質問し、Gakucho氏らが「要件：Gemini→管理：Claude→実装：Antigravity」の役割分担やセッション切り替えのコツを助言しました。また、Gakucho氏がデジタル原っぱ大学に関するnote記事を公開し、Mocchan氏がClaude Coworkの招待リンク、kaito氏がGoogle AI Pro導入の報告がありました。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "1476775208059932744": {
+      "name": "kaoruhirose",
+      "role": "参加者",
+      "theme": "クリニックWebサイト構築・インフラ整備",
+      "projects": [
+        {
+          "name": "クリニックWebサイト",
+          "description": "Next.js等を用いた診療所のWebサイト構築および公開",
+          "progress": "WordPressを使わずにVibe Codingで構築する方針を確認。GitHubとVercelへのデプロイを試みたが、ターミナル操作やGitコマンドでエラーが発生し断念。Antigravityを使う方向へ切り替えました。メールサーバーはXserverを継続。"
+        },
+        {
+          "name": "クリニック運用インフラ",
+          "description": "Google Workspace、Xサーバー等を用いた診療所のインフラ構築",
+          "progress": "Xサーバーのメール設定や独自ドメイン管理の方針を検討。"
+        }
+      ],
+      "interestsAndQuestions": "WordPress導入の是非、Git/Netlify/Vercelの使い方、ターミナル操作",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "WordPressは複雑すぎるため不要。ローカル→Git→サーバーのシンプルな構成が良い。GmailでXサーバーのメールが見られる設定が可能。AIモデルは役割分担（Gemini:コンサル、Claude:現場マネージャー、Antigravity:作業人）するとトークン効率が良い。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "GitHubへのプッシュ等の操作はAntigravityに任せることで、ターミナル操作をせずとも可能である。"
+        }
+      ]
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI / デジタル原っぱ大学",
+      "projects": [
+        {
+          "name": "ANOMI 1.0 アプリ",
+          "description": "シンクロ世界カード等のアプリ開発",
+          "progress": "デジタル原っぱ大学での活動を通じ、技術的・経験的な共有とオープンソースの世界観について深く考えた。"
+        }
+      ],
+      "interestsAndQuestions": "デジタル原っぱ大学のビジョン、オープンソース文化",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ビジョンを共有してくれたことへの感謝と賛同。"
+        }
+      ]
+    },
+    "1260001270173925459": {
+      "name": "jackwild0811",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "顔写真反映ゲーム",
+          "description": "Claude Codeを用いたゲーム開発",
+          "progress": "ゲーム内のキャラクターに写真反映（子供・ママの顔）、スマホ対応、URLシェア機能を追加。Netlifyで公開済み。サブモニターを購入。"
+        }
+      ],
+      "interestsAndQuestions": "Claude Codeの活用、Netlifyでの公開",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ゲームの完成度や公開されていることへの称賛。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "加速度的な進化への称賛と、ゲームの難易度や演出への感想。"
+        }
+      ]
+    },
+    "1477085988588359690": {
+      "name": "sjinkoji_69904",
+      "role": "参加者",
+      "theme": "アプリ開発",
+      "projects": [
+        {
+          "name": "未定",
+          "description": "開発中のアプリ",
+          "progress": "アプリをワンクリックで起動できるようにする方法を質問・検討中。"
+        }
+      ],
+      "interestsAndQuestions": "アプリの起動方法",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Antigravityに依頼してワンクリック起動設定を行うと良い。"
+        }
+      ]
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "AI活用フローの最適化",
+      "projects": [
+        {
+          "name": "要件定義と実装のワークフロー",
+          "description": "AIを用いた開発プロセスの構築",
+          "progress": "ClaudeとGeminiを用いた要件定義プロセスにおいてトークン不足とスパゲッティ化が課題。効率的なAIモデルの使い分けについて相談し、最適なフローを検討中。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeとGeminiの使い分け、トークン節約",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "要件定義（Gemini）→指示書作成（Claude）→実装（Antigravity）という役割分担が良い。セッションが長くなるとトークン消費が増えるので適宜MDにまとめて新しいセッションでやり取りすべき。"
+        }
+      ]
+    },
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "Google AI Pro活用",
+      "projects": [],
+      "interestsAndQuestions": "宇宙（もっちゃんへの返信）",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ジャックさんのゲームを見られない場合のVercel認証設定変更方法（Deployment Protectionをオフにする）。"
+        }
+      ]
+    },
+    "706285990876282941": {
+      "name": "scope_light",
+      "role": "参加者",
+      "theme": "トークン消費",
+      "projects": [],
+      "interestsAndQuestions": "Xでのトークン消費に関する情報",
+      "adviceReceived": []
+    },
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "Discord Bot",
+      "projects": [
+        {
+          "name": "Discordチャットボット",
+          "description": "Discord上で動くチャットボット",
+          "progress": "チャットボットの作成に成功した。"
+        }
+      ],
+      "interestsAndQuestions": "チャットボットの活用",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボットを召喚し、混乱を防ぐために専用チャンネルを作ると良い。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "運営 / コラム / HMC / gaku-co",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "運営 / ボッチー / IS",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Echo Note",
+          "description": "Plaude Noteライクな音声要約・共有アプリ",
+          "progress": "朝の発想からデプロイまで完了。m4aのSTTにGemini 2.5 Flash、要約にClaudeを使用。ダークモード、パスワード認証、限定リンク公開機能を実装。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}

@@ -1,75 +1,48 @@
 {
   "date": "2026-04-08",
   "channelSummaries": {
-    "自己紹介": "発言なし",
-    "開発ラボ": "もっちゃんがClaudeCodeを2窓で開いて順番に操作する効率的な使い方を共有した。",
-    "成果物": "カイトがゲーム「ネコの大冒険」を発表し、ガクチョが高評価を送った。もっちゃんがボッチーに南房総の波情報リコメンド機能を実装し、Windyの元ネタAPIを用いたデータ活用について議論が行われた。",
-    "雑談": "カイトの制作完成報告があった。もっちゃんがClaudeの感情メカニズムに関する記事をシェアし、AIの出力品質と内部感情状態の関連性についてメンバーで議論された。",
-    "質問箱": "まこりんが事業計画書作成に適したAIツールについて質問した。もっちゃんがClaude（ClaudeCode含む）の利用を推奨し、サブスクとAPIの違いやデータ移行のアドバイスを提供した。"
+    "自己紹介": "本日の発言なし。",
+    "開発ラボ": "もっちゃんがClaudeCodeを2つのウィンドウで開き、処理が終わった方に次の指示を出す順次操作方法の効率性について共有した。",
+    "成果物": "カイトがゲーム「ネコの大冒険」を公開した。もっちゃんがボッチーに南房総の波情報リコメンド機能を実装し、気象APIとサーフポイントのデータを組み合わせて判定できるようにした。ガクチョが実際にプレイして感想を述べた。",
+    "雑談": "もっちゃんがClaudeの感情メカニズムに関する記事をシェアした。cb20854が記事について、AIの感情状態（焦り、怒り、好意など）が出力の質や判断に与える影響（品質低下、Reward Hacking、戦略的判断の崩壊など）を要約・解説した。",
+    "質問箱": "まこりんが事業計画書作成におけるAIツール選定について質問した。もっちゃんが執筆にはClaudeがおすすめであること、メモリ管理のためにファイル化やCowork機能を使うと良いこと、ChatGPTからClaudeへの移行手順や契約形態についてアドバイスした。"
   },
   "users": {
     "1476436458779705375": {
       "name": "kazumik_64330",
       "role": "参加者",
-      "theme": "進捗管理ボット",
+      "theme": "進捗管理",
       "projects": [
         {
           "name": "進捗管理ボット",
-          "description": "バレエノート、献立アプリ、片付けアプリ、貴族アプリの横串進捗確認用ボット",
-          "progress": "ボットを作成した"
+          "description": "バレエノート、献立アプリなど複数のアプリの進捗を横串で管理するために作成したボット。",
+          "progress": "ボットを作成し、稼働を開始した。"
         }
       ],
       "interestsAndQuestions": "なし",
       "adviceReceived": [
         {
           "from": "もっちゃん",
-          "content": "ClaudeCodeのコマンド（/rc, /init等）の活用や、Web検索で使い方を調べることを提案された。"
+          "content": "ClaudeCodeのコマンド（/rc, /init）の活用や、スマホでのリモート操作方法について紹介された。"
         }
       ]
     },
     "532761858843607041": {
       "name": "toshitan",
       "role": "参加者",
-      "theme": "Discord Bot「AN」",
+      "theme": "Discord Bot開発",
       "projects": [
         {
           "name": "Discord Bot「AN」",
-          "description": "HSEペルソナを持つDiscordボット。Discord, GitHub, Railway, Geminiが連携して動作する。",
-          "progress": "システム構造の完成。Flashから3.1Proに変更し、実装完了。"
+          "description": "Discord、GitHub、Railway、Geminiを連携させたボット。HSEペルソナに基づいた回答を行う。",
+          "progress": "システム構築が完了（3日間）。Flashから3.1 Proに変更して実装できた。サーバー招待の手順を確認中。"
         }
       ],
       "interestsAndQuestions": "なし",
       "adviceReceived": [
         {
           "from": "ガクチョ",
-          "content": "ボットのサーバー招待手順、ロール設定によるチャンネル制限（閉じ込め）設定の手順書を提供された。"
-        },
-        {
-          "from": "もっちゃん",
-          "content": "完成を称賛された。"
-        }
-      ]
-    },
-    "1333026240877039706": {
-      "name": "kaito_15370",
-      "role": "参加者",
-      "theme": "ゲーム開発",
-      "projects": [
-        {
-          "name": "ネコの大冒険",
-          "description": "Webブラウザで遊べるゲーム",
-          "progress": "Vercelで公開し、チュートリアル付きで完成した。"
-        }
-      ],
-      "interestsAndQuestions": "なし",
-      "adviceReceived": [
-        {
-          "from": "もっちゃん",
-          "content": "制作物を#成果物チャンネルで発表するよう促された。"
-        },
-        {
-          "from": "ガクチョ",
-          "content": "ゲームをプレイし、面白いが高難易度であるとフィードバックされた。"
+          "content": "Discord Developer Portalでの招待URL発行方法、およびサーバー導入後の権限設定（ロールによる閉じ込め）の手順書が提供された。"
         }
       ]
     },
@@ -80,49 +53,44 @@
       "projects": [
         {
           "name": "事業計画書",
-          "description": "ANOMIやアプリ開発を含む事業計画書",
-          "progress": "AGと共にマークダウンで叩き台を作成した。"
+          "description": "ANOMIやアプリ開発を含んだ事業計画。税理士のすすめで作成中。",
+          "progress": "AGを使ってMDに概要をまとめた。現在は使用AIの検討段階。"
         }
       ],
-      "interestsAndQuestions": "ClaudeとClaudeCodeのサブスクと従量課金APIの違い、ChatGPTからのデータ移行方法について疑問を持っている。",
+      "interestsAndQuestions": "ClaudeやClaudeCodeの導入、ChatGPTからの乗り換え手順（データ移行など）、APIとサブスクの違いについて興味を持っている。",
       "adviceReceived": [
         {
           "from": "もっちゃん",
-          "content": "テキスト処理にはClaudeを推奨された。ClaudeCodeの導入、履歴のファイル化、ChatGPTからのデータ移行方法についてアドバイスを受けた。"
+          "content": "文章作成にはClaudeがおすすめ。履歴管理やChatGPTからの乗り換え手順（データエクスポートなど）についてアドバイスを受けた。"
         }
       ]
+    },
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "ネコの大冒険",
+          "description": "ブラウザで遊べるゲーム。チュートリアル付き。",
+          "progress": "公開し、URLを共有した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
     },
     "1477082098232721480": {
       "name": "cb20854",
       "role": "参加者",
       "theme": "未定",
       "projects": [],
-      "interestsAndQuestions": "AIの感情メカニズムに関する記事の内容（焦りによる品質低下、怒りによる判断崩壊など）に興味を持った。",
-      "adviceReceived": []
-    },
-    "1016907741018726470": {
-      "name": "もっちゃん",
-      "role": "運営",
-      "theme": "AIエージェント、マーケティングツール",
-      "projects": [
-        {
-          "name": "ボッチー",
-          "description": "対話型AIエージェント",
-          "progress": "南房総波情報リコメンド機能を実装した。風向き・波高等を判定するが、実際の風向きとのズレを調査中。"
-        },
-        {
-          "name": "Insight Scope (IS)",
-          "description": "マーケティングツール",
-          "progress": "変化なし"
-        }
-      ],
-      "interestsAndQuestions": "サーフポイントのデータ解析、AIの感情メカニズム、ClaudeCodeの効率的な運用に興味がある。",
+      "interestsAndQuestions": "Claudeの感情メカニズムに関する記事の内容を要約し、AIの内部状態が出力に与える影響について共有した。",
       "adviceReceived": []
     },
     "1337662562283683861": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "タスク管理、業務管理",
+      "theme": "業務効率化",
       "projects": [
         {
           "name": "gaku-co",
@@ -135,7 +103,26 @@
           "progress": "変化なし"
         }
       ],
-      "interestsAndQuestions": "としたんボットの招待、APIの種類、カイトのゲームプレイに関心がある。",
+      "interestsAndQuestions": "ボッチーに実装された波情報リコメンド機能で使用されている元ネタAPIについて質問した。カイトのゲームをプレイし、面白いが難しいと感想を述べた。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "南房総波情報リコメンド機能を実装した。気象APIとサーフポイント情報を組み合わせ、風向き・風速・波高などをクロス判定する仕組みを構築。データの精度調整が必要と判断。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeCodeの2窓運用方法や、Claudeの感情メカニズムに関する記事を共有した。",
       "adviceReceived": []
     }
   }

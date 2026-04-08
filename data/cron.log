@@ -5915,3 +5915,140 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-08.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-08",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし。",
+    "開発ラボ": "もっちゃんがClaudeCodeを2つのウィンドウで開き、処理が終わった方に次の指示を出す順次操作方法の効率性について共有した。",
+    "成果物": "カイトがゲーム「ネコの大冒険」を公開した。もっちゃんがボッチーに南房総の波情報リコメンド機能を実装し、気象APIとサーフポイントのデータを組み合わせて判定できるようにした。ガクチョが実際にプレイして感想を述べた。",
+    "雑談": "もっちゃんがClaudeの感情メカニズムに関する記事をシェアした。cb20854が記事について、AIの感情状態（焦り、怒り、好意など）が出力の質や判断に与える影響（品質低下、Reward Hacking、戦略的判断の崩壊など）を要約・解説した。",
+    "質問箱": "まこりんが事業計画書作成におけるAIツール選定について質問した。もっちゃんが執筆にはClaudeがおすすめであること、メモリ管理のためにファイル化やCowork機能を使うと良いこと、ChatGPTからClaudeへの移行手順や契約形態についてアドバイスした。"
+  },
+  "users": {
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "進捗管理",
+      "projects": [
+        {
+          "name": "進捗管理ボット",
+          "description": "バレエノート、献立アプリなど複数のアプリの進捗を横串で管理するために作成したボット。",
+          "progress": "ボットを作成し、稼働を開始した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ClaudeCodeのコマンド（/rc, /init）の活用や、スマホでのリモート操作方法について紹介された。"
+        }
+      ]
+    },
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "Discord Bot開発",
+      "projects": [
+        {
+          "name": "Discord Bot「AN」",
+          "description": "Discord、GitHub、Railway、Geminiを連携させたボット。HSEペルソナに基づいた回答を行う。",
+          "progress": "システム構築が完了（3日間）。Flashから3.1 Proに変更して実装できた。サーバー招待の手順を確認中。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "Discord Developer Portalでの招待URL発行方法、およびサーバー導入後の権限設定（ロールによる閉じ込め）の手順書が提供された。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "事業計画",
+      "projects": [
+        {
+          "name": "事業計画書",
+          "description": "ANOMIやアプリ開発を含んだ事業計画。税理士のすすめで作成中。",
+          "progress": "AGを使ってMDに概要をまとめた。現在は使用AIの検討段階。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeやClaudeCodeの導入、ChatGPTからの乗り換え手順（データ移行など）、APIとサブスクの違いについて興味を持っている。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "文章作成にはClaudeがおすすめ。履歴管理やChatGPTからの乗り換え手順（データエクスポートなど）についてアドバイスを受けた。"
+        }
+      ]
+    },
+    "unknown_kaito_15370": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "ネコの大冒険",
+          "description": "ブラウザで遊べるゲーム。チュートリアル付き。",
+          "progress": "公開し、URLを共有した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "Claudeの感情メカニズムに関する記事の内容を要約し、AIの内部状態が出力に与える影響について共有した。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "業務効率化",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボッチーに実装された波情報リコメンド機能で使用されている元ネタAPIについて質問した。カイトのゲームをプレイし、面白いが難しいと感想を述べた。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "南房総波情報リコメンド機能を実装した。気象APIとサーフポイント情報を組み合わせ、風向き・風速・波高などをクロス判定する仕組みを構築。データの精度調整が必要と判断。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeCodeの2窓運用方法や、Claudeの感情メカニズムに関する記事を共有した。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-08.json
+Updating index...
+Pushing changes to Git...

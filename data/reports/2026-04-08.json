@@ -1,0 +1,142 @@
+{
+  "date": "2026-04-08",
+  "channelSummaries": {
+    "自己紹介": "発言なし",
+    "開発ラボ": "もっちゃんがClaudeCodeを2窓で開いて順番に操作する効率的な使い方を共有した。",
+    "成果物": "カイトがゲーム「ネコの大冒険」を発表し、ガクチョが高評価を送った。もっちゃんがボッチーに南房総の波情報リコメンド機能を実装し、Windyの元ネタAPIを用いたデータ活用について議論が行われた。",
+    "雑談": "カイトの制作完成報告があった。もっちゃんがClaudeの感情メカニズムに関する記事をシェアし、AIの出力品質と内部感情状態の関連性についてメンバーで議論された。",
+    "質問箱": "まこりんが事業計画書作成に適したAIツールについて質問した。もっちゃんがClaude（ClaudeCode含む）の利用を推奨し、サブスクとAPIの違いやデータ移行のアドバイスを提供した。"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "進捗管理ボット",
+      "projects": [
+        {
+          "name": "進捗管理ボット",
+          "description": "バレエノート、献立アプリ、片付けアプリ、貴族アプリの横串進捗確認用ボット",
+          "progress": "ボットを作成した"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ClaudeCodeのコマンド（/rc, /init等）の活用や、Web検索で使い方を調べることを提案された。"
+        }
+      ]
+    },
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "Discord Bot「AN」",
+      "projects": [
+        {
+          "name": "Discord Bot「AN」",
+          "description": "HSEペルソナを持つDiscordボット。Discord, GitHub, Railway, Geminiが連携して動作する。",
+          "progress": "システム構造の完成。Flashから3.1Proに変更し、実装完了。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボットのサーバー招待手順、ロール設定によるチャンネル制限（閉じ込め）設定の手順書を提供された。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "完成を称賛された。"
+        }
+      ]
+    },
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "ネコの大冒険",
+          "description": "Webブラウザで遊べるゲーム",
+          "progress": "Vercelで公開し、チュートリアル付きで完成した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "制作物を#成果物チャンネルで発表するよう促された。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "ゲームをプレイし、面白いが高難易度であるとフィードバックされた。"
+        }
+      ]
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "事業計画",
+      "projects": [
+        {
+          "name": "事業計画書",
+          "description": "ANOMIやアプリ開発を含む事業計画書",
+          "progress": "AGと共にマークダウンで叩き台を作成した。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeとClaudeCodeのサブスクと従量課金APIの違い、ChatGPTからのデータ移行方法について疑問を持っている。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "テキスト処理にはClaudeを推奨された。ClaudeCodeの導入、履歴のファイル化、ChatGPTからのデータ移行方法についてアドバイスを受けた。"
+        }
+      ]
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "AIの感情メカニズムに関する記事の内容（焦りによる品質低下、怒りによる判断崩壊など）に興味を持った。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント、マーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント",
+          "progress": "南房総波情報リコメンド機能を実装した。風向き・波高等を判定するが、実際の風向きとのズレを調査中。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "サーフポイントのデータ解析、AIの感情メカニズム、ClaudeCodeの効率的な運用に興味がある。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク管理、業務管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "としたんボットの招待、APIの種類、カイトのゲームプレイに関心がある。",
+      "adviceReceived": []
+    }
+  }
+}

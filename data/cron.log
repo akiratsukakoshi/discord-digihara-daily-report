@@ -5657,3 +5657,261 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-07.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-08T15:05:15.607Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 14 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 11 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 10 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 2 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 1 messages
+Fetching messages from channel: #成果物
+  → 13 messages
+Fetching messages from channel: #雑談
+  → 8 messages
+Fetching messages from channel: #質問箱
+  → 9 messages
+Total messages fetched: 68
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-08T15:06:44.048Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 14 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 11 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 10 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 2 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 1 messages
+Fetching messages from channel: #成果物
+  → 13 messages
+Fetching messages from channel: #雑談
+  → 8 messages
+Fetching messages from channel: #質問箱
+  → 9 messages
+Total messages fetched: 68
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-08",
+  "channelSummaries": {
+    "自己紹介": "発言なし",
+    "開発ラボ": "もっちゃんがClaudeCodeを2窓で開いて順番に操作する効率的な使い方を共有した。",
+    "成果物": "カイトがゲーム「ネコの大冒険」を発表し、ガクチョが高評価を送った。もっちゃんがボッチーに南房総の波情報リコメンド機能を実装し、Windyの元ネタAPIを用いたデータ活用について議論が行われた。",
+    "雑談": "カイトの制作完成報告があった。もっちゃんがClaudeの感情メカニズムに関する記事をシェアし、AIの出力品質と内部感情状態の関連性についてメンバーで議論された。",
+    "質問箱": "まこりんが事業計画書作成に適したAIツールについて質問した。もっちゃんがClaude（ClaudeCode含む）の利用を推奨し、サブスクとAPIの違いやデータ移行のアドバイスを提供した。"
+  },
+  "users": {
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "進捗管理ボット",
+      "projects": [
+        {
+          "name": "進捗管理ボット",
+          "description": "バレエノート、献立アプリ、片付けアプリ、貴族アプリの横串進捗確認用ボット",
+          "progress": "ボットを作成した"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ClaudeCodeのコマンド（/rc, /init等）の活用や、Web検索で使い方を調べることを提案された。"
+        }
+      ]
+    },
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "Discord Bot「AN」",
+      "projects": [
+        {
+          "name": "Discord Bot「AN」",
+          "description": "HSEペルソナを持つDiscordボット。Discord, GitHub, Railway, Geminiが連携して動作する。",
+          "progress": "システム構造の完成。Flashから3.1Proに変更し、実装完了。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボットのサーバー招待手順、ロール設定によるチャンネル制限（閉じ込め）設定の手順書を提供された。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "完成を称賛された。"
+        }
+      ]
+    },
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "ゲーム開発",
+      "projects": [
+        {
+          "name": "ネコの大冒険",
+          "description": "Webブラウザで遊べるゲーム",
+          "progress": "Vercelで公開し、チュートリアル付きで完成した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "制作物を#成果物チャンネルで発表するよう促された。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "ゲームをプレイし、面白いが高難易度であるとフィードバックされた。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "事業計画",
+      "projects": [
+        {
+          "name": "事業計画書",
+          "description": "ANOMIやアプリ開発を含む事業計画書",
+          "progress": "AGと共にマークダウンで叩き台を作成した。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeとClaudeCodeのサブスクと従量課金APIの違い、ChatGPTからのデータ移行方法について疑問を持っている。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "テキスト処理にはClaudeを推奨された。ClaudeCodeの導入、履歴のファイル化、ChatGPTからのデータ移行方法についてアドバイスを受けた。"
+        }
+      ]
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "AIの感情メカニズムに関する記事の内容（焦りによる品質低下、怒りによる判断崩壊など）に興味を持った。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント、マーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント",
+          "progress": "南房総波情報リコメンド機能を実装した。風向き・波高等を判定するが、実際の風向きとのズレを調査中。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "サーフポイントのデータ解析、AIの感情メカニズム、ClaudeCodeの効率的な運用に興味がある。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスク管理、業務管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "としたんボットの招待、APIの種類、カイトのゲームプレイに関心がある。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-08.json
+Updating index...
+Pushing changes to Git...

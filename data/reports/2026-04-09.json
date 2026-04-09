@@ -1,152 +1,149 @@
 {
   "date": "2026-04-09",
   "channelSummaries": {
-    "自己紹介": "naoko112さんが新規参加。「父が宮崎へ移住して始めた美土里農園のDX化」を目指している。在庫管理や畑の管理を楽しくするWebアプリや、PR活動のためのツール作成に関心がある。現在は現実に何もできていないもどかしさを感じている。Jeanさんも歓迎のコメントを寄せた。",
-    "開発ラボ": "もっちゃんさんが「アン」と呼びかけるテストを行い、アンボットが反応することが確認された。アンボットはシステム制限に達している旨のメッセージを返していた。",
-    "成果物": "takanorinaganuma_15823さんが自己探求型AI「ANOMI」を公開。ログイン機能や「思考プロセスの可視化」、コストを抑える「記憶の階層設計（コンパクション）」について共有された。もっちゃんさんからモデル更新（gpt-4o-miniは古い）のアドバイスがあり、ログインエラー（localhost問題）の修正も行われた。cb20854さんやkazumik_64330さんが実際に使用し、フィードバックを行った。",
-    "雑談": "ガクチョさんがClaudeCodeのアウトプット品質低下に関する情報をシェア。思考バジェットの削減が原因らしく、設定変更（/effort high等）で対処可能とのこと。もっちゃんさんも同意し、AIとの対話における新たなリテラシーやハッシュ化（類似ユーザー抽出）との関連性について言及した。",
-    "質問箱": "本日の発言なし。"
+    "自己紹介": "naoko112さんが参加。父の美土里農園のDX化として、在庫管理や畑の管理をするWebアプリ、PR支援、経理作業の自動化を希望。",
+    "開発ラボ": "ボット「アン」の反応テストが行われたが、システム制限に達し返答ができなかった。",
+    "成果物": "takanorinaganuma_15823さんが自己探求型AI「ANOMI」を公開。3層の記憶設計（プロンプトキャッシュ、コンパクション、願いRAG）の共有や、バグ修正（パスワード再発行のlocalhostエラー）の報告があった。もっちゃんから使用モデルの最適化提案があり、cb20854さんからもフィードバックが寄せられた。",
+    "雑談": "ClaudeCodeの品質低下（Thinking Budget削減）と対処法の共有。もっちゃんによるAIリテラシーやLLMバックエンドに関する考察、およびボッチー開発でのログ共有があった。",
+    "質問箱": "発言なし"
   },
   "users": {
-    "1489794072649666651": {
-      "name": "なおこ",
+    "532761858843607041": {
+      "name": "toshitan",
       "role": "参加者",
-      "theme": "農業DX",
+      "theme": "AN (Bot開発)",
       "projects": [
         {
-          "name": "農園管理アプリ",
-          "description": "在庫管理や畑の管理を楽しくするWebアプリ。顧客をつなげる仕組みやPR支援も視野。",
-          "progress": "自己紹介を行い、現状と課題を共有。"
+          "name": "AN",
+          "description": "Discord上で動作するボット",
+          "progress": "サーバーへの参加完了。権限設定の不備で全チャンネルに反応してしまったが、ガクチョともっちゃんの協力で閲覧可能チャンネルを「ボットたちの遊び基地」に限定。無料枠の制限とAPIコストについても議論。"
         }
       ],
-      "interestsAndQuestions": "経理作業をAIに代わってほしいと考えている。",
-      "adviceReceived": []
-    },
-    "1092347707634503700": {
-      "name": "じぞー",
-      "role": "参加者",
-      "theme": "モバイルアプリ開発",
-      "projects": [
-        {
-          "name": "POSITEIVE",
-          "description": "タップして開いた瞬間笑える、全肯定して褒めるおバカアプリ。",
-          "progress": "以前計画していたSUNO用プロンプト作成ツールは中止し、新たに「POSITEIVE」の企画とAIキャラ設定をGeminiで進めた。Antigravityへの実装タイミングを模索中。"
-        }
-      ],
-      "interestsAndQuestions": "Antigravityへコードを書き起こすタイミングや判断基準について疑問を持っている。",
+      "interestsAndQuestions": "無料枠を使い切って対話できなくなる問題の解決。ボット暴走時の課金上限設定や安価なモデル（gpt-5 nano等）の活用。",
       "adviceReceived": [
         {
-          "from": "ガクチョ",
-          "content": "朝30分というランニング的な向き合い方や、簡単なものから始めて壁打ちすることを勧められた。"
+          "from": "もっちゃん",
+          "content": "OpenAIに課金してnanoモデルを使えば、ボットを楽しむ費用としてリーズナブル。安全策として上限設定やオートチャージOFFを推奨。"
         },
         {
-          "from": "もっちゃん",
-          "content": "ボット運用のコストパフォーマンスや安全策（上限設定）についてアドバイスを受けた。"
+          "from": "ガクチョ",
+          "content": "Discordのロール設定に関するアドバイスおよび権限の修正対応。"
         }
       ]
     },
     "1477082098232721480": {
       "name": "cb20854",
       "role": "参加者",
-      "theme": "Webアプリ開発",
+      "theme": "在庫管理アプリ",
       "projects": [
         {
           "name": "在庫有無リストアプリ",
-          "description": "在庫管理のためのアプリ。",
-          "progress": "Claudeでモックアップを作成し、Antigravityで作る場合との違いを確認中。"
+          "description": "在庫管理を目的としたアプリケーション",
+          "progress": "Claudeを使ってモックアップを作成。「ワクワク」軸で判断するため、手早くモックアップを触る方針を決定。Antigravityで実装するか検討中。"
         }
       ],
-      "interestsAndQuestions": "Antigravityでの実装とClaude Artifactsでの実装の違い、トークン消費とスピードのバランスについて検討中。",
+      "interestsAndQuestions": "AntigravityとClaudeの実装の違い、モックアップ作成のコスト。",
       "adviceReceived": []
+    },
+    "1092347707634503700": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "POSITEIVE",
+      "projects": [
+        {
+          "name": "POSITEIVE",
+          "description": "タップして開いた瞬間笑える全肯定アプリ",
+          "progress": "Suno用自動テキスト化の取り組みを中止し、新規アプリ開発に方針転換。Geminiを使って「愛すべきアホ」なAIキャラ設定（高テンションおじさん、勘違い執事など）を模索中。Antigravityへ移行するタイミングを検討中。"
+        }
+      ],
+      "interestsAndQuestions": "Geminiでのアイデア出しからAntigravityでの実装に移る最適なタイミング。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "朝30分など、短時間から取り組むランニング的な向き合い方を推奨。壁打ちはいつでもどうぞ。"
+        }
+      ]
+    },
+    "1489794072649666651": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "農園DX",
+      "projects": [
+        {
+          "name": "美土里農園管理・PRシステム",
+          "description": "在庫管理、畑の管理Webアプリ及びPRツール",
+          "progress": "新規参入。父が移住した農園のDX化、および父が投げ出さないようにするための遠隔監視や管理を楽しくするアプリ作りを目指す。"
+        }
+      ],
+      "interestsAndQuestions": "AIによる経理作業の自動化。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "農業×DXは最先端。農村集落暮らしの視点からアイディア提供の可能性を示唆。"
+        }
+      ]
     },
     "1182194493479460929": {
       "name": "takanorinaganuma_15823",
       "role": "参加者",
-      "theme": "自己探求AI",
+      "theme": "ANOMI",
       "projects": [
         {
           "name": "ANOMI",
-          "description": "自己探求型AI。対話を記憶しつつコストを抑える「記憶の階層設計（コンパクション）」を採用。",
-          "progress": "ANOMIを公開。ログイン時のlocalhostエラーを修正。ユーザーからのフィードバックを受け、モデルの更新等の改善を検討中。"
+          "description": "自己探求型AI",
+          "progress": "公開開始。思考プロセスの可視化や記憶の階層設計（コンパクション等）について共有。パスワード再発行時のlocalhostエラーを修正。コンパクションに使用するモデル（現行gpt-4o-mini）の見直しについてもっちゃんから指摘を受け、検討へ。"
         }
       ],
-      "interestsAndQuestions": "なし。",
+      "interestsAndQuestions": "ANOMIの対話ログの共有や、ユーザーからの感想収集。",
       "adviceReceived": [
         {
           "from": "もっちゃん",
-          "content": "コンパクションに使用しているgpt-4o-miniは古いため、GPT-5シリーズやnanoなど最新モデルの再検討を勧められた。また、localhostエラーを指摘され修正した。"
+          "content": "コンパクション（要約）に使用するモデルはgpt-4o-miniより安価で高性能な最新モデル（gpt-5 nano等）の検討を推奨。"
         }
       ]
     },
     "1476436458779705375": {
-      "name": "カズミ",
+      "name": "Jean じゃくちゅー de Brienne",
       "role": "参加者",
-      "theme": "未定",
-      "projects": [],
-      "interestsAndQuestions": "PCを閉じたままでも開発できる仕組み（リモート操作やClaudeCode活用）に興味を持った。",
-      "adviceReceived": [
-        {
-          "from": "もっちゃん",
-          "content": "ClaudeCodeをGitHubにインストールし、プルリクからデプロイまで完結させる「ウロボロス」フローの仕組みを説明された。"
-        }
-      ]
-    },
-    "1490218414713864342": {
-      "name": "としたん",
-      "role": "参加者",
-      "theme": "AIボット開発",
-      "projects": [
-        {
-          "name": "AN (ボット)",
-          "description": "Gemini APIを使用したDiscordボット。",
-          "progress": "ボットの権限設定ミスで全チャンネルに反応してしまう問題を解決。特定の遊び基地チャンネルのみに表示されるよう修正した。"
-        }
-      ],
-      "interestsAndQuestions": "無料枠の制限による対話不可や、課金した場合のコスト感について懸念している。",
-      "adviceReceived": [
-        {
-          "from": "ガクチョ",
-          "content": "Discordのロール設定（everyone権限の削除、個別チャンネルの閲覧拒否）について具体的な修正方法を教わった。"
-        },
-        {
-          "from": "もっちゃん",
-          "content": "GPT-5 nanoモデルなど、安価なプランの存在や、暴走時の安全策（上限設定、オートチャージOFF）についてアドバイスを受けた。"
-        }
-      ]
-    },
-    "532761858843607041": {
-      "name": "Jean",
-      "role": "参加者",
-      "theme": "ライフスタイルアプリ",
+      "theme": "マルチプロジェクト",
       "projects": [
         {
           "name": "バレエノート",
-          "description": "バレエに関連するノートアプリ。",
-          "progress": "変化なし。現在80%完了と自己評価している。"
+          "description": "バレエに関する記録アプリ",
+          "progress": "80%完成。メーター表示で現在地を可視化中。"
         },
         {
           "name": "買い物ゴノアナリシス",
-          "description": "買い物行動を分析するツール。",
-          "progress": "変化なし。仕様書作成段階。"
+          "description": "買い物行動の分析アプリ",
+          "progress": "0%。仕様書作成前。"
         },
         {
           "name": "TidyFlow AI",
-          "description": "片付けを支援するAIツール。",
-          "progress": "変化なし。MVP妄想タイム。"
+          "description": "片付けをサポートするAI",
+          "progress": "0%。MVP妄想中。"
         },
         {
           "name": "優雅な気分アプリ",
-          "description": "優雅な気分になれるためのアプリ。",
-          "progress": "変化なし。コンセプト段階。"
+          "description": "気分を上げるアプリ",
+          "progress": "0%。コンセプト段階。"
         }
       ],
-      "interestsAndQuestions": "進捗状況をメーター表示で可視化することや、「志の種」という概念、カオスな状態の整理方法について語った。",
-      "adviceReceived": []
+      "interestsAndQuestions": "複数のプロジェクト（カオス）をどのように管理・進行させるか。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "進捗のメーター表示を称賛。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "GitHubにClaudeCodeをインストールし、プルリクからデプロイまでオンラインで完結する「ウロボロス」フローの説明。"
+        }
+      ]
     },
     "1337662562283683861": {
       "name": "ガクチョ",
       "role": "運営",
-      "theme": "ロボティクス・エージェント",
+      "theme": "Hardware / Management",
       "projects": [
         {
           "name": "gaku-co",
@@ -159,36 +156,31 @@
           "progress": "変化なし"
         },
         {
-          "name": "ハードウェアロボット",
-          "description": "木材とパーツで構成されたロボット",
-          "progress": "パーツとケーブル類の配置を整理し、ボディをビス止めして構成した。不足分のケーブルが届き、移動のためのチューニングを行う予定。"
+          "name": "ガクコマ",
+          "description": "ハードウェアロボット",
+          "progress": "パーツとケーブルの配置を整理し、ボディを構成してビス止め完了。ロボット感が出てきた。移動用のチューニングを予定。"
         }
       ],
-      "interestsAndQuestions": "ボットの権限管理について学習。",
+      "interestsAndQuestions": "Jeanの複数プロジェクトの進捗管理。Discordボットの権限管理。",
       "adviceReceived": []
     },
     "1016907741018726470": {
       "name": "もっちゃん",
       "role": "運営",
-      "theme": "AI・マーケティング・サーフィン",
+      "theme": "Wave Prediction / AI",
       "projects": [
         {
           "name": "ボッチー",
           "description": "対話型AIエージェント（スクラッチから製作）",
-          "progress": "自宅を忘れたためリモートでリファクタを行い、波予測の精度を向上させた。ClaudeCodeを用いた「ウロボロス」フロー（GitHub〜デプロイのオンライン完結）を実装済みであることを共有した。"
+          "progress": "波情報予測の精度向上のため、地形・気象データにサーファーの経験値（Wind Penalty等）を指数化する調整を実施。リモートコントロールによるリファクタリングも実施。GitHub経由のオンライン完結フロー「ウロボロス」について共有。"
         },
         {
           "name": "Insight Scope (IS)",
           "description": "マーケティングツール",
           "progress": "変化なし"
-        },
-        {
-          "name": "波予測システム",
-          "description": "サーファー向けの波予測アルゴリズム",
-          "progress": "地形・気象データにサーファー経験値（Wind PenaltyやCalm Timeへの意識）を組み込んだ指数調整を行っている。"
         }
       ],
-      "interestsAndQuestions": "ClaudeCodeの品質変化や、AI推奨システムにおけるハッシュ化の役割について考察。AIとの対話に求められる新しいリテラシーについて関心を持っている。",
+      "interestsAndQuestions": "AIリテラシーの必要性、LLMのバックエンド構造、ClaudeCodeの品質変化。",
       "adviceReceived": []
     }
   }

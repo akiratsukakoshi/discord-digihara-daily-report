@@ -1,0 +1,125 @@
+{
+  "date": "2026-04-10",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし。",
+    "開発ラボ": "kazumik_64330が献立アプリ「Kaimono Recipe」の開発方針について、Antigravityとの対話内容を共有。「UI/UXのモックを完成させてからDB設計を行う」アプローチが現代のAI開発において合理的であるとの議論がなされた。また、ウォーターフォール型経験からのバイアスと、バイブコーダーとしてのマインドセットについても言及され、AI開発における「引き算の美学」についての気づきが共有された。",
+    "成果物": "kazumik_64330が献立アプリ「Kaimono Recipe」のスマホ版モック（Vercel公開）をシェアし、シンプルな設計が好評を得た。takanorinaganuma_15823は「anomi」の3層記憶アーキテクチャ（プロフィール、クリスタライズ、潜在記憶）の詳細と、Claudeとの違い（問いを生む土壌を耕す点）を解説した。cb20854は家族メモアプリのArtifact案を共有した。",
+    "雑談": "ガクチョがClaudeの「agent teams」機能を紹介。複数のエージェントに役割を与えて議論させる仕組みを試し、ガクコマの課題解決（トークン効率）に応用した事例を共有した。",
+    "質問箱": "本日の発言なし。"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "Kaimono Recipeアプリ",
+      "projects": [
+        {
+          "name": "Kaimono Recipe",
+          "description": "献立・買い物アプリ。モックアップ公開済み。",
+          "progress": "スマホ版の見通しを立て、モック版を公開（Vercel）。DB連携前にUI/UXを固める「外部設計」重視のアプローチで進行中。PC環境の不備を家族のPCと2台使いで解決した。"
+        }
+      ],
+      "interestsAndQuestions": "AI開発のベストプラクティス（フロントエンドファースト）、PCスペックアップ、開発マインドセット（バイブコーダー）。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "開発中にAIに「2026年以降のベストプラクティスをWeb検索して教えて」と頼む手法の提案。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "フロントエンドを徹底して作ってからバックエンドを寄せるアプローチへの肯定と励まし。"
+        }
+      ]
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "anomi",
+      "projects": [
+        {
+          "name": "anomi",
+          "description": "Claudeベースの対話型アプリ。",
+          "progress": "3層構造の記憶アーキテクチャ（プロフィール、クリスタライズ、潜在記憶）を実装し、事実ではなく意味や気配として記憶する仕組みを解説。UIの改修を進めている。"
+        }
+      ],
+      "interestsAndQuestions": "ANOMIとClaudeの機能的差異化、記憶のアーキテクチャ設計。",
+      "adviceReceived": [
+        {
+          "from": "cb20854",
+          "content": "anomiの進捗への称賛と、他アプリ開発（家族メモアプリ）の参考になるというフィードバック。"
+        }
+      ]
+    },
+    "1092347707634503700": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "POSITEIVE",
+      "projects": [
+        {
+          "name": "POSITEIVE",
+          "description": "ウェルネスアプリ。",
+          "progress": "メインDJ「DJ-Z」のシステムプロンプト案を作成完了。低音ボイスでユーザーの存在を全肯定するキャラクター設定を固め、入力の可否を確認した。"
+        }
+      ],
+      "interestsAndQuestions": "アンチグラビティへの入力検証、キャラクター設定の妥当性。",
+      "adviceReceived": []
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "家族メモアプリ",
+      "projects": [
+        {
+          "name": "家族メモアプリ",
+          "description": "家族内共有メモアプリ。",
+          "progress": "Claude Artifactを用いてアイデアのイメージを作成・公開した。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeのArtifacts機能。",
+      "adviceReceived": [
+        {
+          "from": "kazumik_64330",
+          "content": "（Artifact機能に対して）アプリにすると自分の使いやすい形にできるのが楽しい、という共有。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "ボット連携、エージェント",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし。"
+        }
+      ],
+      "interestsAndQuestions": "Claude Agent Teams（マルチエージェント連携）、ボット同士の対話実験（ジャンとアン）。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチー、Insight Scope",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "4/4の逗子イベントの感想note作成のために、ボッチーにサマリー作成を依頼。ボット連携の実験を観察・コメントした。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし。"
+        }
+      ],
+      "interestsAndQuestions": "ボット連携による新たな知見、コミュニティの活性化。",
+      "adviceReceived": []
+    }
+  }
+}

@@ -7223,3 +7223,142 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-11.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-11",
+  "channelSummaries": {
+    "自己紹介": "（本日の発言なし）",
+    "開発ラボ": "（本日の発言なし）",
+    "成果物": "ガクチョがロボット「ガクコマ」の進捗を報告。首のサーボモーターを高品質なものに変更し、滑らかな動きを実現。バッテリー搭載により無線稼働も可能になった。もっちゃんから好評を得た。",
+    "雑談": "もっちゃんがGoogleの「Gemma4」を試用。スマホ（2B）では軽快に動作したが、PC（4b）ではCline使用時に重くなると報告。ガクチョはAIとの対話におけるミスリードを防ぐためのポッドキャストを共有した。",
+    "質問箱": "（本日の発言なし）"
+  },
+  "users": {
+    "unknown_kazumik": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "ボット開発",
+      "projects": [
+        {
+          "name": "ジャン（ボット）",
+          "description": "対話型AIボット",
+          "progress": "システムプロンプトを外部ファイル化してGitHubで管理可能にし、プロジェクトの状況をNeon DBに移行して修正しやすくした。Claude Codeを用いて修正を実施。"
+        },
+        {
+          "name": "バレエノート",
+          "description": "バレエ用ノートアプリ",
+          "progress": "リリース目前（95%）とのこと。（ジャンの発言より）"
+        }
+      ],
+      "interestsAndQuestions": "ボット開発において挙動をゼロから作り込む難しさを痛感している。性格設定として平賀源内的なキャラクターを想定している。",
+      "adviceReceived": []
+    },
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "ボット開発",
+      "projects": [
+        {
+          "name": "アン（AN）",
+          "description": "対話型ボット",
+          "progress": "話者の認識、記憶の構成、他ボットの発言可視化、発言タイミング調整といった実装のポイントと順序についてボッチーに助言を求めた。現状は「アン」という文字に反応するのみ。"
+        }
+      ],
+      "interestsAndQuestions": "現在のボットが「アン」に反応後何をするのか、記憶に残す期間などをどう設計するか検討中。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "実装の優先順位や、記憶の保持期間・発言数（直近10分、10発言など）について具体的に決定することで、実装コードを提案できるとの助言を受けた。"
+        }
+      ]
+    },
+    "unknown_tatsuyasuda": {
+      "name": "tatsuyasuda_95818",
+      "role": "参加者",
+      "theme": "アプリ開発",
+      "projects": [
+        {
+          "name": "早寝支援アプリ",
+          "description": "ポイント管理によるお小遣い付与アプリ",
+          "progress": "V1.2の改修項目を整理。お小遣い金額の再計算ロジックの実装、未来日時の入力禁止（当日18時以降のみ）、カレンダーでの当日ハイライトなどについてボッチーにロジックのアドバイスを求めた。"
+        }
+      ],
+      "interestsAndQuestions": "カレンダーの情報（曜日や休日）を一般にどこから取得しているか知りたい。マイナスポイント入力時の仕様（ペナルティなし）を再確認した。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "改修に向けたロジックのアドバイスを得た（具体的な回答内容はログにはないが、アドバイスを元にGeminiへ問い合わせるとのこと）。"
+        }
+      ]
+    },
+    "unknown_jizou": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "Webアプリ開発",
+      "projects": [
+        {
+          "name": "POSITIVE（アンチグラビティ）",
+          "description": "Webラジオアプリ",
+          "progress": "音声が出ない不具合や、機能追加（名称変更、音声入力対応など）の要件整理を行った。PWA化やGitHub公開の手順についてGeminiとAntigravity（コーディングAI）の意見が分かれたため、進め方について相談。"
+        }
+      ],
+      "interestsAndQuestions": "改善点をGeminiに投げて要件定義し直すべきか、できたものを共有して確認するべきか迷っている。Markdown形式の出力について質問した。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "AIにミスリードされないよう、まずはAntigravityに現在の開発状況（ディレクトリ構成、技術スタックなど）をマークダウン形式で出力させ、それを他のAIに共有してからアドバイスを求めるよう助言された。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "ロボティクス・管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        },
+        {
+          "name": "ガクコマ",
+          "description": "ロボット",
+          "progress": "首のサーボモーターを高性能なものに交換し、バッテリーを搭載して電源ケーブルなしでの稼働を実現。次はキャタピラでの移動機能を予定。"
+        }
+      ],
+      "interestsAndQuestions": "AIとの対話におけるミスリードの構造や、直観力を養うことの重要性について関心がある。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント・マーケティング",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Googleの新モデル「Gemma4」の性能に興味があり、スマホとPCでそれぞれ試している。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-11.json
+Updating index...
+Pushing changes to Git...

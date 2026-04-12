@@ -7362,3 +7362,291 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-11.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-12T15:05:31.204Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 1 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 15 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 16 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 1 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 18 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 8 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 100 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 50 messages
+Fetching messages from channel: #成果物
+  → 25 messages
+Fetching messages from channel: #雑談
+  → 3 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 237
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-12T15:06:48.835Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 1 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 15 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 16 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 1 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 18 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 8 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 100 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 50 messages
+Fetching messages from channel: #成果物
+  → 25 messages
+Fetching messages from channel: #雑談
+  → 3 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 237
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-12",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "OpenClawのソースコード精査と自作ボット（DegiHara-ChatBot）との比較が行われました。ガクチョがmemory.mdがグループチャットで機能しないという「衝撃の事実」を発見し、ボット開発の方針に議論が生じました。また、トークン消費を抑えるためのエージェント構築手法（Claude Codeのサブエージェント活用）が共有されました。",
+    "成果物": "複数の参加者が開発したアプリやボットが紹介されました。cb20854は在庫管理アプリと読解力トレーニングアプリを、toshitanは般若心経を宣伝するボットとANの機能拡張を、naoko112は農場管理アプリ「Midori Farm」を公開しました。kaito_15370はAIを使わずに作成したプログラムを披露しました。これらに対して、UIの改善案やビジネス的な活用アイデアなどがフィードバックされました。",
+    "雑談": "ガクチョによるClaude Codeのトークン節約テクニックや、kazumik_64330による横浜スタジアムでの野球観戦とスタジアムのAI体験レポートなどが話題されました。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "在庫切れ防止アプリ",
+          "description": "家族の在庫管理を行うWebアプリ。",
+          "progress": "アプリを公開した。"
+        },
+        {
+          "name": "2分読解力トレーニングアプリ",
+          "description": "短時間で読解力を鍛えるトレーニング用Webアプリ。",
+          "progress": "アプリを公開した。誤答時のフィードバック改善などが提案された。"
+        },
+        {
+          "name": "片づけアプリ（構想）",
+          "description": "ボット（ジャン等）をユーザーの相棒として接続し、片付けを支援するアプリのアイデア。",
+          "progress": "コミュニティのボットキャラクターとの親和性について議論した。"
+        }
+      ],
+      "interestsAndQuestions": "ボットのキャラクター性や自己認識、建設業界や自動化分野におけるAI活用（画像解析、気象データとの連携など）。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "買い物アプリにポイント制度や金額入力機能を追加すれば、子供の当事者意識を育てられると提案された。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "建設業界のAI化（AI親方）や独自ノウハウのデータ化は非常に面白い分野であると評価された。"
+        }
+      ]
+    },
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ANの「聴いて覚える般若心経」宣伝ボット",
+          "description": "ニュースを読み込み般若心経の切り口で投稿するBot。X（Twitter）への自動投稿機能を実装。",
+          "progress": "Xへの自動投稿を実装し、ANボットに話者認識・話者記憶・URL読み取り機能を追加した。"
+        }
+      ],
+      "interestsAndQuestions": "般若心経、ボットによるSNS自動運用。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Xとの連携や動作の軽さを評価された。"
+        }
+      ]
+    },
+    "unknown_naoko112": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "Midori Farm",
+          "description": "サツマイモなどの作物や新しい作物を記録・管理するWebアプリ。",
+          "progress": "Webアプリを公開した。新作物の追加機能などのアップデートを計画中。"
+        }
+      ],
+      "interestsAndQuestions": "ClaudeとAntigravityの使い分け、GeminiとClaudeの活用。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "本格的なアプリ開発にはClaudeへの課金をお勧めされ、Antigravity上でClaude Codeを使う方法を教わった。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "ログイン画面や多家族対応の設計品質が高く、Webサービスとして完成度が高いと評価された。"
+        }
+      ]
+    },
+    "unknown_kaito_15370": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "AI未使用プログラム",
+          "description": "AIを一切使わずに約2時間で作成したプログラム。",
+          "progress": "プログラムを作成し、その結果を共有した。"
+        }
+      ],
+      "interestsAndQuestions": "AIに頼らないプログラミング。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "AIを使わないスタンスが素敵だと褒められた。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "凄すぎると褒められた。"
+        }
+      ]
+    },
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "ボット（ジャン）との対話を通じて、ボットのキャラクター性やプロンプト調整に関する実験を行った。野球観戦の感想を共有した。",
+      "interestsAndQuestions": "ボットのキャラクター設定、野球観戦。",
+      "adviceReceived": [
+        {
+          "from": "ジャン",
+          "content": "野球観戦に関して、明治時代からの視点など歴史的な感想を共有された。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "gaku-co: open claw を用いたタスク遂行エージェント / Harappa Management Cockpit (HMC): 業務管理application群",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント。",
+          "progress": "memory.mdがグループチャットで効かない課題を発見。Gakukoの挙動制御や実装フローの提示を検討中。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群。",
+          "progress": "変化なし。"
+        }
+      ],
+      "interestsAndQuestions": "OpenClawのソースコード解析、Claude Codeのサブエージェント機能、ボットの自律的な挙動制御。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "OpenClawに関する情報やシステムプロンプトの課題について知見を共有された。"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチー: 対話型AIエージェント（スクラッチから製作） / Insight Scope (IS): マーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）。",
+          "progress": "OpenClawのコード精査とボッチーによる比較分析を指示。トークン問題解決のためのフォーク可能性について検討した。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール。",
+          "progress": "変化なし。"
+        }
+      ],
+      "interestsAndQuestions": "ボットと人間の融合、ボットの成長過程、AIによる省力化・自動化。",
+      "adviceReceived": [
+        {
+          "from": "cb20854",
+          "content": "生産技術現場での自動化や、気象データ・画像解析を用いた重量予測などのアイデアを提供された。"
+        }
+      ]
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-12.json
+Updating index...
+Pushing changes to Git...

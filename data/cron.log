@@ -8094,3 +8094,118 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-13.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-13",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "kazumik_64330が成果物にコメントを寄せました。kaito_15370が対数を計算するプログラムと、フィボナッチ数列を計算するプロジェクトのコードを共有しました。",
+    "雑談": "もっちゃんが「デジタルハラスメント」というドキュメントの理解と実装について触れ、Antigravityの不具合に伴いClaude、VS Code、Cursorの活用を推奨しました。",
+    "質問箱": "本日の発言なし"
+  },
+  "users": {
+    "unknown_3pmmihoko_99895": {
+      "name": "3pmmihoko_99895",
+      "role": "参加者",
+      "theme": "HP作成",
+      "projects": [
+        {
+          "name": "横田美宝子紹介HP",
+          "description": "ManusとAI（レオ）を活用して横田美宝子を紹介するHPを作成中。",
+          "progress": "沖縄出張から戻り夕方から着手。Manusとレオを使ってUIを作成し、スクリーンショットをAIに送ることで指示伝達をスムーズにした。画像をたくさん送り指示を出し、形にすることができた。音声録音ツールNottaも導入。"
+        }
+      ],
+      "interestsAndQuestions": "スクショの添付・共有方法、Notta（音声録音ツール）の活用。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "Manusへの移行とスクショ共有を評価。対面でのやり取りをAI資産にすることの重要性を説き、Antigravityの課題に触れてClaudeの推奨、Nottaの有用性についてアドバイスした。"
+        }
+      ]
+    },
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "Bot開発・デバッグ",
+      "projects": [
+        {
+          "name": "ボット「ジャン」の挙動確認・修正",
+          "description": "ボットのwatchedモードにおける発言確率（60%）と文脈推測ロジックのテストおよびデバッグ。",
+          "progress": "意図した60%の確率で反応せず、ほぼ100%反応してしまう現象を確認。「会話の継続」判定が「おみくじ（確率）」判定よりも前に行われているロジックの問題点を特定した。"
+        }
+      ],
+      "interestsAndQuestions": "ボットの応答ロジック、確率制御の実装順序、会話継続の判定基準。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ロジックの穴を見つけるデバッグ能力が高いと称賛した。"
+        }
+      ]
+    },
+    "unknown_kaito_15370": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "プログラミング学習",
+      "projects": [
+        {
+          "name": "対数計算プログラム",
+          "description": "対数を計算するプログラム。",
+          "progress": "作成完了。"
+        },
+        {
+          "name": "フィボナッチ数列計算プロジェクト",
+          "description": "フィボナッチ数列を計算するプロジェクト。",
+          "progress": "if文の中に実装済み。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AI開発・サポート",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "デジタルハラスメント（ドキュメントの実装）、Antigravityに代わるClaudeやVS Code、Cursorの活用。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "エージェント開発・管理ツール",
+      "projects": [
+        {
+          "name": "gaku-co: open claw",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボット「ジャン」の自動応答テスト、ジャンバラヤ。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-13.json
+Updating index...
+Pushing changes to Git...

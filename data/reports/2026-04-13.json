@@ -1,0 +1,107 @@
+{
+  "date": "2026-04-13",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "カズミクが成果物に対して感想を述べ、カイトが対数計算プログラムを作成して共有しました。また、カイトはフィボナッチ数列計算プロジェクトの進捗についても言及しました。",
+    "雑談": "もっちゃんがデジタルハラスメントに関するドキュメントの有効性に触れ、Antigravityの不具合に対応するためClaudeへの移行やVS Code、Cursorの活用を推奨しました。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "1477520654411628544": {
+      "name": "3pm・さんじはこのままで",
+      "role": "参加者",
+      "theme": "AIを活用したWeb制作",
+      "projects": [
+        {
+          "name": "横田美宝子紹介HP",
+          "description": "自己紹介用HPの作成",
+          "progress": "Manus（AIエージェント名：レオ）を用いて、取材記事等に基づく紹介文の作成や画像指示・修正を行い、非公開HPを形にした。また音声録音ツールのNottaを導入し、AI活用の小さな成功体験を積み重ねている。"
+        }
+      ],
+      "interestsAndQuestions": "AIツール（Manus, Notta, Antigravity）の活用方法や、スクショ画像の共有方法など。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ManusでのUI確認ができることへの安心感の提供。Antigravityの課題を指摘し、Claudeへの移行を推奨。Nottaのような議事録ツールの有用性を示唆された。"
+        }
+      ]
+    },
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "ボット開発・テスト",
+      "projects": [
+        {
+          "name": "ボットの挙動テスト・デバッグ",
+          "description": "チャンネルボット「ジャン・じゃくちゅー・ド・ブリエンヌ」のwatchedモード検証",
+          "progress": "watchedモード（メンションなし・脈絡なしでも60%の確率でコメント）のテストを行い、文脈推測がおみくじ判定の前に行われているために100%反応してしまうロジックの問題点を特定・議論した。"
+        }
+      ],
+      "interestsAndQuestions": "ボットのプロンプトエンジニアリング、気候、花火大会、歴史（豊臣兄弟）。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "ボットのロジックの穴を見抜くテスト手法に対して「かしこいな！」と称賛された。"
+        }
+      ]
+    },
+    "1333026240877039706": {
+      "name": "kaito_15370",
+      "role": "参加者",
+      "theme": "プログラミング学習",
+      "projects": [
+        {
+          "name": "対数計算プログラム",
+          "description": "対数を計算するプログラムの作成",
+          "progress": "プログラムを作成し、共有した。"
+        },
+        {
+          "name": "フィボナッチ数列計算プロジェクト",
+          "description": "フィボナッチ数列を計算するプログラム",
+          "progress": "if文の中で実装中であることを報告した。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント開発・ツール比較",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityの不具合、Claudeの活用、デジタルハラスメント対策ドキュメントの実装。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "タスクエージェント・業務管理アプリ",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ボットの挙動テスト、ジャンバラヤ。",
+      "adviceReceived": []
+    }
+  }
+}

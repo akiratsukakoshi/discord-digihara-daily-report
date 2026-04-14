@@ -8399,3 +8399,104 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2024-04-17.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-14",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "cb20854が家事促進アプリ「Family Pay」と音声入力でGoogleカレンダーに登録するアプリのプロトタイプを共有しました。音声入力のUXやカレンダー連携の良い事例について質問がありました。ガクチョは自作のエージェント「gaku-co」の開発進捗（openclawからの卒業、Pythonへの移行によるトークン消費90%削減）を報告しました。",
+    "雑談": "本日の発言はありませんでした。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "1489807190758789161": {
+      "name": "ケイイチ",
+      "role": "参加者",
+      "theme": "社内業務効率化ツール（スケジュール調整）",
+      "projects": [
+        {
+          "name": "外部スタッフスケジュール調整ツール",
+          "description": "会社の事務担当が外部スタッフ（約10名）とLINEを使ってスケジュール調整を行うためのツール。選別送信や回答集計を支援する。",
+          "progress": "要件定義を完了した（現状のメール連絡からの移行、対象人数、連絡手段LINE、社内確認方法など）。技術選定としてWeb UI（Antigravity）を採用。ボッチーに要件定義書を作成させ、開発に着手する準備段階。"
+        }
+      ],
+      "interestsAndQuestions": "GASとWeb UIの違い、Antigravityの環境設定手順、ボッチーへの指示出し方法について。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "プロセスがコピペだらけになるためGASは推奨せず、Web UI（Antigravity）での開発を提案。開発前に業務プロセスや課題などを具体的に整理することを指示。AntigravityはVS Codeベースなので再インストール不要であることの説明。ボッチーには要件定義書を出力させ、KeiichiさんがそれをAntigravityに渡して開発を進めるよう助言。"
+        }
+      ]
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "生活ユーティリティアプリ",
+      "projects": [
+        {
+          "name": "Family Pay",
+          "description": "家事促進アプリ。",
+          "progress": "プロトタイプを公開しURLを共有。"
+        },
+        {
+          "name": "音声入力カレンダーアプリ",
+          "description": "音声入力でGoogleカレンダーへイベントを作成するアプリ。",
+          "progress": "プロトタイプを作成したが、スマホでの操作性に課題を感じている段階。"
+        }
+      ],
+      "interestsAndQuestions": "音声入力でのカレンダー操作に関するUX改善、カレンダーと連携している他のツールの良さや事例についての聞き取り。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "音声入力はマルチモーダル時代の最先端であり、非常に良い取り組みであると評価。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "業務効率化、AIエージェント",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "openclawを卒業し、Pythonベースの軽量なオリジナルフレームワークへ移行完了。インプットトークン90%削減、反応速度を大幅改善。次は移動モジュールの実装を予定。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント、マーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-14.json
+Updating index...
+Pushing changes to Git...

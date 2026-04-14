@@ -8209,3 +8209,193 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-13.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-14T15:05:30.655Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 35 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 5 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 40
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-14T15:06:51.704Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 35 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 5 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 40
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2024-04-17",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "cb20854が「家事促進アプリFamily Pay」のプロトタイプと、Googleカレンダーへの音声入力アプリを共有しました。音声入力の利便性や他の連携事例について意見が交わされ、ガクチョが自身のツールのカレンダー連携について言及しました。",
+    "雑談": "本日の発言はありませんでした。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "1489807190758789161": {
+      "name": "ケイイチ",
+      "role": "参加者",
+      "theme": "LINE事務スケジュール調整ツール",
+      "projects": [
+        {
+          "name": "LINE事務スケジュール調整ツール",
+          "description": "事務担当がLINEを通じて外部スタッフ（約10名）とスケジュール調整を行うためのツール。案件ごとの選別、OK/NG/要調整の回答管理、社内共有を目的とする。",
+          "progress": "ガクチョの助言に基づき要件定義（現状プロセス、課題、連絡手段等10項目）を完了。Antigravity（Web UI）による開発を決定。ボッチーに要件定義書の作成を依頼中。"
+        }
+      ],
+      "interestsAndQuestions": "GASとWeb UIのどちらを選択すべきか、開発環境の構築手順について。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "コピペ作業が増えるGASよりも、AIと対話しながら開発できるWeb UI（Antigravity）が推奨される。また、AntigravityはVS Codeベースなので再インストール不要。"
+        }
+      ]
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "家事促進アプリFamily Pay",
+          "description": "家事を促進するアプリ。",
+          "progress": "プロトタイプを公開。管理者画面の実装を完了。"
+        },
+        {
+          "name": "Googleカレンダー音声入力アプリ",
+          "description": "音声入力でGoogleカレンダーにイベントを登録するアプリ。",
+          "progress": "プロトタイプを作成したが、スマホでの操作性に課題を感じており、改善案を模索中。"
+        }
+      ],
+      "interestsAndQuestions": "音声入力をカレンダーと連携させる際の良い事例や、Claudeを使った音声入力の利用方法について。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "Agent Development",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "open clawを卒業し、Pythonベースのオリジナルフレームワークへ移行完了。トークン消費を90%削減し、反応速度を大幅改善。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし。"
+        },
+        {
+          "name": "がくこま (Physical AI)",
+          "description": "物理的なAIエージェント",
+          "progress": "オリジナルフレームワークへの移管完了。次は移動モジュールの実装を予定。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2024-04-17.json
+Updating index...
+Pushing changes to Git...

@@ -8500,3 +8500,255 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-14.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-15T15:05:19.531Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 3 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 4 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 5 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 8 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 8 messages
+Fetching messages from channel: #雑談
+  → 9 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 37
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-15T15:07:07.845Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 3 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 4 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 5 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 8 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 8 messages
+Fetching messages from channel: #雑談
+  → 9 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 37
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2024-05-22",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "AIを活用したカレンダー・タスク管理の実体験や、GitHubを部品棚として活用するアイデアについて議論されました。cb20854さんがスマホのフラッシュとカメラを用いた通信方法（和製モールス）の試行錯誤状況を共有し、誤読対策などに苦戦していることが報告されました。",
+    "雑談": "ポッドキャストに対するフィードバックが多数寄せられました。参加者からはAI活用において要件定義の壁打ちや「なぜ」を問うこと（P-COC）の重要性を再認識する声が上がり、コミュニティでの学びを深める場として機能している様子が見られました。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "メーター管理アプリ",
+      "projects": [
+        {
+          "name": "メーター管理アプリ",
+          "description": "企業の入水・排水メーター管理アプリ。写真を撮ると数値を読み取り圧縮保存、DB蓄積するもの。",
+          "progress": "要件定義を纏めた。トークン消費を懸念していたが、助言を得て制作を決意。"
+        }
+      ],
+      "interestsAndQuestions": "般若心経生態系プロジェクトにも興味があるが、トークン消費を気にして躊躇している。メーター管理アプリのトークン消費量について質問した。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "アプリ制作にそれほど多くのトークンは使用しないとの見解を得た。"
+        }
+      ]
+    },
+    "tatsuyasuda_95818": {
+      "name": "tatsuyasuda_95818",
+      "role": "参加者",
+      "theme": "早寝アプリ",
+      "projects": [
+        {
+          "name": "早寝アプリ",
+          "description": "アニメーションエフェクトを実装中のアプリ。",
+          "progress": "v1.2でアニメーションのエフェクト実装を試みたが失敗。Lottie Filesを使い、週末に再挑戦する予定。"
+        }
+      ],
+      "interestsAndQuestions": "ポッドキャストを聴き、AIとの対話を深めることの重要性を感じた。アニメーション実装にこだわりを持っている。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "動画生成やアニメーション作成にMidjourneyが鉄板であると勧められた。"
+        }
+      ]
+    },
+    "unknown_keiichikudo_22887": {
+      "name": "keiichikudo_22887",
+      "role": "参加者",
+      "theme": "Antigravityプロジェクト",
+      "projects": [
+        {
+          "name": "Antigravityプロジェクト",
+          "description": "Antigravity環境およびClaude Codeを使用して開発中の案件。",
+          "progress": "要件定義書を確認し修正はないため、Antigravityでの開発を開始した。"
+        }
+      ],
+      "interestsAndQuestions": "Claude Codeへのファイル貼り付け手順など、具体的な開発環境の使い方について質問があった。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ファイルのダウンロード方法や手順について案内を受けた。"
+        }
+      ]
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "和製モース信号通信",
+      "projects": [
+        {
+          "name": "和製モース信号通信",
+          "description": "スマホのフラッシュとカメラを用いて文字入力・変換を行う通信システム。",
+          "progress": "情報伝達には成功したが、誤読が解消できず四苦八苦している状態。"
+        }
+      ],
+      "interestsAndQuestions": "GitHubを部品棚（コードの溜まり場）として活用できないかと考えている。ハードウェアへの興味が湧き始めた。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "ベストプラクティス検索のためにGitHubを対象とすることはあり、先行事例を活用しつつカスタマイズするのが良いと助言された。"
+        }
+      ]
+    },
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "ポッドキャストを聴いて、過去の業務フローの失敗経験（なぜを深掘りしなかったこと）を回想し、バイブコーディングでも本質を見失わないことの重要性を再認識した。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "Harappa Management Cockpit (HMC)",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ポッドキャストに対する参加者のポジティブなフィードバックに喜びを感じている。コミュニティでワイワイ言いながら進めることの楽しさを強調。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチー",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "EchoNoteのリファクタリングを実施。3時間超のデータ処理のためチャンク×並行処理機能を実装。要約の深度調整、固有名詞マスク機能、クライアント管理機能を追加。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "波情報アプリの経験から、AIと人間の領域について意識している。GitHubの活用方法やMidjourneyの情報共有。",
+      "adviceReceived": []
+    }
+  }
+}
+Dropping non-discord user id from report: tatsuyasuda_95818
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2024-05-22.json
+Updating index...
+Pushing changes to Git...

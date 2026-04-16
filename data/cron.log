@@ -8894,3 +8894,183 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-15.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-16T15:05:22.564Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 12 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 7 messages
+Fetching messages from channel: #雑談
+  → 4 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 23
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-16T15:06:52.359Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+Raw LLM output: {
+  "date": "2026-04-16",
+  "channelSummaries": {
+    "自己紹介": "（本日の発言なし）",
+    "開発ラボ": "（本日の発言なし）",
+    "成果物": "kazumik_64330がバレエノートをThreadsで公開し、一般からのフィードバックを募り始めた。公開に伴い、相談回数制限超過時の入力不可バグを修正したほか、デプロイのタイミングやメンテナンス、サブスクリプションモデルについて運営メンバーと議論した。",
+    "雑談": "もっちゃんとガクチョの間で、新曲「P-COC」の共有や長沼さんの編集塾に関するポッドキャスト、野田秀樹さんの東大入学式祝辞についての会話が交わされた。",
+    "質問箱": "（本日の発言なし）"
+  },
+  "users": {
+    "unknown_jizou2771": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "Antigravity投入用：超・爆上げ装置「DJコジコジ」",
+      "projects": [
+        {
+          "name": "DJコジコジ",
+          "description": "Webコンテンツ生成および実装プロジェクト",
+          "progress": "ClaudeおよびAntigravityのクォータ制限に伴い、ChatGPTを用いてコード生成を試みた。HTML/CSS/JSのコード出力を確認し、VSCodeでの動作検証段階。出張のため次回の対応は19日を予定。"
+        }
+      ],
+      "interestsAndQuestions": "Antigravityの停止理由（バグかクォータ切れか）の確認方法や、Claudeのクォータリセット日時への関心。",
+      "adviceReceived": []
+    },
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "バレエノート",
+      "projects": [
+        {
+          "name": "バレエノート",
+          "description": "バレエの練習記録・フィードバック用アプリ",
+          "progress": "ThreadsにてURLを公開し、機能のフィードバック収集を開始。制限回数超過時のバグ修正を実施し、アップデートを行った。"
+        },
+        {
+          "name": "献立アプリ",
+          "description": "献立管理アプリ",
+          "progress": "バレエノートの区切りをつけたため、次はこちらに集中する予定。"
+        }
+      ],
+      "interestsAndQuestions": "公開・デプロイ時の正しい手順（メンテナンスモード等）や、将来的なサブスクリプションモデルの実装について。",
+      "adviceReceived": [
+        {
+          "from": "ガクチョ",
+          "content": "公開に対する称賛、および認証機能やAPIガードがしっかりしているとの評価。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "プロダクト公開への称賛と、サブスクを見据えた開発姿勢への驚き。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "新曲「P-COC」、長沼さんの編集塾での話題、野田秀樹さんの東大入学式祝辞。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "楽曲制作（P-COC）、長沼さんの編集塾の話題への言及。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-16.json
+Updating index...
+Pushing changes to Git...

@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-17",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "takanorinaganuma_15823がANOMI 3.0の更新を報告。記憶システム（core, essence, patternの3種類、AIによる重要度判定）を導入し、非同期処理のバグを修正した。また、ANOMI 3.0を搭載した「シンクロ世界カード2.0」を公開した。",
+    "雑談": "Opus 4.7のリリースやClaude Coworkの活用事例（資料作成の自動化）について共有された。GakchoからはClaude Codeの課金体系に関する注意喚起があった。",
+    "質問箱": "本日の発言なし"
+  },
+  "users": {
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "バレエノートアプリ",
+      "projects": [
+        {
+          "name": "バレエノート（スマホアプリ）",
+          "description": "Webアプリ/PWA化されたバレエ用記録アプリ",
+          "progress": "Antigravityを用いてデザインシステム（MD3、親色ディープネイビー）を適用し、UIを刷新した。認証機能の改善（生体認証の検討）とデータロードの高速化（ローカルキャッシュの検討）を課題として認識している。"
+        }
+      ],
+      "interestsAndQuestions": "PWA/Webアプリ向けの最新デザインガイドラインの有無、ローカルキャッシュを用いたハイブリッド構築の可能性。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "Antigravityでのデザイン自動生成における重要なキーワードの提供（アイコンセット、親色、MD3など）。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "VS CodeはAntigravity（Googleによる改良版）として認識すること、Quota制限の回避方法。"
+        }
+      ]
+    },
+    "1092347707634503700": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "AIによるコード生成",
+      "projects": [
+        {
+          "name": "Webアプリ立ち上げ",
+          "description": "ChatGPTを活用したコード生成プロジェクト",
+          "progress": "無事に立ち上げが完了し、不具合や改善点の洗い出しが行われた。今後の改善に向けたプロンプト作成ワークフローを確認中。"
+        }
+      ],
+      "interestsAndQuestions": "コード貼り付けからプロンプト作成、コード化までの正しいワークフロー、Antigravityでのファイル上書き手順。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "VS CodeをAntigravityとして認識すること、Quota制限回避方法のリンク共有。"
+        }
+      ]
+    },
+    "1489794072649666651": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "ボットとの対話",
+      "projects": [],
+      "interestsAndQuestions": "ボット（アン）が過去のサーバー等の対話履歴を引き継ぐ仕組みについて。",
+      "adviceReceived": []
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI開発",
+      "projects": [
+        {
+          "name": "ANOMI 3.0",
+          "description": "暗黙知にアプローチする対話型AIシステム",
+          "progress": "記憶システムを導入（core, essence, patternの3分類、重要度スコアリング1-5）。Vercel環境での非同期保存問題を修正し、記憶の蓄積が可能になった。"
+        },
+        {
+          "name": "シンクロ世界カード 2.0",
+          "description": "ANOMI 3.0を搭載したカード引き・解釈デモアプリ",
+          "progress": "1.0からアップデートしデモ版を公開。ANOMI 3.0がカードを引き、独自に解釈して対話を開始する機能を実装した。"
+        }
+      ],
+      "interestsAndQuestions": "AIが受け取れる形式知に対して、暗黙知の中のコア領域にどうつなげるか。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "ロボット開発",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "第1段階の開発が終了し、「がくこま」が動作を開始した。今後はソフトウェアのチューニングを行い、より人間的なロボットへ進化させる。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "大規模なリファクタリングを実施中。Proプランでの耐久性テストを兼ねて進めている。"
+        }
+      ],
+      "interestsAndQuestions": "Claude Coworkの実務活用（ドキュメント作成の効率化）、Claude Codeの従量課金APIが意図せず使われてしまったことへの注意。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント開発",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "Opus 4.7の利用可能性、AntigravityのQuota制限回避方法。",
+      "adviceReceived": []
+    }
+  }
+}

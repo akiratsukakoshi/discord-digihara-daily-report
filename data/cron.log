@@ -9461,3 +9461,146 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-18.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+Notification sent successfully.
+Done!
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 38 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 5 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 50
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-18",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "本日の発言はありませんでした。",
+    "雑談": "もっちゃんにより新サービス「Claude Design」のローンチと、それを用いたオンラインストア限定ページの作成状況が共有されました。ガクチョとの間でデジハラ（HMC）のLPアップデートについて言及がありました。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "献立アプリWeb化",
+      "projects": [
+        {
+          "name": "献立アプリ",
+          "description": "献立管理アプリ",
+          "progress": "Web化を進めている。ガクコのアドバイスをClaude Codeに適用し使いやすさが向上。フェーズ8（ハイブリッドキャッシュによるパフォーマンス改善）を完了。レシート入力は未実装。"
+        },
+        {
+          "name": "バレエアプリ",
+          "description": "バレエ用アプリ",
+          "progress": "チュートリアルのように網羅的に工程に触れることができている状態。"
+        }
+      ],
+      "interestsAndQuestions": "AIや技術の説明の仕方に対し、問題発見から解決、理由提示、リスク考慮まで含めた論理性に感銘を受けている。",
+      "adviceReceived": [
+        {
+          "from": "ガクコ",
+          "content": "献立アプリの開発において、キャッシュの考え方を含む使いやすさの向上に関するアドバイス。"
+        }
+      ]
+    },
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "ボット（アン）との対話を通じて、記憶の共有や関係の構築に興味を持っている。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "gaku-co",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "「がくこま」のソフトウェアアップデートに着手。openclawとは完全決別し、独自システムとして進化中。「忘却」「感情の重みづけ」「退屈行動」「睡眠」「夢」「非宣言記憶」の実装を予定。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "もっちゃんの提案を受け、デジハラのLPアップデートを検討・予定している。"
+        }
+      ],
+      "interestsAndQuestions": "ボット（アン）と「実体」「物語」「アイデンティティ」「所有」について哲学的な議論を交わした。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "ボッチー",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "オンラインストア",
+          "description": "もっちゃんのオンラインストア",
+          "progress": "Claude DesignとClaude Codeを用いて限定ページを作成し、試用中。"
+        },
+        {
+          "name": "デジハラLP",
+          "description": "デジハラのランディングページ",
+          "progress": "Claude Designを用いたアップデートを検討中。"
+        }
+      ],
+      "interestsAndQuestions": "新サービス「Claude Design」の導入とそのワークフロー（LP作成案の提示から実装）に高い関心を持っている。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-18.json
+Updating index...
+Pushing changes to Git...

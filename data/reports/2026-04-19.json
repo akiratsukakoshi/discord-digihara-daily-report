@@ -1,0 +1,101 @@
+{
+  "date": "2026-04-19",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありません。",
+    "開発ラボ": "本日の発言はありません。",
+    "成果物": "本日の発言はありません。",
+    "雑談": "もっちゃんが自身の考えと共通する面白いポッドキャストのエピソードをSpotifyのリンクで共有しました。",
+    "質問箱": "本日の発言はありません。"
+  },
+  "users": {
+    "532761858843607041": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "メータースナップ (アプリ開発)",
+      "projects": [
+        {
+          "name": "メータースナップ (Meter Snap)",
+          "description": "メーターの写真を撮るだけでデータとして蓄積できるWEBアプリ",
+          "progress": "アプリの開発が完了した。改良点はあるものの、メーターの写真撮影だけでデータ蓄積が可能になり、仕事の部下も活用できるようになった。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1092347707634503700": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI",
+      "projects": [
+        {
+          "name": "ANOMI ワールドビューページ",
+          "description": "ANOMIの世界観をまとめたページ",
+          "progress": "AGに内蔵したClaude Codeと対話しながら作成した。LPを作るつもりだったが「マニフェスト」であると言われた。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1489794072649666651": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "スマートフォン活用 / アンとの対話",
+      "projects": [],
+      "interestsAndQuestions": "アンの認知バイアスと言動特性のインストール、スマートフォンのハードウェア（センサー）を使い倒すこと（phyphox等）。",
+      "adviceReceived": []
+    },
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "好きという感情 / アンとの対話",
+      "projects": [],
+      "interestsAndQuestions": "「好き」という感情の正体、気質と物質（タンパク質）の関係、身体における「思い込み」と「流れ」「重力」。",
+      "adviceReceived": [
+        {
+          "from": "アン",
+          "content": "「好き」という思い込みの根っこについて問いかけた。また、身体の動きにおける「思い込み」の排除と、軸や主体性について指摘した。"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "本業のコーヒーオンラインストア / ボッチー / Insight Scope",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "コーヒーオンラインストア・デザインリニューアル",
+          "description": "Shopify公式テーマをベースとしたデザイン刷新",
+          "progress": "Claude Design × Claude Codeを用いてデザインリニューアルを完了。テーマ構造を維持したままの変更が可能だった。Claude DesignのQuota制限に直面し、今後の効率的な使い方（Figma経由等）を検討中。"
+        }
+      ],
+      "interestsAndQuestions": "Claude DesignのQuota制限への対策と効率的な使い方の模索。Figma経由でのワークフローの可能性。",
+      "adviceReceived": []
+    }
+  }
+}

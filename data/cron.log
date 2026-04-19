@@ -9604,3 +9604,220 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-18.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-19T15:05:52.137Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 2 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 5 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 1 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 1 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 2 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 26 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 1 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 38
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-19T15:07:36.003Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 2 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 5 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 1 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 1 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 2 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 26 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 1 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 38
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-19",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありません。",
+    "開発ラボ": "本日の発言はありません。",
+    "成果物": "本日の発言はありません。",
+    "雑談": "もっちゃんが自身の考えと共通する面白いポッドキャストのエピソードをSpotifyのリンクで共有しました。",
+    "質問箱": "本日の発言はありません。"
+  },
+  "users": {
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "メータースナップ (アプリ開発)",
+      "projects": [
+        {
+          "name": "メータースナップ (Meter Snap)",
+          "description": "メーターの写真を撮るだけでデータとして蓄積できるWEBアプリ",
+          "progress": "アプリの開発が完了した。改良点はあるものの、メーターの写真撮影だけでデータ蓄積が可能になり、仕事の部下も活用できるようになった。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_jizou2771": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI",
+      "projects": [
+        {
+          "name": "ANOMI ワールドビューページ",
+          "description": "ANOMIの世界観をまとめたページ",
+          "progress": "AGに内蔵したClaude Codeと対話しながら作成した。LPを作るつもりだったが「マニフェスト」であると言われた。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_naoko112": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "スマートフォン活用 / アンとの対話",
+      "projects": [],
+      "interestsAndQuestions": "アンの認知バイアスと言動特性のインストール、スマートフォンのハードウェア（センサー）を使い倒すこと（phyphox等）。",
+      "adviceReceived": []
+    },
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "好きという感情 / アンとの対話",
+      "projects": [],
+      "interestsAndQuestions": "「好き」という感情の正体、気質と物質（タンパク質）の関係、身体における「思い込み」と「流れ」「重力」。",
+      "adviceReceived": [
+        {
+          "from": "アン",
+          "content": "「好き」という思い込みの根っこについて問いかけた。また、身体の動きにおける「思い込み」の排除と、軸や主体性について指摘した。"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "本業のコーヒーオンラインストア / ボッチー / Insight Scope",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "コーヒーオンラインストア・デザインリニューアル",
+          "description": "Shopify公式テーマをベースとしたデザイン刷新",
+          "progress": "Claude Design × Claude Codeを用いてデザインリニューアルを完了。テーマ構造を維持したままの変更が可能だった。Claude DesignのQuota制限に直面し、今後の効率的な使い方（Figma経由等）を検討中。"
+        }
+      ],
+      "interestsAndQuestions": "Claude DesignのQuota制限への対策と効率的な使い方の模索。Figma経由でのワークフローの可能性。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-19.json
+Updating index...
+Pushing changes to Git...

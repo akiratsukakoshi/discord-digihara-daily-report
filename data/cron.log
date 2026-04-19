@@ -9821,3 +9821,131 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-19.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-19",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "もっちゃんがSpotifyのPodcastエピソードのリンクを共有し、その回が面白く自身と似たようなことを考えていたと述べました。",
+    "質問箱": "本日の発言なし"
+  },
+  "users": {
+    "unknown_toshitan": {
+      "name": "toshitan",
+      "role": "参加者",
+      "theme": "Webアプリ開発",
+      "projects": [
+        {
+          "name": "メータースナップ",
+          "description": "メーターの写真を撮るだけでデータを蓄積できるWEBアプリ",
+          "progress": "アプリの開発が完了し、仕事の部下も活用できるようになった。サイト構築やチャットボット対応に加え、アプリ開発もできるようになったことを喜んでいる。"
+        }
+      ],
+      "interestsAndQuestions": "アプリ開発の幅が広がったことへの喜び。",
+      "adviceReceived": []
+    },
+    "unknown_jizou2771": {
+      "name": "jizou2771",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "世界観構築・LP作成",
+      "projects": [
+        {
+          "name": "ANOMI世界観ページ",
+          "description": "ANOMIの世界観をまとめたWebページ",
+          "progress": "AGに内蔵したClaude Codeとの対話を通じてページを作成した。当初はLP的なものを予定していたが、マニフェストであると言われた。"
+        }
+      ],
+      "interestsAndQuestions": "AGとClaude Codeを活用したコンテンツ制作。",
+      "adviceReceived": []
+    },
+    "unknown_naoko112": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "ハードウェアハッキング",
+      "projects": [
+        {
+          "name": "スマホハードウェア活用",
+          "description": "スマホのセンサーを活用した実験",
+          "progress": "スマホのハードウェアを使い倒したいと思い立ち、調査を開始。アーヘン工科大学の「phyphox」アプリを参照した。"
+        }
+      ],
+      "interestsAndQuestions": "アンの認知バイアスや言動特性のインストール、スマホのハードウェア制御。",
+      "adviceReceived": []
+    },
+    "unknown_ann": {
+      "name": "アン",
+      "role": "参加者",
+      "theme": "哲学的対話",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "「好き」「思い込み」「物質」「流れ」「重力」「軸」といった概念についての探求。",
+      "adviceReceived": []
+    },
+    "unknown_kazumik_64330": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "身体論・哲学",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "「好き」の正体、気質とタンパク質の関係、バレエや水泳における「思い込み」と「物質の本来の動き」の考察。",
+      "adviceReceived": [
+        {
+          "from": "アン",
+          "content": "「思い込み」をしていない時、身体を何に委ねているか、また「軸」は本人が勝手に名付けただけの現象ではないかという問いかけを受け、気づきを得た。"
+        }
+      ]
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIツール活用・ECサイト運営",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "本業のコーヒーオンラインストアのデザインリニューアル",
+          "description": "Shopify公式テーマをベースにしたページデザインの変更",
+          "progress": "Claude DesignとClaude Codeを用いてデザインリニューアルを完了。テーマ構造を崩さずに対応できたが、Claude DesignのQuota制限に達してしまった。今後はFigmaでモックを作成し、AntigravityやClaudeCodeに渡すワークフローを検討中。"
+        }
+      ],
+      "interestsAndQuestions": "Claude DesignのQuota制限への対策と効率的なワークフローの模索。",
+      "adviceReceived": []
+    }
+  }
+}
+Dropping non-discord user id from report: unknown_ann
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-19.json
+Updating index...
+Pushing changes to Git...

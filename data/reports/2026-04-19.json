@@ -1,25 +1,25 @@
 {
   "date": "2026-04-19",
   "channelSummaries": {
-    "自己紹介": "本日の発言はありません。",
-    "開発ラボ": "本日の発言はありません。",
-    "成果物": "本日の発言はありません。",
-    "雑談": "もっちゃんが自身の考えと共通する面白いポッドキャストのエピソードをSpotifyのリンクで共有しました。",
-    "質問箱": "本日の発言はありません。"
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "もっちゃんがSpotifyのPodcastエピソードのリンクを共有し、その回が面白く自身と似たようなことを考えていたと述べました。",
+    "質問箱": "本日の発言なし"
   },
   "users": {
     "532761858843607041": {
       "name": "toshitan",
       "role": "参加者",
-      "theme": "メータースナップ (アプリ開発)",
+      "theme": "Webアプリ開発",
       "projects": [
         {
-          "name": "メータースナップ (Meter Snap)",
-          "description": "メーターの写真を撮るだけでデータとして蓄積できるWEBアプリ",
-          "progress": "アプリの開発が完了した。改良点はあるものの、メーターの写真撮影だけでデータ蓄積が可能になり、仕事の部下も活用できるようになった。"
+          "name": "メータースナップ",
+          "description": "メーターの写真を撮るだけでデータを蓄積できるWEBアプリ",
+          "progress": "アプリの開発が完了し、仕事の部下も活用できるようになった。サイト構築やチャットボット対応に加え、アプリ開発もできるようになったことを喜んでいる。"
         }
       ],
-      "interestsAndQuestions": "なし",
+      "interestsAndQuestions": "アプリ開発の幅が広がったことへの喜び。",
       "adviceReceived": []
     },
     "1092347707634503700": {
@@ -27,21 +27,22 @@
       "role": "参加者",
       "theme": "未定",
       "projects": [],
+      "progress": "変化なし",
       "interestsAndQuestions": "なし",
       "adviceReceived": []
     },
     "1182194493479460929": {
       "name": "takanorinaganuma_15823",
       "role": "参加者",
-      "theme": "ANOMI",
+      "theme": "世界観構築・LP作成",
       "projects": [
         {
-          "name": "ANOMI ワールドビューページ",
-          "description": "ANOMIの世界観をまとめたページ",
-          "progress": "AGに内蔵したClaude Codeと対話しながら作成した。LPを作るつもりだったが「マニフェスト」であると言われた。"
+          "name": "ANOMI世界観ページ",
+          "description": "ANOMIの世界観をまとめたWebページ",
+          "progress": "AGに内蔵したClaude Codeとの対話を通じてページを作成した。当初はLP的なものを予定していたが、マニフェストであると言われた。"
         }
       ],
-      "interestsAndQuestions": "なし",
+      "interestsAndQuestions": "AGとClaude Codeを活用したコンテンツ制作。",
       "adviceReceived": []
     },
     "1489794072649666651": {
@@ -49,34 +50,42 @@
       "role": "参加者",
       "theme": "未定",
       "projects": [],
+      "progress": "変化なし",
       "interestsAndQuestions": "なし",
       "adviceReceived": []
     },
     "1477082098232721480": {
       "name": "cb20854",
       "role": "参加者",
-      "theme": "スマートフォン活用 / アンとの対話",
-      "projects": [],
-      "interestsAndQuestions": "アンの認知バイアスと言動特性のインストール、スマートフォンのハードウェア（センサー）を使い倒すこと（phyphox等）。",
+      "theme": "ハードウェアハッキング",
+      "projects": [
+        {
+          "name": "スマホハードウェア活用",
+          "description": "スマホのセンサーを活用した実験",
+          "progress": "スマホのハードウェアを使い倒したいと思い立ち、調査を開始。アーヘン工科大学の「phyphox」アプリを参照した。"
+        }
+      ],
+      "interestsAndQuestions": "アンの認知バイアスや言動特性のインストール、スマホのハードウェア制御。",
       "adviceReceived": []
     },
     "1476436458779705375": {
       "name": "kazumik_64330",
       "role": "参加者",
-      "theme": "好きという感情 / アンとの対話",
+      "theme": "身体論・哲学",
       "projects": [],
-      "interestsAndQuestions": "「好き」という感情の正体、気質と物質（タンパク質）の関係、身体における「思い込み」と「流れ」「重力」。",
+      "progress": "変化なし",
+      "interestsAndQuestions": "「好き」の正体、気質とタンパク質の関係、バレエや水泳における「思い込み」と「物質の本来の動き」の考察。",
       "adviceReceived": [
         {
           "from": "アン",
-          "content": "「好き」という思い込みの根っこについて問いかけた。また、身体の動きにおける「思い込み」の排除と、軸や主体性について指摘した。"
+          "content": "「思い込み」をしていない時、身体を何に委ねているか、また「軸」は本人が勝手に名付けただけの現象ではないかという問いかけを受け、気づきを得た。"
         }
       ]
     },
     "1016907741018726470": {
       "name": "もっちゃん",
       "role": "運営",
-      "theme": "本業のコーヒーオンラインストア / ボッチー / Insight Scope",
+      "theme": "AIツール活用・ECサイト運営",
       "projects": [
         {
           "name": "ボッチー",
@@ -89,12 +98,12 @@
           "progress": "変化なし"
         },
         {
-          "name": "コーヒーオンラインストア・デザインリニューアル",
-          "description": "Shopify公式テーマをベースとしたデザイン刷新",
-          "progress": "Claude Design × Claude Codeを用いてデザインリニューアルを完了。テーマ構造を維持したままの変更が可能だった。Claude DesignのQuota制限に直面し、今後の効率的な使い方（Figma経由等）を検討中。"
+          "name": "本業のコーヒーオンラインストアのデザインリニューアル",
+          "description": "Shopify公式テーマをベースにしたページデザインの変更",
+          "progress": "Claude DesignとClaude Codeを用いてデザインリニューアルを完了。テーマ構造を崩さずに対応できたが、Claude DesignのQuota制限に達してしまった。今後はFigmaでモックを作成し、AntigravityやClaudeCodeに渡すワークフローを検討中。"
         }
       ],
-      "interestsAndQuestions": "Claude DesignのQuota制限への対策と効率的な使い方の模索。Figma経由でのワークフローの可能性。",
+      "interestsAndQuestions": "Claude DesignのQuota制限への対策と効率的なワークフローの模索。",
       "adviceReceived": []
     }
   }

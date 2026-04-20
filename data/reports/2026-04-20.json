@@ -1,0 +1,120 @@
+{
+  "date": "2026-04-20",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "AnthropicのテクニカルスタッフによるVibe codingに関する講演が共有され、翻訳・要約アプリ「EchoNote」を通じて議論が行われました。「正しい問いを立てる技術」の重要性について運営メンバーが考察しています。また、ANOMIの開発状況として、対話内容をクリスタライズ（記事化）して記憶・活用する機能の調整や、Claudeの利用コスト増加による一時的な利用制限について報告がありました。",
+    "質問箱": "AntigravityにClaudeCodeを拡張機能として追加する手順に関する動画URLが共有されました。"
+  },
+  "users": {
+    "1489807190758789161": {
+      "name": "keiichikudo_22887",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1476436458779705375": {
+      "name": "kazumik_64330",
+      "role": "参加者",
+      "theme": "身体感覚とAI",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "身体のハードウェア（関節や腱のセンサーなど）の向上、ロボット開発への応用、運動能力の物質的な捉え方。",
+      "adviceReceived": []
+    },
+    "1477082098232721480": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "バイブコーディングと身体",
+      "projects": [
+        {
+          "name": "疲労解消アプリ（仮）",
+          "description": "バイブコーディング作業後の身体のハードウェアに起因する疲労感を解消するためのアプリ",
+          "progress": "構想・興味を持っている段階"
+        }
+      ],
+      "interestsAndQuestions": "バイブコーディング作業の疲労感と身体のハードウェアの関連性。",
+      "adviceReceived": []
+    },
+    "1182194493479460929": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI開発",
+      "projects": [
+        {
+          "name": "ANOMI",
+          "description": "対話内容を構造化・記憶し、クリスタライズ（記事化）するシステム",
+          "progress": "構造化とクリスタライズ機能の詳細調整中。Claudeの課金額急増により原因究明中で対話機能を一時停止。共有リンクの権限設定を修正済み。"
+        }
+      ],
+      "interestsAndQuestions": "人の自我の形成（記憶と関係性）とAIの再現性、クリスタライズされた記憶とRAG検索の違い。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "共有したリンクが最初見られないことを指摘し、修正後に読みやすさを評価した。"
+        }
+      ]
+    },
+    "1489794072649666651": {
+      "name": "1489794072649666651",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "progress": "変化なし",
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "AntigravityにClaudeCodeを拡張機能として追加する手順について、動画で手順を共有・サポートした。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "エージェント・業務管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "ANOMIの記憶クリスタライズ機能に対する共感。",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "対話型AIエージェント",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "基地で呼びかけたが応答なし。雑談チャンネルで講演の要約を依頼し、実行した。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        },
+        {
+          "name": "EchoNote",
+          "description": "翻訳・要約アプリ",
+          "progress": "Vibe coding講演の翻訳・要約に活用。UIの改善余地を認識。"
+        }
+      ],
+      "interestsAndQuestions": "「正しい問いを立てる技術的素養」の養い方、問いのスタート地点からの想像力（比喩・SF）。",
+      "adviceReceived": []
+    }
+  }
+}

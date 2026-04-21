@@ -1,0 +1,63 @@
+{
+  "date": "2026-04-21",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありません。",
+    "開発ラボ": "本日の発言はありません。",
+    "成果物": "本日の発言はありません。",
+    "雑談": "本日の発言はありません。",
+    "質問箱": "naoko112さんが環境構築が完了したことを報告しました。もっちゃんさんからは、次は要件定義であること、わからないことがあれば気軽に聞いてほしいというアドバイスがありました。"
+  },
+  "users": {
+    "1489794072649666651": {
+      "name": "naoko112",
+      "role": "参加者",
+      "theme": "未定",
+      "projects": [],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "次は要件定義を行う段階であること。わからないことがあれば気軽に質問してほしいこと。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}

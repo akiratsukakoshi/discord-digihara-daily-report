@@ -10605,3 +10605,75 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-22.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-22",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "本日の発言なし",
+    "質問箱": "本日の発言なし"
+  },
+  "users": {
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI",
+      "projects": [
+        {
+          "name": "ANOMI",
+          "description": "対話型AIエージェント",
+          "progress": "APIコスト異常消費トラブルの解決。Anthropic APIのPrompt Caching設定（90%オフ）が外れていた件を修正し、キャッシュヒット率を改善。OpenAI APIの高コストモデル(gpt-4o)を(gpt-4o-mini)にダウングレードし、月額コストを数千円レベルに最適化。今後はAIエージェントによる修正後、人間がダッシュボードを確認するプロセスを導入。"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-22.json
+Updating index...
+Pushing changes to Git...

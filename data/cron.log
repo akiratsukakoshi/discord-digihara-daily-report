@@ -10425,3 +10425,183 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-21.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-22T15:05:26.271Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 5 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 5
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-22T15:07:26.567Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 0 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 0 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 5 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 5
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-22",
+  "channelSummaries": {
+    "自己紹介": "本日の発言なし",
+    "開発ラボ": "本日の発言なし",
+    "成果物": "本日の発言なし",
+    "雑談": "本日の発言なし",
+    "質問箱": "本日の発言なし"
+  },
+  "users": {
+    "unknown_takanorinaganuma": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "ANOMI",
+      "projects": [
+        {
+          "name": "ANOMI",
+          "description": "記憶や経歴を活用する対話型AIエージェント",
+          "progress": "APIコスト異常消費の原因（プロンプトキャッシュの設定漏れ、gpt-4oの高額利用）を特定し修正完了。キャッシュ設定の再適用およびモデルのダウングレードを行い、コスト適正化（月額数千円レベル）を達成。"
+        }
+      ],
+      "interestsAndQuestions": "AIエージェント（Claude Code）による開発において、コード上のエラーは解消できても請求ダッシュボード上の設定ミスには気づけないという盲点に対する考察と、人間による定期的な目視確認の重要性。\"あの90％引きが（実際に）実装された\"ことへの安堵。",
+      "adviceReceived": []
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "未定",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-22.json
+Updating index...
+Pushing changes to Git...

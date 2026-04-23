@@ -10891,3 +10891,111 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-23.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Raw LLM output: {
+  "date": "2026-04-23",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありません。",
+    "開発ラボ": "本日の発言はありません。",
+    "成果物": "本日の発言はありません。",
+    "雑談": "本日の発言はありません。",
+    "質問箱": "本日の発言はありません。"
+  },
+  "users": {
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "初心者向け参考書作成",
+      "projects": [
+        {
+          "name": "デジハラ第０期初心者向け参考書（零式）",
+          "description": "バイブコーディング初心者がAntigravityの概念を理解し、一歩踏み出しやすくするための参考書。",
+          "progress": "初心者向けの資料（スライド、長文、イメージ図）を作成し、ボッチーや運営メンバーからフィードバックを受けた。アドバイスを元にv2を作成し、プロセスと構造の可視化を進めた。"
+        }
+      ],
+      "interestsAndQuestions": "デジハラ特有の初心者が立ち上がる際の不安感の本質（「判断」など）について考察。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "資料で拾うより手触りで本人が拾う方が良い。流れの透明性の方が重要。"
+        },
+        {
+          "from": "ガクチョ",
+          "content": "プロセスと構造が可視化されていることが素晴らしい。"
+        },
+        {
+          "from": "もっちゃん",
+          "content": "パワポが判り易い。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "AIアプリ開発（ANOMI）",
+      "projects": [
+        {
+          "name": "ANOMI / シンクロカード",
+          "description": "記憶力とコストを最適化した対話型AIアプリケーションおよびプラットフォーム。",
+          "progress": "プロンプトキャッシュを導入しAPI通信費を90%削減、記憶件数を10件から50件へ拡張、中略処理を撤廃して完全記憶を実現。gpt-4o-miniのサポート終了に備え、モデル指定を環境変数化するリファクタリングを完了し、移行準備を整えた。"
+        }
+      ],
+      "interestsAndQuestions": "gpt-5.4-nanoとgpt-4o-miniの置き換えの可否、およびPrompt Cashingによるコスト削減効果について。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "gpt-4o-miniはレガシーモデルとなり、2026年から2027年にかけてサポート終了予定であるため、GPT-5.3 InstantやGPT-5.4 miniへの移行推奨と具体的な終了日時の情報提供。"
+        },
+        {
+          "from": "AG",
+          "content": "裏方のJSON生成処理等はgpt-4o-miniの方が安定しており、急いで移行する必要はないと判断。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "AIエージェント（ロボティクス）",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "「がくこま」において、プログラム上の「踊る」関数を書かずに、LLMが旋回・直進・後退というツール定義から「踊って」という言葉を解釈し、自律的に身体表現を行うことを確認。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIモデル選定、プロジェクト管理",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "変化なし（モデル選定の議論に関与）"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "gpt-4o-miniのレガシー化と代替モデル（gpt-5シリーズ）の特性、およびPrompt Cashingの仕組みについて調査。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-23.json
+Updating index...
+Pushing changes to Git...

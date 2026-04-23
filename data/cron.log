@@ -10677,3 +10677,217 @@ Saving report...
 Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-22.json
 Updating index...
 Pushing changes to Git...
+Git push successful.
+Sending notification to Discord...
+Notification sent successfully.
+Done!
+Starting Daily Report Task at 2026-04-23T15:05:47.668Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 1 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 16 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 31 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 48
+Generating daily report...
+Generating report using model: glm-4.7
+Starting Daily Report Task at 2026-04-23T15:07:55.916Z
+Fetching kichi category channels...
+Found 19 kichi channels: もっちゃんの基地, ガクチョの基地, かいとの基地, カズミの基地, としたんの基地, かおるんの基地, ひげの基地, シンジの基地, cb2の基地, みほこの基地, たつの基地, じぞーの基地, はまのりの基地, まこりんの基地, ケイイチの基地, 若村雄介の基地, ryuの基地, なおこの基地, ボットたちの遊び基地
+Fetching messages from kichi channel: #もっちゃんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ガクチョの基地
+  → 1 messages
+Fetching messages from kichi channel: #かいとの基地
+  → 0 messages
+Fetching messages from kichi channel: #カズミの基地
+  → 0 messages
+Fetching messages from kichi channel: #としたんの基地
+  → 0 messages
+Fetching messages from kichi channel: #かおるんの基地
+  → 0 messages
+Fetching messages from kichi channel: #ひげの基地
+  → 0 messages
+Fetching messages from kichi channel: #シンジの基地
+  → 0 messages
+Fetching messages from kichi channel: #cb2の基地
+  → 16 messages
+Fetching messages from kichi channel: #みほこの基地
+  → 0 messages
+Fetching messages from kichi channel: #たつの基地
+  → 0 messages
+Fetching messages from kichi channel: #じぞーの基地
+  → 0 messages
+Fetching messages from kichi channel: #はまのりの基地
+  → 0 messages
+Fetching messages from kichi channel: #まこりんの基地
+  → 31 messages
+Fetching messages from kichi channel: #ケイイチの基地
+  → 0 messages
+Fetching messages from kichi channel: #若村雄介の基地
+  → 0 messages
+Fetching messages from kichi channel: #ryuの基地
+  → 0 messages
+Fetching messages from kichi channel: #なおこの基地
+  → 0 messages
+Fetching messages from kichi channel: #ボットたちの遊び基地
+Error fetching messages from 1491072751123824761: 503
+  → 0 messages
+Fetching messages from channel: #自己紹介
+  → 0 messages
+Fetching messages from channel: #開発ラボ
+  → 0 messages
+Fetching messages from channel: #成果物
+  → 0 messages
+Fetching messages from channel: #雑談
+  → 0 messages
+Fetching messages from channel: #質問箱
+  → 0 messages
+Total messages fetched: 48
+Generating daily report...
+Generating report using model: glm-4.7
+Raw LLM output: {
+  "date": "2026-04-23",
+  "channelSummaries": {
+    "自己紹介": "本日の発言はありませんでした。",
+    "開発ラボ": "本日の発言はありませんでした。",
+    "成果物": "本日の発言はありませんでした。",
+    "雑談": "本日の発言はありませんでした。",
+    "質問箱": "本日の発言はありませんでした。"
+  },
+  "users": {
+    "unknown_cb20854": {
+      "name": "cb20854",
+      "role": "参加者",
+      "theme": "バイブコーディング教育",
+      "projects": [
+        {
+          "name": "バイブコーディング初心者向け参考書",
+          "description": "デジハラ第0期の経験を基にした、完全初心者向けのバイブコーディング参考書",
+          "progress": "Antigravityのコンセプト（事前知識を詰め込みすぎず、不安感を軽減して一歩踏み出させる）に基づき、アドバイスを取り入れて資料（v2）を修正・作成中。"
+        }
+      ],
+      "interestsAndQuestions": "バイブコーディング初心者に立ち上がる際の不安感の本質について関心を持っている。",
+      "adviceReceived": [
+        {
+          "from": "ボッチー",
+          "content": "資料で拾うより手触りで本人が拾う方が良い、流れの透明性が重要であることなど、資料作成に関するアドバイスを受けた。"
+        }
+      ]
+    },
+    "unknown_takanorinaganuma_15823": {
+      "name": "takanorinaganuma_15823",
+      "role": "参加者",
+      "theme": "AIプラットフォーム開発",
+      "projects": [
+        {
+          "name": "ANOMI",
+          "description": "プロンプトキャッシュ技術による高記憶・低コストのAIプラットフォーム",
+          "progress": "「プロンプトキャッシュ」導入により、通信費を90%削減しつつ記憶件数を50件に拡張。中略処理を撤廃し完全記憶を実現。また、gpt-4o-miniの廃止に備え、モデル指定を環境変数化するリファクタリングを完了した。"
+        },
+        {
+          "name": "シンクロカード",
+          "description": "ANOMI3.0を搭載した製品",
+          "progress": "ランディングページ（LP）を作成し、プロモーションの準備を進めている。"
+        }
+      ],
+      "interestsAndQuestions": "gpt-4o-miniとgpt-5.4-nanoの置き換え比較、およびPrompt Cachingの技術的詳細。",
+      "adviceReceived": [
+        {
+          "from": "もっちゃん",
+          "content": "gpt-4o-miniが2026年後半〜2027年にかけてレガシー化しサポート終了する予定であるため、移行計画を立てるべきという情報を提供された。"
+        },
+        {
+          "from": "ボッチー",
+          "content": "gpt-5.4-nanoへの移行は、JSON安定性のリスクやスイッチコストを考慮すると、現時点では急ぐ必要がないという評価を受けた。"
+        }
+      ]
+    },
+    "1337662562283683861": {
+      "name": "ガクチョ",
+      "role": "運営",
+      "theme": "自律エージェント・業務管理",
+      "projects": [
+        {
+          "name": "gaku-co",
+          "description": "open claw を用いたタスク遂行エージェント",
+          "progress": "「がくこま」が、プログラムされていない「踊る」という動作を、旋回や直進などのツールをLLMが解釈・組み合わせることで実現する様子を確認した。"
+        },
+        {
+          "name": "Harappa Management Cockpit (HMC)",
+          "description": "業務管理application群",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "なし",
+      "adviceReceived": []
+    },
+    "1016907741018726470": {
+      "name": "もっちゃん",
+      "role": "運営",
+      "theme": "AIエージェント・マーケティングツール",
+      "projects": [
+        {
+          "name": "ボッチー",
+          "description": "対話型AIエージェント（スクラッチから製作）",
+          "progress": "gpt-5.4-nanoとgpt-4o-miniの比較説明など、ボッチー（AI）を活用して技術的な議論や確認を行った。"
+        },
+        {
+          "name": "Insight Scope (IS)",
+          "description": "マーケティングツール",
+          "progress": "変化なし"
+        }
+      ],
+      "interestsAndQuestions": "LLMモデルの更新動向、APIコストの最適化。",
+      "adviceReceived": []
+    }
+  }
+}
+Saving report...
+Report saved to: /home/node/.openclaw/workspace/skills/discord-daily-report/data/reports/2026-04-23.json
+Updating index...
+Pushing changes to Git...
